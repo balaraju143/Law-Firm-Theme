@@ -1,0 +1,2504 @@
+
+/* ==========================================
+   STACKLY CONTACT PAGE HERO
+========================================== */
+
+.law-contact-hero {
+    position: relative;
+
+    width: 100%;
+    min-height: 530px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 120px 5% 80px;
+
+    background-color: #14232e;
+
+    /* SAME IMAGE AS ABOUT PAGE */
+
+    background-image:
+        radial-gradient(
+            circle,
+            rgba(255, 255, 255, 0.07) 1px,
+            transparent 1.5px
+        ),
+        url("../assets/law-hero.webp");
+
+    background-size:
+        9px 9px,
+        cover;
+
+    background-position:
+        center,
+        center;
+
+    background-repeat:
+        repeat,
+        no-repeat;
+
+    overflow: hidden;
+    isolation: isolate;
+}
+
+
+/* ==========================================
+   DARK NAVY IMAGE OVERLAY
+========================================== */
+
+.law-contact-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        110deg,
+        rgba(10, 25, 43, 0.88),
+        rgba(17, 37, 57, 0.80),
+        rgba(10, 25, 43, 0.90)
+    );
+
+    z-index: -1;
+}
+
+
+/* ==========================================
+   CENTER CONTENT
+========================================== */
+
+.law-contact-hero-content {
+    position: relative;
+
+    width: 100%;
+    max-width: 1200px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    z-index: 2;
+}
+
+
+/* ==========================================
+   MAIN HEADING
+========================================== */
+
+.law-contact-hero-title {
+    color: #ffffff;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: clamp(42px, 5.5vw, 72px);
+
+    font-weight: 750;
+
+    line-height: 1.15;
+
+    letter-spacing: 1px;
+
+    margin: 0 0 20px;
+}
+
+
+/* ==========================================
+   BREADCRUMB
+========================================== */
+
+.law-contact-breadcrumb {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 14px;
+
+    color: #ffffff;
+
+    font-size: 17px;
+    font-weight: 500;
+}
+
+
+/* HOME LINK */
+
+.law-contact-breadcrumb a {
+    color: #ffffff;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.law-contact-breadcrumb a:hover {
+    color: #d0a13e;
+}
+
+
+/* GOLD SEPARATOR */
+
+.law-contact-breadcrumb .contact-breadcrumb-separator {
+    color: #d0a13e;
+
+    font-size: 21px;
+}
+
+
+/* CURRENT PAGE */
+
+.law-contact-breadcrumb .current-page {
+    color: #ffffff;
+}
+
+
+/* ==========================================
+   TABLET RESPONSIVE
+========================================== */
+
+@media (max-width: 1024px) {
+
+    .law-contact-hero {
+        min-height: 460px;
+
+        padding: 110px 5% 65px;
+    }
+
+    .law-contact-hero-title {
+        font-size: 58px;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .law-contact-hero {
+        min-height: 400px;
+
+        padding: 100px 5% 55px;
+
+        background-position:
+            center,
+            center;
+    }
+
+    .law-contact-hero-content {
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .law-contact-hero-title {
+        font-size: clamp(38px, 9vw, 52px);
+
+        margin-bottom: 15px;
+    }
+
+    .law-contact-breadcrumb {
+        font-size: 15px;
+
+        gap: 11px;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+    .law-contact-hero {
+        min-height: 340px;
+
+        padding: 90px 5% 45px;
+    }
+
+    .law-contact-hero-title {
+        font-size: 36px;
+
+        letter-spacing: 0.5px;
+    }
+
+    .law-contact-breadcrumb {
+        font-size: 14px;
+    }
+
+}
+
+
+/* ==========================================
+   EXTRA SMALL MOBILE
+========================================== */
+
+@media (max-width: 360px) {
+
+    .law-contact-hero {
+        min-height: 310px;
+    }
+
+    .law-contact-hero-title {
+        font-size: 32px;
+    }
+
+}
+
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .law-contact-hero-title,
+    .law-contact-breadcrumb {
+        transition: none;
+    }
+
+}
+
+
+
+
+/* ==========================================
+   STACKLY CONTACT FORM SECTION
+========================================== */
+
+.stackly-contact-form-section {
+    position: relative;
+
+    width: 100%;
+
+    padding: 75px 5% 100px;
+
+    background: #f5f1e9;
+
+    overflow: hidden;
+
+    isolation: isolate;
+}
+
+
+/* MAIN CONTAINER */
+
+.stackly-contact-form-container {
+    width: 100%;
+
+    max-width: 1450px;
+
+    margin: 0 auto;
+}
+
+
+/* ==========================================
+   TOP HEADING ROW
+========================================== */
+
+.stackly-contact-top {
+    display: grid;
+
+    grid-template-columns: 1fr 0.75fr;
+
+    align-items: center;
+
+    gap: 45px;
+
+    padding-bottom: 28px;
+
+    margin-bottom: 40px;
+
+    border-bottom: 1px solid rgba(20, 35, 46, 0.15);
+}
+
+
+/* LABEL */
+
+.stackly-contact-label {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 10px;
+
+    color: #7b8490;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+.stackly-contact-label .material-symbols-outlined {
+    color: #cba447;
+
+    font-size: 25px;
+}
+
+
+/* HEADING */
+
+.stackly-contact-top-title h2 {
+    color: #182833;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(35px, 4vw, 51px);
+
+    font-weight: 400;
+
+    line-height: 1.18;
+
+    margin: 0;
+}
+
+.stackly-contact-top-title h2 span {
+    display: block;
+
+    color: #c99a4e;
+}
+
+
+/* TOP DESCRIPTION */
+
+.stackly-contact-top-description {
+    max-width: 450px;
+
+    margin: 0;
+
+    color: #66727c;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* ==========================================
+   IMAGE + FORM MAIN GRID
+========================================== */
+
+.stackly-contact-main {
+    position: relative;
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1.08fr 0.92fr;
+
+    align-items: center;
+
+    gap: 0;
+}
+
+
+/* ==========================================
+   LEFT IMAGE
+========================================== */
+
+.stackly-contact-visual {
+    position: relative;
+
+    width: 100%;
+
+    height: 550px;
+
+    z-index: 1;
+}
+
+
+/* IMAGE CONTAINER */
+
+.stackly-contact-main-image {
+    position: relative;
+
+    width: 100%;
+
+    height: 100%;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    background: #d7cbbc;
+}
+
+
+/* MAIN IMAGE */
+
+.stackly-contact-main-image > img {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transition: transform 0.7s ease;
+}
+
+.stackly-contact-visual:hover .stackly-contact-main-image > img {
+    transform: scale(1.04);
+}
+
+
+/* IMAGE OVERLAY */
+
+.stackly-contact-image-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background: linear-gradient(
+        to top,
+        rgba(12, 25, 39, 0.83),
+        rgba(12, 25, 39, 0.05) 55%,
+        transparent
+    );
+}
+
+
+/* IMAGE CAPTION */
+
+.stackly-contact-image-caption {
+    position: absolute;
+
+    left: 35px;
+
+    bottom: 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    z-index: 2;
+
+    color: #ffffff;
+}
+
+.stackly-contact-image-caption > .material-symbols-outlined {
+    width: 49px;
+
+    height: 49px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-shrink: 0;
+
+    background: #cba447;
+
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    font-size: 25px;
+}
+
+.stackly-contact-image-caption h3 {
+    color: #ffffff;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    margin: 0 0 5px;
+}
+
+.stackly-contact-image-caption p {
+    color: #e4e7eb;
+
+    font-size: 13px;
+
+    margin: 0;
+}
+
+
+/* ==========================================
+   FLOATING TRUST CARD
+========================================== */
+
+.stackly-contact-trust-card {
+    position: absolute;
+
+    left: 25px;
+
+    top: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 15px 20px;
+
+    background: rgba(255,255,255,0.94);
+
+    border-radius: 10px;
+
+    z-index: 2;
+
+    box-shadow: 0 8px 30px rgba(0,0,0,0.10);
+
+    backdrop-filter: blur(8px);
+}
+
+.stackly-contact-trust-card > .material-symbols-outlined {
+    font-size: 32px;
+
+    color: #cba447;
+}
+
+.stackly-contact-trust-card h4 {
+    margin: 0 0 4px;
+
+    color: #182833;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+.stackly-contact-trust-card p {
+    margin: 0;
+
+    color: #7b8490;
+
+    font-size: 11px;
+}
+
+
+/* ==========================================
+   RIGHT FORM CARD
+========================================== */
+
+.stackly-contact-form-card {
+    position: relative;
+
+    width: calc(100% + 65px);
+
+    margin-left: -65px;
+
+    padding: 36px 36px 30px;
+
+    background: #172b3a;
+
+    color: #ffffff;
+
+    border-radius: 15px;
+
+    z-index: 3;
+
+    box-shadow: 0 20px 55px rgba(13, 29, 43, 0.17);
+}
+
+
+/* FORM HEADING */
+
+.stackly-contact-form-heading {
+    margin-bottom: 25px;
+}
+
+.stackly-contact-form-heading > .material-symbols-outlined {
+    color: #cba447;
+
+    font-size: 32px;
+
+    margin-bottom: 10px;
+}
+
+.stackly-contact-form-heading h3 {
+    color: #ffffff;
+
+    font-size: 23px;
+
+    font-weight: 700;
+
+    margin: 0 0 8px;
+}
+
+.stackly-contact-form-heading p {
+    color: #c5ced6;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+/* ==========================================
+   FORM FIELDS
+========================================== */
+
+.stackly-contact-form {
+    width: 100%;
+}
+
+.stackly-form-group {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin-bottom: 17px;
+}
+
+
+/* LABEL */
+
+.stackly-form-group label {
+    display: block;
+
+    color: #eee8dc;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    margin-bottom: 7px;
+}
+
+.stackly-form-group label span {
+    color: #e7b956;
+}
+
+
+/* INPUTS */
+
+.stackly-form-group input,
+.stackly-form-group textarea {
+    width: 100%;
+
+    padding: 12px 15px;
+
+    border: 1px solid transparent;
+
+    outline: none;
+
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    color: #182833;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* INPUT HEIGHT */
+
+.stackly-form-group input {
+    height: 47px;
+}
+
+
+/* TEXTAREA */
+
+.stackly-form-group textarea {
+    min-height: 125px;
+
+    resize: vertical;
+
+    line-height: 1.6;
+}
+
+
+/* PLACEHOLDER */
+
+.stackly-form-group input::placeholder,
+.stackly-form-group textarea::placeholder {
+    color: #9ba1a8;
+
+    opacity: 1;
+}
+
+
+/* FOCUS */
+
+.stackly-form-group input:focus,
+.stackly-form-group textarea:focus {
+    border-color: #cba447;
+
+    box-shadow: 0 0 0 3px rgba(203,164,71,0.15);
+}
+
+
+/* INVALID INPUT */
+
+.stackly-form-group input.has-error,
+.stackly-form-group textarea.has-error {
+    border-color: #ff7777;
+
+    box-shadow: 0 0 0 2px rgba(255, 100, 100, 0.12);
+}
+
+
+/* ==========================================
+   FIELD ERROR MESSAGES
+========================================== */
+
+.stackly-field-error {
+    display: block;
+
+    min-height: 0;
+
+    margin-top: 0;
+
+    color: #ffaaaa;
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+    line-height: 1.4;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateY(-4px);
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease,
+        margin 0.25s ease;
+}
+
+
+/* ERROR VISIBLE */
+
+.stackly-field-error.show-error {
+    margin-top: 6px;
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+
+/* ==========================================
+   SUBMIT BUTTON
+========================================== */
+
+.stackly-contact-submit {
+    width: 50%;
+
+    min-height: 54px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    padding: 12px 20px;
+
+    margin-top: 7px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #cba447;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.stackly-contact-submit:hover {
+    background: #ffffff;
+
+    color: #172b3a;
+
+    transform: translateY(-3px);
+}
+
+.stackly-contact-submit .material-symbols-outlined {
+    font-size: 21px;
+
+    transition: transform 0.3s ease;
+}
+
+.stackly-contact-submit:hover .material-symbols-outlined {
+    transform: translateX(5px);
+}
+
+
+/* ==========================================
+   PRIVACY NOTE
+========================================== */
+
+.stackly-contact-privacy {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    margin-top: 18px;
+
+    color: #b7c2ca;
+
+    font-size: 11px;
+}
+
+.stackly-contact-privacy .material-symbols-outlined {
+    color: #cba447;
+
+    font-size: 16px;
+}
+
+
+/* ==========================================
+   TABLET RESPONSIVE
+========================================== */
+
+@media (max-width: 1050px) {
+
+    .stackly-contact-form-section {
+        padding: 65px 4% 80px;
+    }
+
+    .stackly-contact-main {
+        grid-template-columns: 1fr 0.95fr;
+    }
+
+    .stackly-contact-visual {
+        height: 520px;
+    }
+
+    .stackly-contact-form-card {
+        width: calc(100% + 40px);
+
+        margin-left: -40px;
+
+        padding: 28px 25px;
+    }
+
+    .stackly-contact-top-title h2 {
+        font-size: 41px;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .stackly-contact-form-section {
+        padding: 60px 5% 75px;
+    }
+
+
+    /* CENTER TOP CONTENT */
+
+    .stackly-contact-top {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+
+        text-align: center;
+
+        margin-bottom: 35px;
+
+        padding-bottom: 22px;
+    }
+
+    .stackly-contact-label {
+        justify-content: center;
+    }
+
+    .stackly-contact-top-title h2 {
+        font-size: clamp(33px, 7vw, 43px);
+    }
+
+    .stackly-contact-top-description {
+        max-width: 550px;
+
+        margin: 0 auto;
+
+        font-size: 14px;
+
+        text-align: center;
+    }
+
+
+    /* STACK IMAGE AND FORM */
+
+    .stackly-contact-main {
+        grid-template-columns: 1fr;
+
+        gap: 0;
+
+        justify-items: center;
+    }
+
+
+    /* IMAGE */
+
+    .stackly-contact-visual {
+        width: 100%;
+
+        max-width: 550px;
+
+        height: 390px;
+
+        margin: 0 auto;
+    }
+
+    .stackly-contact-main-image {
+        border-radius: 13px;
+    }
+
+    .stackly-contact-image-caption {
+        left: 20px;
+        bottom: 22px;
+    }
+
+    .stackly-contact-image-caption h3 {
+        font-size: 17px;
+    }
+
+
+    /* FLOATING TRUST CARD */
+
+    .stackly-contact-trust-card {
+        left: 15px;
+        top: 15px;
+
+        padding: 11px 14px;
+    }
+
+    .stackly-contact-trust-card > .material-symbols-outlined {
+        font-size: 27px;
+    }
+
+
+    /* FORM OVERLAPS IMAGE */
+
+    .stackly-contact-form-card {
+        width: calc(100% - 20px);
+
+        max-width: 530px;
+
+        margin: -35px auto 0;
+
+        padding: 29px 24px 25px;
+        border-radius: 13px;
+
+        z-index: 4;
+    }
+
+
+    /* FORM HEADING CENTER */
+
+    .stackly-contact-form-heading {
+        text-align: center;
+    }
+
+    .stackly-contact-form-heading > .material-symbols-outlined {
+        font-size: 30px;
+    }
+
+    .stackly-contact-form-heading h3 {
+        font-size: 21px;
+    }
+
+    .stackly-contact-form-heading p {
+        font-size: 13px;
+    }
+
+
+    /* KEEP FORM LABELS ABOVE INPUTS */
+
+    .stackly-form-group {
+        text-align: left;
+
+        margin-bottom: 16px;
+    }
+
+    .stackly-form-group label {
+        font-size: 13px;
+    }
+
+    .stackly-form-group input {
+        height: 47px;
+    }
+
+    .stackly-form-group textarea {
+        min-height: 115px;
+    }
+
+
+    /* BUTTON */
+
+    .stackly-contact-submit {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+    .stackly-contact-form-section {
+        padding: 50px 5% 65px;
+    }
+
+    .stackly-contact-top-title h2 {
+        font-size: 32px;
+    }
+
+    .stackly-contact-top-description {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+
+    /* IMAGE */
+
+    .stackly-contact-visual {
+        height: 320px;
+    }
+
+    .stackly-contact-image-caption {
+        left: 13px;
+        bottom: 15px;
+
+        gap: 9px;
+    }
+
+    .stackly-contact-image-caption > .material-symbols-outlined {
+        width: 41px;
+        height: 41px;
+
+        font-size: 21px;
+    }
+
+    .stackly-contact-image-caption h3 {
+        font-size: 14px;
+    }
+
+    .stackly-contact-image-caption p {
+        font-size: 10px;
+    }
+
+
+    /* TRUST CARD */
+
+    .stackly-contact-trust-card {
+        padding: 9px 10px;
+
+        gap: 8px;
+    }
+
+    .stackly-contact-trust-card h4 {
+        font-size: 12px;
+    }
+
+    .stackly-contact-trust-card p {
+        font-size: 9px;
+    }
+
+
+    /* FORM */
+
+    .stackly-contact-form-card {
+        width: calc(100% - 10px);
+
+        padding: 24px 16px;
+
+        margin-top: 15px;
+    }
+
+    .stackly-contact-form-heading h3 {
+        font-size: 19px;
+    }
+
+    .stackly-form-group input,
+    .stackly-form-group textarea {
+        font-size: 13px;
+    }
+
+    .stackly-contact-privacy {
+        font-size: 10px;
+    }
+
+}
+
+
+/* ==========================================
+   EXTRA SMALL MOBILE
+========================================== */
+
+@media (max-width: 360px) {
+
+    .stackly-contact-top-title h2 {
+        font-size: 29px;
+    }
+
+    .stackly-contact-visual {
+        height: 285px;
+    }
+
+    .stackly-contact-form-card {
+        padding: 21px 13px;
+    }
+
+    .stackly-contact-image-caption h3 {
+        font-size: 13px;
+    }
+
+    .stackly-contact-image-caption p {
+        font-size: 9px;
+    }
+
+}
+
+
+/* ==========================================
+   REDUCED MOTION
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .stackly-contact-form-section *,
+    .stackly-contact-form-section *::before,
+    .stackly-contact-form-section *::after {
+        transition: none !important;
+    }
+
+}
+
+
+
+
+/* ==========================================
+   STACKLY CONTACT INFORMATION SECTION
+========================================== */
+
+.stackly-contact-info-section {
+    position: relative;
+
+    width: 100%;
+
+    padding: 85px 4% 95px;
+
+    background:#d7cbbc;
+
+    overflow: hidden;
+    isolation: isolate;
+}
+
+
+/* MAIN CONTAINER */
+
+.stackly-contact-info-container {
+    width: 100%;
+    max-width: 1500px;
+
+    margin: 0 auto;
+}
+
+
+/* ==========================================
+   SECTION HEADING
+========================================== */
+
+.stackly-contact-info-heading {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 0 auto 48px;
+
+    text-align: center;
+}
+
+
+/* LABEL */
+
+.stackly-contact-info-label {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    margin-bottom: 13px;
+
+    color: #263743;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+.stackly-contact-info-label .material-symbols-outlined {
+    color: #cba447;
+
+    font-size: 27px;
+}
+
+
+/* HEADING */
+
+.stackly-contact-info-heading h2 {
+    margin: 0;
+
+    color: #182833;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(35px, 4vw, 49px);
+
+    font-weight: 400;
+
+    line-height: 1.2;
+
+    letter-spacing: -0.8px;
+}
+
+.stackly-contact-info-heading h2 span {
+    display: block;
+
+    color: #b88d49;
+}
+
+
+/* DESCRIPTION */
+
+.stackly-contact-info-heading > p {
+    max-width: 680px;
+
+    margin: 17px auto 0;
+
+    color: #75808a;
+
+    font-size: 15px;
+
+    line-height: 1.85;
+}
+
+
+/* ==========================================
+   FOUR CONTACT CARDS
+========================================== */
+
+.stackly-contact-info-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 23px;
+
+    align-items: stretch;
+}
+
+
+/* ==========================================
+   INDIVIDUAL CARD
+========================================== */
+
+.stackly-contact-info-card {
+    position: relative;
+
+    min-width: 0;
+
+    min-height: 260px;
+
+    padding: 30px 19px 27px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: flex-start;
+
+    text-align: center;
+
+    background: #715b42;
+
+    border: 1px solid rgba(255,255,255,0.13);
+
+    border-radius: 13px;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.4s ease,
+        background 0.4s ease,
+        box-shadow 0.4s ease,
+        border-color 0.4s ease;
+}
+
+
+/* SUBTLE GOLD TOP ACCENT */
+
+.stackly-contact-info-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 0;
+    height: 3px;
+
+    background: #d8b15b;
+
+    transition: width 0.4s ease;
+}
+
+
+/* HOVER */
+
+.stackly-contact-info-card:hover {
+    transform: translateY(-9px);
+
+    background: #263a48;
+
+    border-color: rgba(203,164,71,0.55);
+
+    box-shadow: 0 16px 35px rgba(20,35,46,0.15);
+}
+
+.stackly-contact-info-card:hover::before {
+    width: 65%;
+}
+
+
+/* ==========================================
+   CARD ICON
+========================================== */
+
+.stackly-contact-info-icon {
+    width: 53px;
+    height: 53px;
+
+    margin-bottom: 19px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.12);
+
+    color: #ffffff;
+
+    transition:
+        background 0.35s ease,
+        transform 0.35s ease;
+}
+
+.stackly-contact-info-icon .material-symbols-outlined {
+    font-size: 29px;
+}
+
+.stackly-contact-info-card:hover .stackly-contact-info-icon {
+    background: #cba447;
+
+    transform: translateY(-3px);
+}
+
+
+/* ==========================================
+   CARD TITLE
+========================================== */
+
+.stackly-contact-info-card h3 {
+    color: #ffffff;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    line-height: 1.4;
+
+    margin: 0 0 10px;
+}
+
+
+/* ==========================================
+   CARD DESCRIPTION
+========================================== */
+
+.stackly-contact-info-card > p {
+    max-width: 260px;
+
+    color: #e8e0d5;
+
+    font-size: 13px;
+
+    line-height: 1.75;
+
+    margin: 0 0 13px;
+}
+
+
+/* ==========================================
+   ADDRESS
+========================================== */
+
+.stackly-contact-address {
+    display: block;
+
+    max-width: 255px;
+
+    margin: 0 auto 13px;
+
+    color: #e8e0d5;
+
+    font-size: 11px;
+
+    line-height: 1.75;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.stackly-contact-address:hover {
+    color: #e8bd65;
+}
+
+
+/* ==========================================
+   CONTACT LINKS
+========================================== */
+
+.stackly-contact-info-link {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    flex-wrap: wrap;
+
+    margin-top: auto;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    line-height: 1.5;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.stackly-contact-info-link .material-symbols-outlined {
+    font-size: 17px;
+
+    color: #e5bd69;
+
+    transition: transform 0.3s ease;
+}
+
+.stackly-contact-info-link:hover {
+    color: #efc96f;
+}
+
+.stackly-contact-info-link:hover .material-symbols-outlined {
+    transform: translateX(4px);
+}
+
+
+/* ==========================================
+   TABLET RESPONSIVE
+========================================== */
+
+@media (max-width: 1050px) {
+
+    .stackly-contact-info-section {
+        padding: 75px 3% 85px;
+    }
+
+    .stackly-contact-info-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 20px;
+    }
+
+    .stackly-contact-info-card {
+        min-height: 245px;
+
+        padding: 28px 22px;
+    }
+
+    .stackly-contact-info-card h3 {
+        font-size: 18px;
+    }
+
+    .stackly-contact-address {
+        max-width: 280px;
+        font-size: 12px;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 600px) {
+
+    .stackly-contact-info-section {
+        padding: 60px 5% 70px;
+    }
+
+
+    /* CENTER HEADING */
+
+    .stackly-contact-info-heading {
+        margin-bottom: 35px;
+
+        padding: 0 5px;
+
+        text-align: center;
+    }
+
+    .stackly-contact-info-label {
+        justify-content: center;
+
+        font-size: 12px;
+    }
+
+    .stackly-contact-info-heading h2 {
+        font-size: clamp(31px, 7vw, 39px);
+
+        line-height: 1.25;
+    }
+
+    .stackly-contact-info-heading > p {
+        font-size: 13px;
+
+        line-height: 1.8;
+    }
+
+
+    /* ONE CARD PER ROW */
+
+    .stackly-contact-info-grid {
+        width: 100%;
+
+        max-width: 390px;
+
+        margin: 0 auto;
+
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+
+    /* EQUAL CARD HEIGHT */
+
+    .stackly-contact-info-card {
+        width: 100%;
+
+        min-height: 225px;
+
+        padding: 26px 20px;
+
+        align-items: center;
+
+        text-align: center;
+
+        border-radius: 12px;
+    }
+
+
+    /* CARD ICON */
+
+    .stackly-contact-info-icon {
+        width: 51px;
+        height: 51px;
+
+        margin-bottom: 14px;
+    }
+
+    .stackly-contact-info-icon .material-symbols-outlined {
+        font-size: 27px;
+    }
+
+
+    /* CARD TEXT */
+
+    .stackly-contact-info-card h3 {
+        font-size: 18px;
+
+        text-align: center;
+    }
+
+    .stackly-contact-info-card > p {
+        max-width: 300px;
+
+        font-size: 13px;
+
+        line-height: 1.8;
+
+        text-align: center;
+    }
+
+
+    /* ADDRESS */
+
+    .stackly-contact-address {
+        max-width: 290px;
+
+        margin: 0 auto 14px;
+
+        font-size: 12px;
+
+        line-height: 1.8;
+
+        text-align: center;
+    }
+
+
+    /* LINKS */
+
+    .stackly-contact-info-link {
+        justify-content: center;
+
+        font-size: 14px;
+
+        text-align: center;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 380px) {
+
+    .stackly-contact-info-section {
+        padding: 50px 15px 60px;
+    }
+
+    .stackly-contact-info-heading h2 {
+        font-size: 29px;
+    }
+
+    .stackly-contact-info-card {
+        min-height: 215px;
+
+        padding: 23px 16px;
+    }
+
+    .stackly-contact-info-card h3 {
+        font-size: 17px;
+    }
+
+    .stackly-contact-address {
+        font-size: 11px;
+    }
+
+}
+
+
+/* ==========================================
+   ACCESSIBILITY
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .stackly-contact-info-card,
+    .stackly-contact-info-icon,
+    .stackly-contact-info-link,
+    .stackly-contact-info-card::before {
+        transition: none !important;
+    }
+
+}
+
+
+
+/* ==========================================
+   STACKLY LEGAL FAQ FEATURE SECTION
+========================================== */
+
+.stackly-legal-faq-feature {
+    position: relative;
+
+    width: 100%;
+
+    padding: 75px 5% 85px;
+
+    background: #f3eee4;
+
+    overflow: hidden;
+    isolation: isolate;
+}
+
+
+/* MAIN CONTAINER */
+
+.stackly-legal-faq-container {
+    width: 100%;
+    max-width: 1450px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 0.88fr 1.12fr;
+
+    align-items: center;
+
+    gap: 45px;
+}
+
+
+/* ==========================================
+   LEFT CONTENT
+========================================== */
+
+.stackly-legal-faq-content {
+    width: 100%;
+    min-width: 0;
+}
+
+
+/* LABEL */
+
+.stackly-legal-faq-label {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 16px;
+
+    color: #858995;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.8px;
+}
+
+.stackly-legal-faq-label .material-symbols-outlined {
+    color: #c99a4e;
+
+    font-size: 25px;
+}
+
+
+/* ==========================================
+   HEADING
+========================================== */
+
+.stackly-legal-faq-content h2 {
+    color: #172733;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(35px, 3.6vw, 49px);
+
+    font-weight: 400;
+
+    line-height: 1.2;
+
+    letter-spacing: -0.7px;
+
+    margin: 0 0 18px;
+}
+
+.stackly-legal-faq-content h2 span {
+    display: block;
+
+    color: #bf934a;
+}
+
+
+/* DESCRIPTION */
+
+.stackly-legal-faq-description {
+    max-width: 520px;
+
+    margin: 0 0 28px;
+
+    color: #77818b;
+
+    font-size: 15px;
+
+    line-height: 1.85;
+}
+
+
+/* ==========================================
+   FAQ LIST
+========================================== */
+
+.stackly-legal-faq-list {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 11px;
+
+    margin-bottom: 27px;
+}
+
+
+/* FAQ ITEM */
+
+.stackly-legal-faq-item {
+    width: 100%;
+
+    border: 1px solid rgba(113, 91, 66, 0.25);
+
+    border-radius: 8px;
+
+    background: rgba(255,255,255,0.56);
+
+    overflow: hidden;
+
+    transition:
+        background 0.35s ease,
+        border-color 0.35s ease;
+}
+
+
+/* FAQ QUESTION */
+
+.stackly-legal-faq-question {
+    width: 100%;
+
+    min-height: 53px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 12px;
+
+    padding: 13px 15px;
+
+    background: transparent;
+
+    border: none;
+
+    color: #172733;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    line-height: 1.5;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition: color 0.3s ease;
+}
+
+
+/* PLUS ICON */
+
+.stackly-legal-faq-question .material-symbols-outlined {
+    flex-shrink: 0;
+
+    color: #b88d49;
+
+    font-size: 21px;
+
+    transition:
+        transform 0.35s ease,
+        color 0.35s ease;
+}
+
+
+/* ==========================================
+   FAQ ANSWER
+========================================== */
+
+.stackly-legal-faq-answer {
+    display: grid;
+
+    grid-template-rows: 0fr;
+
+    transition: grid-template-rows 0.4s ease;
+}
+
+.stackly-legal-faq-answer > div {
+    min-height: 0;
+
+    overflow: hidden;
+
+    padding: 0 15px;
+
+    transition: padding 0.4s ease;
+}
+
+.stackly-legal-faq-answer p {
+    color: #75808a;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    margin: 0;
+}
+
+
+/* OPEN FAQ */
+
+.stackly-legal-faq-item.is-open {
+    background: #172b3a;
+
+    border-color: #172b3a;
+}
+
+.stackly-legal-faq-item.is-open .stackly-legal-faq-question {
+    color: #ffffff;
+}
+
+.stackly-legal-faq-item.is-open .stackly-legal-faq-question .material-symbols-outlined {
+    color: #e5bd69;
+
+    transform: rotate(180deg);
+}
+
+.stackly-legal-faq-item.is-open .stackly-legal-faq-answer {
+    grid-template-rows: 1fr;
+}
+
+.stackly-legal-faq-item.is-open .stackly-legal-faq-answer > div {
+    padding-top: 0;
+    padding-bottom: 16px;
+}
+
+.stackly-legal-faq-item.is-open .stackly-legal-faq-answer p {
+    color: #d0d7dd;
+}
+
+
+/* ==========================================
+   CTA BUTTON
+========================================== */
+
+.stackly-legal-faq-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    min-width: 190px;
+
+    min-height: 55px;
+
+    padding: 12px 23px;
+
+    background: #c99a4e;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition:
+        background 0.35s ease,
+        color 0.35s ease,
+        transform 0.35s ease;
+}
+
+.stackly-legal-faq-button:hover {
+    background: #172b3a;
+
+    color: #ffffff;
+
+    transform: translateY(-3px);
+}
+
+.stackly-legal-faq-button .material-symbols-outlined {
+    font-size: 20px;
+
+    transition: transform 0.3s ease;
+}
+
+.stackly-legal-faq-button:hover .material-symbols-outlined {
+    transform: translateX(5px);
+}
+
+
+/* ==========================================
+   RIGHT IMAGE DESIGN
+========================================== */
+
+.stackly-legal-faq-visual {
+    position: relative;
+
+    width: 100%;
+
+    min-width: 0;
+
+    height: 430px;
+
+    z-index: 2;
+}
+
+
+/* IMAGE WRAPPER - LARGE TOP LEFT CURVE */
+
+.stackly-legal-faq-image-wrap {
+    position: relative;
+
+    width: 100%;
+
+    height: 100%;
+
+    overflow: hidden;
+
+    border-radius: 145px 13px 13px 13px;
+
+    background: #d8d2c8;
+}
+
+
+/* IMAGE */
+
+.stackly-legal-faq-image-wrap > img {
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transition: transform 0.7s ease;
+}
+
+.stackly-legal-faq-image-wrap:hover > img {
+    transform: scale(1.035);
+}
+
+
+/* IMAGE CAPTION OVERLAY */
+
+.stackly-legal-faq-image-wrap::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 45% 0 0;
+
+    background: linear-gradient(
+        to top,
+        rgba(12, 26, 39, 0.86),
+        transparent
+    );
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+
+/* IMAGE CAPTION */
+
+.stackly-legal-faq-image-caption {
+    position: absolute;
+
+    left: 30px;
+
+    bottom: 27px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    z-index: 3;
+
+    color: #ffffff;
+}
+
+.stackly-legal-faq-image-caption > .material-symbols-outlined {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #c99a4e;
+
+    color: #ffffff;
+
+    font-size: 24px;
+}
+
+.stackly-legal-faq-image-caption h3 {
+    color: #ffffff;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    margin: 0 0 5px;
+}
+
+.stackly-legal-faq-image-caption p {
+    color: #e5e8eb;
+
+    font-size: 12px;
+
+    margin: 0;
+}
+
+
+/* ==========================================
+   TABLET RESPONSIVE
+========================================== */
+
+@media (max-width: 1050px) {
+
+    .stackly-legal-faq-feature {
+        padding: 65px 4% 75px;
+    }
+
+    .stackly-legal-faq-container {
+        grid-template-columns: 0.95fr 1.05fr;
+
+        gap: 25px;
+    }
+
+    .stackly-legal-faq-content h2 {
+        font-size: 37px;
+    }
+
+    .stackly-legal-faq-visual {
+        height: 390px;
+    }
+
+    .stackly-legal-faq-image-wrap {
+        border-radius: 110px 12px 12px 12px;
+    }
+
+    .stackly-legal-faq-question {
+        font-size: 13px;
+
+        padding: 12px;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .stackly-legal-faq-feature {
+        padding: 65px 5% 75px;
+    }
+
+    .stackly-legal-faq-container {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+
+    /* CENTER LEFT CONTENT */
+
+    .stackly-legal-faq-content {
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .stackly-legal-faq-label {
+        justify-content: center;
+    }
+
+    .stackly-legal-faq-content h2 {
+        font-size: clamp(33px, 7vw, 43px);
+
+        line-height: 1.23;
+
+        text-align: center;
+    }
+
+    .stackly-legal-faq-description {
+        max-width: 550px;
+
+        font-size: 14px;
+
+        text-align: center;
+
+        line-height: 1.8;
+    }
+
+
+    /* FAQ LIST */
+
+    .stackly-legal-faq-list {
+        width: 100%;
+
+        max-width: 570px;
+
+        text-align: left;
+    }
+
+    .stackly-legal-faq-question {
+        font-size: 14px;
+
+        min-height: 56px;
+
+        padding: 13px 15px;
+    }
+
+    .stackly-legal-faq-answer p {
+        font-size: 13px;
+    }
+
+
+    /* CENTER BUTTON */
+
+    .stackly-legal-faq-button {
+        margin: 0 auto;
+    }
+
+
+    /* RIGHT IMAGE BELOW CONTENT */
+
+    .stackly-legal-faq-visual {
+        width: 100%;
+
+        max-width: 550px;
+
+        height: 390px;
+
+        margin: 0 auto;
+    }
+
+    .stackly-legal-faq-image-wrap {
+        border-radius: 100px 12px 12px 12px;
+    }
+
+    .stackly-legal-faq-image-caption {
+        left: 20px;
+
+        bottom: 20px;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+    .stackly-legal-faq-feature {
+        padding: 55px 5% 65px;
+    }
+
+    .stackly-legal-faq-container {
+        gap: 34px;
+    }
+
+    .stackly-legal-faq-content h2 {
+        font-size: 32px;
+    }
+
+    .stackly-legal-faq-description {
+        font-size: 13px;
+    }
+
+
+    /* FAQ */
+
+    .stackly-legal-faq-question {
+        font-size: 13px;
+
+        min-height: 53px;
+
+        padding: 11px 12px;
+    }
+
+    .stackly-legal-faq-question .material-symbols-outlined {
+        font-size: 19px;
+    }
+
+    .stackly-legal-faq-answer p {
+        font-size: 12px;
+
+        line-height: 1.8;
+    }
+
+
+    /* IMAGE */
+
+    .stackly-legal-faq-visual {
+        height: 310px;
+    }
+
+    .stackly-legal-faq-image-wrap {
+        border-radius: 75px 10px 10px 10px;
+    }
+
+    .stackly-legal-faq-image-caption {
+        left: 13px;
+
+        bottom: 14px;
+
+        gap: 9px;
+    }
+
+    .stackly-legal-faq-image-caption > .material-symbols-outlined {
+        width: 39px;
+        height: 39px;
+
+        font-size: 20px;
+    }
+
+    .stackly-legal-faq-image-caption h3 {
+        font-size: 14px;
+    }
+
+    .stackly-legal-faq-image-caption p {
+        font-size: 10px;
+    }
+
+}
+
+
+/* ==========================================
+   EXTRA SMALL MOBILE
+========================================== */
+
+@media (max-width: 360px) {
+
+    .stackly-legal-faq-content h2 {
+        font-size: 29px;
+    }
+
+    .stackly-legal-faq-visual {
+        height: 280px;
+    }
+
+    .stackly-legal-faq-image-wrap {
+        border-radius: 60px 9px 9px 9px;
+    }
+
+}
+
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .stackly-legal-faq-section *,
+    .stackly-legal-faq-section *::before,
+    .stackly-legal-faq-section *::after {
+        transition: none !important;
+    }
+
+}

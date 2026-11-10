@@ -1,0 +1,1385 @@
+
+/* =========================================
+   STACKLY LAW FIRM - NAVBAR
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: #14232d;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.stackly-header {
+    width: 100%;
+    padding: 14px 2.5%;
+    position: relative;
+    z-index: 1000;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.stackly-navbar {
+    width: 80%;
+    height: 72px;
+    padding: 8px 13px 8px 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+    background: rgba(255, 255, 255, 0.10);
+
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 50px;
+    margin-left: 8%;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    position:fixed;
+}
+
+
+/* =========================================
+   STACKLY LOGO
+========================================= */
+
+.stackly-logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    text-decoration: none;
+}
+
+.stackly-logo img {
+    display: block;
+    width: 145px;
+    height: 48px;
+    object-fit: contain;
+    object-position: left center;
+}
+
+
+/* =========================================
+   NAVIGATION LINKS
+========================================= */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 42px;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #d2aa48;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+
+    width: 0;
+    height: 2px;
+
+    background: #d2aa48;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+
+/* =========================================
+   LOGIN BUTTON
+========================================= */
+
+.login-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 13px 27px;
+
+    background: #d0aa4d;
+    color: #ffffff;
+
+    border-radius: 40px;
+
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+
+    white-space: nowrap;
+    border: none;
+
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    background: #e1bd63;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   MOBILE LOGIN
+========================================= */
+
+.mobile-login {
+    display: none;
+}
+
+
+/* =========================================
+   HAMBURGER MENU
+========================================= */
+
+.menu-toggle {
+    display: none;
+
+    width: 43px;
+    height: 43px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #d0aa4d;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 5px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.menu-toggle span {
+    width: 19px;
+    height: 2px;
+
+    display: block;
+
+    background: #14232d;
+    border-radius: 5px;
+
+    transition: all 0.3s ease;
+}
+
+
+/* HAMBURGER TO X */
+
+.menu-toggle.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+
+/* =========================================
+   TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 1050px) {
+
+    .nav-links {
+        gap: 23px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .stackly-logo img {
+        width: 125px;
+    }
+
+    .login-btn {
+        padding: 12px 22px;
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .stackly-header {
+        padding: 12px 4%;
+    }
+
+    .stackly-navbar {
+        height: 65px;
+        padding: 7px 9px 7px 16px;
+        border-radius: 40px;
+        width: 95%;
+        margin-left: 0;
+    }
+
+
+    /* LOGO LEFT */
+
+    .stackly-logo img {
+        width: 125px;
+        height: 43px;
+    }
+
+
+    /* HIDE DESKTOP LOGIN */
+
+    .login-btn {
+        display: none;
+    }
+
+
+    /* SHOW HAMBURGER */
+
+    .menu-toggle {
+        display: flex;
+    }
+
+
+    /* MOBILE MENU BOX */
+
+    .nav-links {
+        position: absolute;
+
+        top: calc(100% + 10px);
+        left: 0;
+        right: 0;
+
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+
+        gap: 0;
+
+        padding: 0 20px;
+
+        background: #263640;
+
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 20px;
+
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+
+        transform: translateY(-10px);
+
+        transition:
+            opacity 0.3s ease,
+            transform 0.3s ease,
+            visibility 0.3s ease;
+
+        z-index: 1001;
+    }
+
+
+    /* MENU OPEN */
+
+    .nav-links.show {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+
+        transform: translateY(0);
+
+        padding-top: 12px;
+        padding-bottom: 14px;
+    }
+
+
+    /* MOBILE PAGE LINKS */
+
+    .nav-link {
+        display: block;
+        width: 100%;
+
+        padding: 14px 8px;
+
+        font-size: 16px;
+        font-weight: 600;
+
+        border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    }
+
+    .nav-link::after {
+        display: none;
+    }
+
+    .nav-link.active {
+        color: #d2aa48;
+    }
+
+
+    /* MOBILE LOGIN */
+
+    .mobile-login {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+
+        margin-top: 14px;
+        padding: 13px 20px;
+
+        background: #d0aa4d;
+        color: #ffffff;
+
+        border-radius: 30px;
+
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+
+    .stackly-header {
+        padding: 10px 3%;
+    }
+
+    .stackly-navbar {
+        height: 60px;
+        padding: 6px 8px 6px 12px;
+    }
+
+    .stackly-logo img {
+        width: 112px;
+        height: 40px;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-link {
+        font-size: 15px;
+    }
+
+}
+
+
+/* =========================================
+   LARGE DESKTOP
+========================================= */
+
+@media (min-width: 1400px) {
+
+    .stackly-header {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .stackly-navbar {
+        height: 72px;
+    }
+
+}
+
+
+
+
+/* ==========================================
+   STACKLY LAW FIRM - FOOTER
+========================================== */
+
+/* ==========================================
+   STACKLY LAW FIRM - FOOTER BACKGROUND
+========================================== */
+
+.law-footer {
+    position: relative;
+    width: 100%;
+
+    padding: 65px 3.2% 25px;
+
+    /* Background image + dotted pattern */
+    background-color: #14232e;
+
+    background-image:
+        radial-gradient(
+            circle,
+            rgba(255, 255, 255, 0.08) 1px,
+            transparent 1.5px
+        ),
+        url("../assets/law-hero.webp");
+
+    background-size:
+        9px 9px,
+        cover;
+
+    background-position:
+        center,
+        center;
+
+    background-repeat:
+        repeat,
+        no-repeat;
+
+    background-attachment: scroll;
+
+    overflow: hidden;
+    isolation: isolate;
+}
+
+
+/* DARK BLUE IMAGE OVERLAY */
+
+.law-footer::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        110deg,
+        rgba(10, 25, 43, 0.96),
+        rgba(17, 37, 57, 0.91),
+        rgba(10, 25, 43, 0.96)
+    );
+
+    z-index: -1;
+}
+
+/* MAIN CONTAINER */
+
+.law-footer-container {
+    width: 100%;
+    max-width: 1650px;
+
+    margin: 0 auto;
+}
+
+
+/* ==========================================
+   TOP FOOTER GRID
+========================================== */
+
+.law-footer-top {
+    display: grid;
+
+    grid-template-columns: 1.45fr 0.7fr 0.85fr 0.95fr;
+
+    gap: 55px;
+
+    padding-bottom: 65px;
+}
+
+
+/* ==========================================
+   BRAND
+========================================== */
+
+.law-footer-brand {
+    min-width: 0;
+}
+
+
+/* STACKLY LOGO */
+
+.law-footer-logo {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 17px;
+
+    text-decoration: none;
+
+    margin-bottom: 23px;
+}
+
+.law-footer-logo-icon {
+    width: 75px;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #d0a13e;
+
+    flex-shrink: 0;
+}
+
+.law-footer-logo-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.law-footer-logo-text {
+    color: #ffffff;
+
+    font-size: 34px;
+    font-weight: 750;
+
+    letter-spacing: -1.5px;
+}
+
+.law-footer-logo-text span {
+    color: #d0a13e;
+}
+
+
+/* DESCRIPTION */
+
+.law-footer-description {
+    max-width: 390px;
+
+    color: #ffffff;
+
+    font-size: 15px;
+    line-height: 1.85;
+
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
+
+
+/* ==========================================
+   SOCIAL ICONS
+========================================== */
+
+.law-footer-social {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    padding-top: 28px;
+    margin-left: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.law-footer-social a {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #303d47;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    transition: all 0.35s ease;
+}
+
+.law-footer-social a:hover {
+    background: #c99f4b;
+
+    color: #ffffff;
+
+    transform: translateY(-5px);
+}
+
+.law-footer-social .material-symbols-outlined {
+    font-size: 23px;
+}
+
+
+/* ==========================================
+   FOOTER COLUMNS
+========================================== */
+
+.law-footer-column {
+    min-width: 0;
+
+    padding-left: 10px;
+}
+
+.law-footer-column:not(:last-child) {
+    border-right: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+
+/* HEADINGS */
+
+.law-footer-column h3 {
+    color: #ffffff;
+
+    font-size: 23px;
+    font-weight: 700;
+
+    margin-bottom: 35px;
+}
+
+
+/* LINKS */
+
+.law-footer-column ul {
+    display: flex;
+    flex-direction: column;
+
+    gap: 19px;
+
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+
+.law-footer-column li {
+    color: #ffffff;
+
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.law-footer-column a {
+    top:0;
+    color: #ffffff;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.law-footer-column a:hover {
+    color: #d0a13e;
+    padding-left: 5px;
+}
+
+
+/* ==========================================
+   WORKING HOURS
+========================================== */
+
+.law-footer-hours {
+    padding-left: 5px;
+}
+
+.law-footer-hours ul {
+    gap: 19px;
+}
+
+
+/* ==========================================
+   CONTACT + NEWSLETTER BOX
+========================================== */
+
+.law-footer-contact-box {
+    width: 100%;
+
+    min-height: 150px;
+
+    padding: 30px 38px;
+
+    display: grid;
+
+    grid-template-columns: 0.85fr 1.3fr 1.8fr;
+
+    align-items: center;
+
+    gap: 30px;
+
+    background: #303d47;
+
+    border-radius: 26px;
+
+    margin-bottom: 48px;
+}
+
+
+/* CONTACT ITEM */
+
+.law-footer-contact-item {
+    display: flex;
+    align-items: center;
+
+    gap: 17px;
+
+    min-width: 0;
+
+    color: #ffffff;
+
+    text-decoration: none;
+}
+
+.law-footer-contact-item:first-child {
+    border-right: 1px solid rgba(255, 255, 255, 0.17);
+
+    padding-right: 22px;
+}
+
+
+/* CONTACT ICON */
+
+.law-footer-contact-icon {
+    width: 62px;
+    height: 62px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #c99f4b;
+
+    color: #ffffff;
+
+    transition: transform 0.35s ease;
+}
+
+.law-footer-contact-item:hover .law-footer-contact-icon {
+    transform: rotate(-10deg) scale(1.06);
+}
+
+.law-footer-contact-icon .material-symbols-outlined {
+    font-size: 30px;
+}
+
+
+/* CONTACT TEXT */
+
+.law-footer-contact-text {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.law-footer-contact-text span {
+    color: #ffffff;
+
+    font-size: 17px;
+}
+
+.law-footer-contact-text strong {
+    color: #ffffff;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* ==========================================
+   NEWSLETTER FORM
+========================================== */
+
+.law-footer-newsletter {
+    width: 100%;
+    min-width: 0;
+}
+
+.law-footer-newsletter-input {
+    width: 100%;
+    min-height: 77px;
+
+    padding: 6px;
+
+    display: flex;
+    align-items: center;
+
+    background: #45515b;
+
+    border-radius: 50px;
+
+    transition: box-shadow 0.3s ease;
+}
+
+.law-footer-newsletter-input:focus-within {
+    box-shadow: 0 0 0 2px rgba(201, 159, 75, 0.5);
+}
+
+
+/* EMAIL INPUT */
+
+.law-footer-newsletter-input input {
+    width: 100%;
+    min-width: 0;
+
+    height: 60px;
+
+    padding: 0 18px;
+
+    background: transparent;
+
+    border: none;
+    outline: none;
+
+    color: #ffffff;
+
+    font-size: 16px;
+}
+
+.law-footer-newsletter-input input::placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+
+/* SUBSCRIBE BUTTON */
+
+.law-footer-newsletter-input button {
+    min-width: 235px;
+    height: 65px;
+
+    flex-shrink: 0;
+
+    padding: 0 6px 0 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+
+    border: none;
+    border-radius: 50px;
+
+    background: #c99f4b;
+
+    color: #ffffff;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: background 0.3s ease;
+}
+
+.law-footer-newsletter-input button:hover {
+    background: #b68736;
+}
+
+
+/* ARROW */
+
+.law-footer-subscribe-arrow {
+    width: 53px;
+    height: 53px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #14232e;
+
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    border: 3px solid rgba(255, 255, 255, 0.35);
+
+    transition: transform 0.3s ease;
+}
+
+.law-footer-newsletter-input button:hover .law-footer-subscribe-arrow {
+    transform: translateX(3px);
+}
+
+.law-footer-subscribe-arrow .material-symbols-outlined {
+    font-size: 24px;
+}
+
+
+/* VALIDATION */
+
+.law-footer-error {
+    min-height: 0;
+
+    margin: 0;
+    padding: 0 18px;
+
+    color: #ffb4a9;
+
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.law-footer-error:not(:empty) {
+    margin-top: 9px;
+}
+
+
+/* INVALID INPUT */
+
+.law-footer-newsletter-input.has-error {
+    box-shadow: 0 0 0 2px #e58b80;
+}
+
+
+/* ==========================================
+   BOTTOM FOOTER
+========================================== */
+
+.law-footer-bottom {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 8px 0 5px;
+}
+
+
+/* COPYRIGHT */
+
+.law-footer-copyright {
+    color: #ffffff;
+
+    font-size: 15px;
+
+    margin: 0;
+}
+
+
+/* LEGAL LINKS */
+
+.law-footer-legal-links {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+}
+
+.law-footer-legal-links a {
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: color 0.3s ease;
+}
+
+.law-footer-legal-links a:hover {
+    color: #d0a13e;
+}
+
+.law-footer-legal-links span {
+    width: 1px;
+    height: 15px;
+
+    background: rgba(255, 255, 255, 0.4);
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 1200px) {
+
+    .law-footer {
+        padding: 55px 4% 25px;
+    }
+
+    .law-footer-top {
+        grid-template-columns: 1.2fr 0.8fr 0.9fr;
+
+        gap: 35px;
+    }
+
+    .law-footer-hours {
+        grid-column: 2 / 4;
+
+        border: none !important;
+
+        padding-top: 15px;
+    }
+
+    .law-footer-contact-box {
+        grid-template-columns: 1fr 1.3fr;
+        gap: 25px;
+    }
+
+    .law-footer-newsletter {
+        grid-column: 1 / -1;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .law-footer {
+        padding: 55px 5% 25px;
+    }
+
+    /* TOP COLUMNS */
+
+    .law-footer-top {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 35px 20px;
+
+        padding-bottom: 40px;
+    }
+
+
+    /* BRAND */
+
+    .law-footer-brand {
+        grid-column: 1 / -1;
+
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .law-footer-logo {
+        justify-content: center;
+    }
+
+    .law-footer-description {
+        max-width: 430px;
+        font-size: 14px;
+        margin-left: 0;
+    }
+
+    .law-footer-social {
+        width: 100%;
+
+        justify-content: center;
+        margin-left: 0;
+    }
+
+
+    /* COLUMNS */
+
+    .law-footer-column {
+        padding: 0 !important;
+
+        border: none !important;
+
+        text-align: center;
+    }
+
+    .law-footer-column h3 {
+        font-size: 19px;
+        margin-bottom: 22px;
+    }
+
+    .law-footer-column ul {
+        align-items: center;
+        gap: 15px;
+    }
+
+    .law-footer-column li {
+        font-size: 15px;
+    }
+
+    .law-footer-hours {
+        grid-column: 1 / -1;
+    }
+
+
+    /* CONTACT BOX */
+
+    .law-footer-contact-box {
+        grid-template-columns: 1fr;
+
+        padding: 28px 20px;
+
+        gap: 25px;
+
+        border-radius: 22px;
+
+        margin-bottom: 35px;
+    }
+
+    .law-footer-contact-item {
+        justify-content: center;
+    }
+
+    .law-footer-contact-item:first-child {
+        border: none;
+
+        padding: 0;
+    }
+
+    .law-footer-newsletter {
+        grid-column: auto;
+
+        max-width: 550px;
+        margin: 0 auto;
+    }
+
+
+    /* BOTTOM */
+
+    .law-footer-bottom {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 16px;
+    }
+
+    .law-footer-copyright {
+        font-size: 13px;
+    }
+
+    .law-footer-legal-links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+    .law-footer {
+        padding: 45px 5% 22px;
+    }
+
+    .law-footer-top {
+        gap: 32px 12px;
+    }
+
+    .law-footer-logo-icon {
+        width: 62px;
+        height: 62px;
+    }
+
+    .law-footer-logo-text {
+        font-size: 29px;
+    }
+
+    .law-footer-description {
+        font-size: 13px;
+    }
+
+    .law-footer-column h3 {
+        font-size: 17px;
+    }
+
+    .law-footer-column li a {
+        font-size: 14px;
+    }
+
+    .law-footer-social {
+        gap: 11px;
+    }
+
+    .law-footer-social a {
+        width: 43px;
+        height: 43px;
+    }
+
+    .law-footer-contact-box {
+        padding: 24px 13px;
+    }
+
+    .law-footer-contact-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .law-footer-contact-icon .material-symbols-outlined {
+        font-size: 24px;
+    }
+
+    .law-footer-contact-text span {
+        font-size: 14px;
+    }
+
+    .law-footer-contact-text strong {
+        font-size: 15px;
+    }
+
+    .law-footer-newsletter-input {
+        flex-direction: column;
+
+        padding: 10px;
+
+        border-radius: 20px;
+
+        gap: 8px;
+    }
+
+    .law-footer-newsletter-input input {
+        height: 48px;
+
+        text-align: center;
+    }
+
+    .law-footer-newsletter-input button {
+        width: 100%;
+        min-width: 0;
+
+        height: 55px;
+
+        justify-content: space-between;
+
+        font-size: 14px;
+    }
+
+    .law-footer-subscribe-arrow {
+        width: 43px;
+        height: 43px;
+    }
+
+    .law-footer-legal-links {
+        gap: 10px;
+    }
+
+    .law-footer-legal-links a {
+        font-size: 12px;
+    }
+
+}
+
+
+/* ==========================================
+   EXTRA SMALL MOBILE
+========================================== */
+
+@media (max-width: 360px) {
+
+    .law-footer-top {
+        grid-template-columns: 1fr;
+    }
+
+    .law-footer-brand,
+    .law-footer-hours {
+        grid-column: auto;
+    }
+
+    .law-footer-column {
+        text-align: center;
+    }
+
+    .law-footer-contact-item {
+        gap: 10px;
+    }
+
+}
+
+
+/* ==========================================
+   REDUCED MOTION
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .law-footer *,
+    .law-footer *::before,
+    .law-footer *::after {
+        transition: none !important;
+        animation: none !important;
+    }
+
+}
+/* STACKLY FOOTER IMAGE LOGO */
+
+.law-footer-logo {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 23px;
+}
+
+.law-footer-logo-image {
+    display: block;
+    width: 180px;
+    height: 65px;
+    object-fit: contain;
+    object-position: left center;
+    margin-left: 90px;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+    .law-footer-logo {
+        justify-content: center;
+    }
+
+    .law-footer-logo-image {
+        width: 160px;
+        height: 60px;
+        object-position: center;
+        margin-left: 0;
+    }
+}

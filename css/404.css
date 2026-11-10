@@ -1,0 +1,759 @@
+
+/* ==========================================
+   STACKLY LAW FIRM - COMPACT 404 PAGE
+========================================== */
+
+:root {
+    --error-navy: #14232e;
+    --error-navy-light: #203744;
+    --error-gold: #cba447;
+    --error-gold-light: #e7c97e;
+    --error-cream: #f3eee4;
+    --error-white: #ffffff;
+}
+
+
+/* ==========================================
+   RESET
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.stackly-404-body {
+    width: 100%;
+    min-height: 100vh;
+
+    font-family: "DM Sans", sans-serif;
+
+    background: var(--error-cream);
+
+    overflow-x: hidden;
+}
+
+
+/* ==========================================
+   MAIN WRAPPER
+========================================== */
+
+.stackly-404-wrapper {
+    width: 100%;
+    min-height: 100svh;
+
+    padding: 25px 15px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+}
+
+
+/* ==========================================
+   COMPACT MAIN ERROR CARD
+========================================== */
+
+.stackly-404-card {
+    position: relative;
+
+    width: 100%;
+    max-width: 550px;
+
+    min-height: auto;
+
+    padding: 30px 40px 25px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background: linear-gradient(
+        145deg,
+        #203542,
+        #14232e 60%,
+        #263d48
+    );
+
+    border: 1px solid rgba(203,164,71,0.32);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 18px 45px rgba(20,35,46,0.16);
+
+    isolation: isolate;
+}
+
+
+/* ==========================================
+   BACKGROUND LIGHT EFFECT
+========================================== */
+
+.stackly-404-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    top: -170px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: radial-gradient(
+        circle,
+        rgba(203,164,71,0.15),
+        transparent 70%
+    );
+
+    z-index: -1;
+
+    pointer-events: none;
+}
+
+
+.stackly-404-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+    height: 180px;
+
+    bottom: -120px;
+    right: -70px;
+
+    background: radial-gradient(
+        circle,
+        rgba(203,164,71,0.12),
+        transparent 70%
+    );
+
+    z-index: -1;
+
+    pointer-events: none;
+}
+
+
+/* ==========================================
+   STACKLY IMAGE LOGO
+========================================== */
+
+.stackly-404-logo {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 17px;
+
+    text-decoration: none;
+}
+
+.stackly-404-logo img {
+    display: block;
+
+    width: 155px;
+    height: 43px;
+
+    object-fit: contain;
+}
+
+
+/* ==========================================
+   404 GRAPHIC
+========================================== */
+
+.stackly-404-graphic {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 290px;
+
+    height: 115px;
+
+    margin-bottom: 15px;
+}
+
+
+/* LARGE 404 NUMBERS */
+
+.stackly-404-number {
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 137px;
+
+    line-height: 1;
+
+    font-weight: 800;
+
+    letter-spacing: -10px;
+
+    color: rgba(203,164,71,0.22);
+}
+
+
+/* CENTER LEGAL ICON */
+
+.stackly-404-symbol {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 91px;
+    height: 91px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(203,164,71,0.13);
+
+    border: 1px solid rgba(231,201,126,0.65);
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+
+.stackly-404-symbol-inner {
+    width: 71px;
+    height: 71px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(231,201,126,0.4);
+
+    background: rgba(255,255,255,0.035);
+}
+
+
+.stackly-404-symbol-inner .material-symbols-outlined {
+    color: var(--error-gold-light);
+
+    font-size: 37px;
+
+    font-weight: 400;
+}
+
+
+/* ==========================================
+   ERROR LABEL
+========================================== */
+
+.stackly-404-label {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 32px;
+
+    padding: 6px 16px;
+
+    margin-bottom: 13px;
+
+    border: 1px solid rgba(231,201,126,0.45);
+
+    border-radius: 30px;
+
+    color: #e5cc92;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.4px;
+}
+
+
+/* ==========================================
+   MAIN HEADING
+========================================== */
+
+.stackly-404-card h1 {
+    max-width: 420px;
+
+    margin-bottom: 12px;
+
+    color: #ffffff;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: clamp(32px, 4vw, 42px);
+
+    line-height: 1.17;
+
+    font-weight: 400;
+}
+
+
+.stackly-404-card h1 span {
+    display: block;
+
+    color: var(--error-gold-light);
+}
+
+
+/* ==========================================
+   DESCRIPTION
+========================================== */
+
+.stackly-404-description {
+    max-width: 410px;
+
+    margin-bottom: 20px;
+
+    color: #d0d8dd;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+
+    font-weight: 400;
+}
+
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.stackly-404-actions {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 19px;
+}
+
+
+/* HOME BUTTON */
+
+.stackly-404-home-btn {
+    min-width: 125px;
+    min-height: 44px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 17px;
+
+    border-radius: 30px;
+
+    background: var(--error-gold);
+
+    color: var(--error-navy);
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+
+.stackly-404-home-btn:hover {
+    background: #ffffff;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 7px 18px rgba(0,0,0,0.15);
+}
+
+
+/* GO BACK BUTTON */
+
+.stackly-404-back-btn {
+    min-width: 125px;
+    min-height: 44px;
+
+    padding: 10px 17px;
+
+    border-radius: 30px;
+
+    border: 1px solid rgba(231,201,126,0.7);
+
+    background: transparent;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+.stackly-404-back-btn:hover {
+    background: var(--error-gold);
+
+    color: var(--error-navy);
+
+    border-color: var(--error-gold);
+
+    transform: translateY(-3px);
+}
+
+
+/* ==========================================
+   ERROR CODE
+========================================== */
+
+.stackly-404-code {
+    color: #aeb9bf;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.7px;
+}
+
+
+.stackly-404-code strong {
+    color: var(--error-gold-light);
+}
+
+
+/* ==========================================
+   BOTTOM TAGLINE
+========================================== */
+
+.stackly-404-footer {
+    color: #8c7150;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 15px;
+
+    text-align: center;
+
+    letter-spacing: 0.2px;
+}
+
+
+/* ==========================================
+   TABLET RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .stackly-404-wrapper {
+        padding: 25px 18px;
+    }
+
+    .stackly-404-card {
+        max-width: 470px;
+
+        padding: 28px 30px 24px;
+
+        border-radius: 18px;
+    }
+
+    .stackly-404-logo img {
+        width: 145px;
+        height: 40px;
+    }
+
+    .stackly-404-graphic {
+        height: 105px;
+        max-width: 260px;
+    }
+
+    .stackly-404-number {
+        font-size: 120px;
+    }
+
+    .stackly-404-symbol {
+        width: 83px;
+        height: 83px;
+    }
+
+    .stackly-404-symbol-inner {
+        width: 65px;
+        height: 65px;
+    }
+
+    .stackly-404-symbol-inner .material-symbols-outlined {
+        font-size: 34px;
+    }
+
+    .stackly-404-card h1 {
+        font-size: 37px;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 550px) {
+
+    .stackly-404-wrapper {
+        min-height: 100svh;
+
+        padding: 20px 13px;
+
+        gap: 13px;
+    }
+
+    .stackly-404-card {
+        width: 100%;
+
+        max-width: 390px;
+
+        min-height: auto;
+
+        padding: 25px 20px 22px;
+
+        border-radius: 17px;
+    }
+
+
+    /* LOGO */
+
+    .stackly-404-logo {
+        margin-bottom: 15px;
+    }
+
+    .stackly-404-logo img {
+        width: 135px;
+        height: 38px;
+    }
+
+
+    /* GRAPHIC */
+
+    .stackly-404-graphic {
+        height: 90px;
+
+        max-width: 230px;
+
+        margin-bottom: 14px;
+    }
+
+    .stackly-404-number {
+        font-size: 105px;
+
+        letter-spacing: -8px;
+    }
+
+    .stackly-404-symbol {
+        width: 73px;
+        height: 73px;
+    }
+
+    .stackly-404-symbol-inner {
+        width: 57px;
+        height: 57px;
+    }
+
+    .stackly-404-symbol-inner .material-symbols-outlined {
+        font-size: 30px;
+    }
+
+
+    /* LABEL */
+
+    .stackly-404-label {
+        min-height: 29px;
+
+        padding: 6px 13px;
+
+        margin-bottom: 12px;
+
+        font-size: 9px;
+
+        letter-spacing: 1.1px;
+    }
+
+
+    /* HEADING */
+
+    .stackly-404-card h1 {
+        font-size: clamp(30px, 8vw, 36px);
+
+        line-height: 1.18;
+
+        margin-bottom: 11px;
+    }
+
+
+    /* DESCRIPTION */
+
+    .stackly-404-description {
+        max-width: 320px;
+
+        margin-bottom: 18px;
+
+        font-size: 12px;
+
+        line-height: 1.75;
+    }
+
+
+    /* BUTTONS */
+
+    .stackly-404-actions {
+        gap: 9px;
+
+        width: 100%;
+
+        margin-bottom: 17px;
+    }
+
+    .stackly-404-home-btn,
+    .stackly-404-back-btn {
+        min-width: 115px;
+
+        min-height: 42px;
+
+        padding: 9px 13px;
+
+        font-size: 12px;
+    }
+
+
+    /* ERROR CODE */
+
+    .stackly-404-code {
+        font-size: 9px;
+    }
+
+
+    /* FOOTER */
+
+    .stackly-404-footer {
+        font-size: 13px;
+    }
+
+}
+
+
+/* ==========================================
+   EXTRA SMALL MOBILE
+========================================== */
+
+@media (max-width: 360px) {
+
+    .stackly-404-wrapper {
+        padding: 15px 10px;
+    }
+
+    .stackly-404-card {
+        max-width: 340px;
+
+        padding: 23px 15px 20px;
+
+        border-radius: 15px;
+    }
+
+    .stackly-404-logo img {
+        width: 125px;
+        height: 35px;
+    }
+
+    .stackly-404-graphic {
+        height: 80px;
+    }
+
+    .stackly-404-number {
+        font-size: 92px;
+    }
+
+    .stackly-404-symbol {
+        width: 67px;
+        height: 67px;
+    }
+
+    .stackly-404-symbol-inner {
+        width: 53px;
+        height: 53px;
+    }
+
+    .stackly-404-symbol-inner .material-symbols-outlined {
+        font-size: 27px;
+    }
+
+    .stackly-404-card h1 {
+        font-size: 29px;
+    }
+
+    .stackly-404-description {
+        font-size: 12px;
+    }
+
+    .stackly-404-home-btn,
+    .stackly-404-back-btn {
+        min-width: 108px;
+
+        min-height: 40px;
+
+        font-size: 11px;
+    }
+
+}
+
+
+/* ==========================================
+   ACCESSIBILITY
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .stackly-404-card *,
+    .stackly-404-card *::before,
+    .stackly-404-card *::after {
+
+        transition: none !important;
+
+        animation: none !important;
+
+    }
+
+}

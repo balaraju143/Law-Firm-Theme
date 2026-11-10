@@ -1,0 +1,1882 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stackly | Admin Dashboard</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/admin-dashboard.css">
+
+    <!-- MATERIAL SYMBOLS -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body class="stackly-admin-body">
+
+<div class="ad-dashboard">
+
+
+    <!-- MOBILE SIDEBAR OVERLAY -->
+    <div class="ad-sidebar-overlay" id="adSidebarOverlay"></div>
+
+
+    <!-- ======================================
+         ADMIN SIDEBAR
+    ======================================= -->
+
+    <aside class="ad-sidebar" id="adSidebar">
+
+        <!-- STACKLY IMAGE LOGO -->
+        <a href="#overview" class="ad-brand">
+
+            <img
+                src="assets/logo 4.webp"
+                alt="Stackly Logo"
+                class="ad-brand-logo"
+            >
+
+        </a>
+
+
+        <!-- ADMIN PROFILE -->
+        <div class="ad-profile">
+
+            <div class="ad-avatar" data-admin-initial>A</div>
+
+            <div class="ad-profile-info">
+
+                <h3 data-admin-name>Admin Account</h3>
+
+                <p data-admin-email>admin@example.com</p>
+
+                <span class="ad-role-badge">ADMIN</span>
+
+            </div>
+
+        </div>
+
+
+        <!-- SIDEBAR NAVIGATION -->
+        <nav class="ad-navigation">
+
+            <div class="ad-nav-heading">
+                ADMINISTRATION
+            </div>
+
+
+            <a href="#overview"
+               class="ad-nav-link active"
+               data-page="overview">
+
+                <span class="material-symbols-outlined">dashboard</span>
+                <span>Overview</span>
+
+            </a>
+
+
+            <a href="#cases"
+               class="ad-nav-link"
+               data-page="cases">
+
+                <span class="material-symbols-outlined">work</span>
+                <span>Case Management</span>
+
+                <span class="ad-nav-count">12</span>
+
+            </a>
+
+
+            <a href="#clients"
+               class="ad-nav-link"
+               data-page="clients">
+
+                <span class="material-symbols-outlined">groups</span>
+                <span>Clients</span>
+
+            </a>
+
+
+            <a href="#attorneys"
+               class="ad-nav-link"
+               data-page="attorneys">
+
+                <span class="material-symbols-outlined">gavel</span>
+                <span>Attorneys</span>
+
+            </a>
+
+
+            <a href="#documents"
+               class="ad-nav-link"
+               data-page="documents">
+
+                <span class="material-symbols-outlined">folder_open</span>
+                <span>Documents</span>
+
+            </a>
+
+
+            <a href="#appointments"
+               class="ad-nav-link"
+               data-page="appointments">
+
+                <span class="material-symbols-outlined">calendar_month</span>
+                <span>Appointments</span>
+
+            </a>
+
+
+            <a href="#billing"
+               class="ad-nav-link"
+               data-page="billing">
+
+                <span class="material-symbols-outlined">receipt_long</span>
+                <span>Billing &amp; Payments</span>
+
+            </a>
+
+
+            <a href="#reports"
+               class="ad-nav-link"
+               data-page="reports">
+
+                <span class="material-symbols-outlined">analytics</span>
+                <span>Reports &amp; Analytics</span>
+
+            </a>
+
+
+            <div class="ad-nav-heading ad-nav-heading-second">
+                SYSTEM
+            </div>
+
+
+            <a href="#settings"
+               class="ad-nav-link"
+               data-page="settings">
+
+                <span class="material-symbols-outlined">settings</span>
+                <span>Settings</span>
+
+            </a>
+
+        </nav>
+
+
+        <!-- SIDEBAR BOTTOM -->
+        <div class="ad-sidebar-bottom">
+
+            <a href="login.html" class="ad-logout-link">
+
+                <span class="material-symbols-outlined">logout</span>
+                <span>Logout</span>
+
+            </a>
+
+            <p>Stackly Admin Portal v1.0</p>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- ======================================
+         MAIN ADMIN AREA
+    ======================================= -->
+
+    <main class="ad-main">
+
+
+        <!-- HEADER -->
+        <header class="ad-header">
+
+
+            <div class="ad-header-left">
+
+                <!-- MOBILE MENU -->
+                <button
+                    type="button"
+                    class="ad-menu-toggle"
+                    id="adMenuToggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                >
+
+                    <span class="material-symbols-outlined">menu</span>
+
+                </button>
+
+
+                <div class="ad-header-title">
+
+                    <h1 id="adHeaderTitle">Overview</h1>
+
+                    <p id="adHeaderSubtitle">
+                        Manage your law firm operations.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- HEADER ACTIONS -->
+            <div class="ad-header-actions">
+
+
+                <!-- SEARCH -->
+                <a href="404.html"
+                   class="ad-search-link"
+                   aria-label="Search">
+
+                    <span class="material-symbols-outlined">search</span>
+
+                    <span>Search administration...</span>
+
+                </a>
+
+
+                <!-- NOTIFICATIONS -->
+                <a href="404.html"
+                   class="ad-header-icon"
+                   aria-label="Notifications">
+
+                    <span class="material-symbols-outlined">
+                        notifications
+                    </span>
+
+                    <span class="ad-notification-dot"></span>
+
+                </a>
+
+
+                <!-- DYNAMIC ADMIN AVATAR -->
+                <a href="#settings"
+                   class="ad-header-avatar"
+                   data-admin-initial
+                   aria-label="Admin profile">
+
+                    A
+
+                </a>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ======================================
+             ALL ADMIN PAGE VIEWS
+        ======================================= -->
+
+        <div class="ad-content">
+
+
+            <!-- ==================================
+                 01. ADMIN OVERVIEW
+            =================================== -->
+
+            <section
+                class="ad-view active"
+                id="overview"
+                data-title="Overview"
+                data-subtitle="Manage your law firm operations and performance."
+            >
+
+
+                <!-- WELCOME BANNER -->
+                <div class="ad-welcome-banner" data-reveal>
+
+                    <div class="ad-welcome-content">
+
+                        <span class="ad-welcome-label">
+                            STACKLY LAW FIRM ADMINISTRATION
+                        </span>
+
+                        <h2>
+                            Welcome Back,
+                            <span data-admin-name>Admin Account</span>
+                        </h2>
+
+                        <p>
+                            Monitor legal operations, manage attorneys,
+                            review client records, and oversee your
+                            firm's daily activities from one place.
+                        </p>
+
+                        <div class="ad-welcome-actions">
+
+                            <a href="#cases" class="ad-btn ad-btn-light">
+                                Manage Cases
+                            </a>
+
+                            <a href="#reports" class="ad-btn ad-btn-outline">
+                                View Reports
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="ad-banner-icon">
+                        <span class="material-symbols-outlined">
+                            account_balance
+                        </span>
+                    </div>
+
+                </div>
+
+
+
+                <!-- ADMIN KPI CARDS -->
+                <div class="ad-stats-grid">
+
+
+                    <article class="ad-stat-card" data-reveal>
+
+                        <div class="ad-stat-top">
+
+                            <span class="ad-stat-icon gold">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </span>
+
+                            <span class="ad-stat-trend">Firm-wide</span>
+
+                        </div>
+
+                        <p>TOTAL CASES</p>
+
+                        <h3>128</h3>
+
+                        <span class="ad-stat-note">
+                            12 awaiting review
+                        </span>
+
+                    </article>
+
+
+                    <article class="ad-stat-card" data-reveal>
+
+                        <div class="ad-stat-top">
+
+                            <span class="ad-stat-icon blue">
+                                <i class="fa-solid fa-users"></i>
+                            </span>
+
+                            <span class="ad-stat-trend">Registered</span>
+
+                        </div>
+
+                        <p>TOTAL CLIENTS</p>
+
+                        <h3>96</h3>
+
+                        <span class="ad-stat-note">
+                            Client records
+                        </span>
+
+                    </article>
+
+
+                    <article class="ad-stat-card" data-reveal>
+
+                        <div class="ad-stat-top">
+
+                            <span class="ad-stat-icon green">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </span>
+
+                            <span class="ad-stat-trend">Available</span>
+
+                        </div>
+
+                        <p>LEGAL ATTORNEYS</p>
+
+                        <h3>18</h3>
+
+                        <span class="ad-stat-note">
+                            Across practice areas
+                        </span>
+
+                    </article>
+
+
+                    <article class="ad-stat-card" data-reveal>
+
+                        <div class="ad-stat-top">
+
+                            <span class="ad-stat-icon brown">
+                                <i class="fa-solid fa-money-bill-wave"></i>
+                            </span>
+
+                            <span class="ad-stat-trend">Sample data</span>
+
+                        </div>
+
+                        <p>MONTHLY REVENUE</p>
+
+                        <h3>₹12.8L</h3>
+
+                        <span class="ad-stat-note">
+                            Illustrative dashboard value
+                        </span>
+
+                    </article>
+
+
+                </div>
+
+
+
+                <!-- OVERVIEW CHARTS -->
+                <div class="ad-overview-grid">
+
+
+                    <!-- CASE ACTIVITY -->
+                    <div class="ad-panel" data-reveal>
+
+                        <div class="ad-panel-heading">
+
+                            <div>
+                                <h3>Case Activity Overview</h3>
+
+                                <p>Illustrative case activity by month</p>
+                            </div>
+
+                            <a href="#reports" class="ad-text-link">
+                                Detailed Reports
+                            </a>
+
+                        </div>
+
+
+                        <div class="ad-chart">
+
+                            <div class="ad-chart-y-labels">
+                                <span>100</span>
+                                <span>75</span>
+                                <span>50</span>
+                                <span>25</span>
+                                <span>0</span>
+                            </div>
+
+
+                            <div class="ad-chart-main">
+
+                                <div class="ad-chart-grid-lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+
+                                <div class="ad-chart-bars">
+
+                                    <div class="ad-chart-column">
+                                        <span class="ad-bar" style="height:45%"></span>
+                                        <small>Jan</small>
+                                    </div>
+
+                                    <div class="ad-chart-column">
+                                        <span class="ad-bar" style="height:58%"></span>
+                                        <small>Feb</small>
+                                    </div>
+
+                                    <div class="ad-chart-column">
+                                        <span class="ad-bar" style="height:50%"></span>
+                                        <small>Mar</small>
+                                    </div>
+
+                                    <div class="ad-chart-column">
+                                        <span class="ad-bar" style="height:70%"></span>
+                                        <small>Apr</small>
+                                    </div>
+
+                                    <div class="ad-chart-column">
+                                        <span class="ad-bar" style="height:62%"></span>
+                                        <small>May</small>
+                                    </div>
+
+                                    <div class="ad-chart-column">
+                                        <span class="ad-bar" style="height:86%"></span>
+                                        <small>Jun</small>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="ad-chart-legend">
+
+                            <span><i class="legend-gold"></i> New Cases</span>
+
+                            <span><i class="legend-navy"></i> Resolved Cases</span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CASE DISTRIBUTION -->
+                    <div class="ad-panel" data-reveal>
+
+                        <div class="ad-panel-heading">
+
+                            <div>
+                                <h3>Practice Areas</h3>
+
+                                <p>Sample case distribution</p>
+                            </div>
+
+                            <span class="material-symbols-outlined">
+                                pie_chart
+                            </span>
+
+                        </div>
+
+
+                        <div class="ad-practice-chart">
+
+                            <div class="ad-donut">
+                                <div>
+                                    <strong>128</strong>
+                                    <span>Total Cases</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="ad-legend-grid">
+
+                            <span><i class="practice-one"></i> Corporate Law</span>
+
+                            <span><i class="practice-two"></i> Family Law</span>
+
+                            <span><i class="practice-three"></i> Criminal Law</span>
+
+                            <span><i class="practice-four"></i> Property Law</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- OVERVIEW BOTTOM -->
+                <div class="ad-overview-bottom">
+
+
+                    <!-- RECENT CASES -->
+                    <div class="ad-panel" data-reveal>
+
+                        <div class="ad-panel-heading">
+
+                            <div>
+                                <h3>Recent Case Records</h3>
+
+                                <p>Latest legal matters registered</p>
+                            </div>
+
+                            <a href="#cases" class="ad-text-link">
+                                View All
+                            </a>
+
+                        </div>
+
+
+                        <div class="ad-table-wrapper">
+
+                            <table class="ad-table">
+
+                                <thead>
+                                    <tr>
+                                        <th>Case ID</th>
+                                        <th>Client</th>
+                                        <th>Practice Area</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+
+                                    <tr>
+                                        <td>SL-001</td>
+                                        <td>Arjun Kumar</td>
+                                        <td>Corporate Law</td>
+                                        <td><span class="ad-status in-progress">Active</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>SL-002</td>
+                                        <td>Priya Sharma</td>
+                                        <td>Family Law</td>
+                                        <td><span class="ad-status pending">Under Review</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>SL-003</td>
+                                        <td>Rahul Verma</td>
+                                        <td>Property Law</td>
+                                        <td><span class="ad-status completed">Completed</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>SL-004</td>
+                                        <td>Ananya Rao</td>
+                                        <td>Criminal Law</td>
+                                        <td><span class="ad-status in-progress">Active</span></td>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ADMIN TASKS -->
+                    <div class="ad-panel" data-reveal>
+
+                        <div class="ad-panel-heading">
+                            <div>
+                                <h3>Administrative Tasks</h3>
+                                <p>Items requiring attention</p>
+                            </div>
+                        </div>
+
+
+                        <a href="#cases" class="ad-task-item">
+                            <span class="ad-task-icon">
+                                <i class="fa-solid fa-folder-open"></i>
+                            </span>
+
+                            <span>
+                                <strong>Case Reviews</strong>
+                                <small>12 cases awaiting review</small>
+                            </span>
+
+                            <b>12</b>
+                        </a>
+
+
+                        <a href="#documents" class="ad-task-item">
+                            <span class="ad-task-icon">
+                                <i class="fa-solid fa-file-circle-check"></i>
+                            </span>
+
+                            <span>
+                                <strong>Document Approvals</strong>
+                                <small>6 records to review</small>
+                            </span>
+
+                            <b>06</b>
+                        </a>
+
+
+                        <a href="#billing" class="ad-task-item">
+                            <span class="ad-task-icon">
+                                <i class="fa-solid fa-receipt"></i>
+                            </span>
+
+                            <span>
+                                <strong>Payment Follow-ups</strong>
+                                <small>3 pending invoices</small>
+                            </span>
+
+                            <b>03</b>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================
+                 02. CASE MANAGEMENT
+            =================================== -->
+
+            <section
+                class="ad-view"
+                id="cases"
+                data-title="Case Management"
+                data-subtitle="Manage and monitor all law firm cases."
+            >
+
+                <div class="ad-page-intro" data-reveal>
+
+                    <div>
+                        <span class="ad-section-label">LEGAL OPERATIONS</span>
+
+                        <h2>Case Management</h2>
+
+                        <p>
+                            Review case records, track legal progress,
+                            and manage case assignments.
+                        </p>
+                    </div>
+
+                    <a href="404.html" class="ad-btn ad-btn-gold">
+                        Add New Case
+                    </a>
+
+                </div>
+
+
+                <div class="ad-mini-stats">
+
+                    <div class="ad-mini-stat">
+                        <span>Total Cases</span>
+                        <strong>128</strong>
+                    </div>
+
+                    <div class="ad-mini-stat">
+                        <span>Active Cases</span>
+                        <strong>42</strong>
+                    </div>
+
+                    <div class="ad-mini-stat">
+                        <span>Under Review</span>
+                        <strong>12</strong>
+                    </div>
+
+                    <div class="ad-mini-stat">
+                        <span>Completed</span>
+                        <strong>74</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="ad-panel" data-reveal>
+
+                    <div class="ad-panel-heading">
+
+                        <div>
+                            <h3>All Legal Cases</h3>
+                            <p>Case records and current status</p>
+                        </div>
+
+                        <a href="404.html" class="ad-btn ad-btn-soft">
+                            Export Records
+                        </a>
+
+                    </div>
+
+
+                    <div class="ad-table-wrapper">
+
+                        <table class="ad-table">
+
+                            <thead>
+                                <tr>
+                                    <th>Case ID</th>
+                                    <th>Case Title</th>
+                                    <th>Client</th>
+                                    <th>Attorney</th>
+                                    <th>Category</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>SL-001</td>
+                                    <td>Corporate Agreement</td>
+                                    <td>Arjun Kumar</td>
+                                    <td>Michael Anderson</td>
+                                    <td>Corporate</td>
+                                    <td><span class="ad-status in-progress">Active</span></td>
+                                    <td><a href="404.html" class="ad-action-link">Manage</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>SL-002</td>
+                                    <td>Family Property Dispute</td>
+                                    <td>Priya Sharma</td>
+                                    <td>Emma Collins</td>
+                                    <td>Family</td>
+                                    <td><span class="ad-status pending">Review</span></td>
+                                    <td><a href="404.html" class="ad-action-link">Manage</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>SL-003</td>
+                                    <td>Property Ownership</td>
+                                    <td>Rahul Verma</td>
+                                    <td>James Anderson</td>
+                                    <td>Property</td>
+                                    <td><span class="ad-status completed">Completed</span></td>
+                                    <td><a href="404.html" class="ad-action-link">Manage</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>SL-004</td>
+                                    <td>Criminal Defense Review</td>
+                                    <td>Ananya Rao</td>
+                                    <td>Sophia Reynolds</td>
+                                    <td>Criminal</td>
+                                    <td><span class="ad-status in-progress">Active</span></td>
+                                    <td><a href="404.html" class="ad-action-link">Manage</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>SL-005</td>
+                                    <td>Employment Contract</td>
+                                    <td>Vikram Singh</td>
+                                    <td>Michael Anderson</td>
+                                    <td>Employment</td>
+                                    <td><span class="ad-status pending">Review</span></td>
+                                    <td><a href="404.html" class="ad-action-link">Manage</a></td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================
+                 03. CLIENT MANAGEMENT
+            =================================== -->
+
+            <section
+                class="ad-view"
+                id="clients"
+                data-title="Client Management"
+                data-subtitle="Manage client records and enquiries."
+            >
+
+                <div class="ad-page-intro" data-reveal>
+
+                    <div>
+                        <span class="ad-section-label">CLIENT RELATIONSHIPS</span>
+
+                        <h2>Client Management</h2>
+
+                        <p>
+                            Review client information, track engagement,
+                            and manage client enquiries.
+                        </p>
+                    </div>
+
+                    <a href="404.html" class="ad-btn ad-btn-gold">
+                        Add New Client
+                    </a>
+
+                </div>
+
+
+                <div class="ad-mini-stats">
+
+                    <div class="ad-mini-stat">
+                        <span>Total Clients</span>
+                        <strong>96</strong>
+                    </div>
+
+                    <div class="ad-mini-stat">
+                        <span>Active Clients</span>
+                        <strong>72</strong>
+                    </div>
+
+                    <div class="ad-mini-stat">
+                        <span>New Enquiries</span>
+                        <strong>14</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="ad-panel" data-reveal>
+
+                    <div class="ad-panel-heading">
+
+                        <div>
+                            <h3>Registered Clients</h3>
+                            <p>Client contact and case information</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="ad-table-wrapper">
+
+                        <table class="ad-table">
+
+                            <thead>
+                                <tr>
+                                    <th>Client</th>
+                                    <th>Email</th>
+                                    <th>Case Reference</th>
+                                    <th>Joined</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>Arjun Kumar</td>
+                                    <td>arjun@example.com</td>
+                                    <td>SL-001</td>
+                                    <td>02 Nov 2026</td>
+                                    <td><span class="ad-status in-progress">Active</span></td>
+                                    <td><a href="404.html" class="ad-action-link">View</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Priya Sharma</td>
+                                    <td>priya@example.com</td>
+                                    <td>SL-002</td>
+                                    <td>05 Nov 2026</td>
+                                    <td><span class="ad-status in-progress">Active</span></td>
+                                    <td><a href="404.html" class="ad-action-link">View</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Rahul Verma</td>
+                                    <td>rahul@example.com</td>
+                                    <td>SL-003</td>
+                                    <td>08 Nov 2026</td>
+                                    <td><span class="ad-status completed">Completed</span></td>
+                                    <td><a href="404.html" class="ad-action-link">View</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Ananya Rao</td>
+                                    <td>ananya@example.com</td>
+                                    <td>SL-004</td>
+                                    <td>09 Nov 2026</td>
+                                    <td><span class="ad-status pending">Review</span></td>
+                                    <td><a href="404.html" class="ad-action-link">View</a></td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================
+                 04. ATTORNEY MANAGEMENT
+            =================================== -->
+
+            <section
+                class="ad-view"
+                id="attorneys"
+                data-title="Attorney Management"
+                data-subtitle="Manage your firm's legal professionals."
+            >
+
+                <div class="ad-page-intro" data-reveal>
+
+                    <div>
+                        <span class="ad-section-label">LEGAL TEAM MANAGEMENT</span>
+
+                        <h2>Our Attorneys</h2>
+
+                        <p>
+                            Manage legal team members, practice areas,
+                            and professional assignments.
+                        </p>
+                    </div>
+
+                    <a href="404.html" class="ad-btn ad-btn-gold">
+                        Add Attorney
+                    </a>
+
+                </div>
+
+
+                <div class="ad-mini-stats">
+
+                    <div class="ad-mini-stat">
+                        <span>Total Attorneys</span>
+                        <strong>18</strong>
+                    </div>
+
+                    <div class="ad-mini-stat">
+                        <span>Available</span>
+                        <strong>14</strong>
+                    </div>
+
+                    <div class="ad-mini-stat">
+                        <span>On Leave</span>
+                        <strong>04</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="ad-attorney-grid">
+
+
+                    <article class="ad-attorney-card" data-reveal>
+
+                        <div class="ad-attorney-avatar">M</div>
+
+                        <span class="ad-status in-progress">Available</span>
+
+                        <h3>Michael Anderson</h3>
+
+                        <p>Corporate &amp; Business Attorney</p>
+
+                        <div class="ad-attorney-meta">
+                            <span>Assigned Cases</span>
+                            <strong>08</strong>
+                        </div>
+
+                        <a href="404.html" class="ad-btn ad-btn-soft">
+                            View Profile
+                        </a>
+
+                    </article>
+
+
+                    <article class="ad-attorney-card" data-reveal>
+
+                        <div class="ad-attorney-avatar">E</div>
+
+                        <span class="ad-status in-progress">Available</span>
+
+                        <h3>Emma Collins</h3>
+
+                        <p>Family Law Attorney</p>
+
+                        <div class="ad-attorney-meta">
+                            <span>Assigned Cases</span>
+                            <strong>06</strong>
+                        </div>
+
+                        <a href="404.html" class="ad-btn ad-btn-soft">
+                            View Profile
+                        </a>
+
+                    </article>
+
+
+                    <article class="ad-attorney-card" data-reveal>
+
+                        <div class="ad-attorney-avatar">J</div>
+
+                        <span class="ad-status pending">On Assignment</span>
+
+                        <h3>James Anderson</h3>
+
+                        <p>Senior Litigation Attorney</p>
+
+                        <div class="ad-attorney-meta">
+                            <span>Assigned Cases</span>
+                            <strong>10</strong>
+                        </div>
+
+                        <a href="404.html" class="ad-btn ad-btn-soft">
+                            View Profile
+                        </a>
+
+                    </article>
+
+
+                    <article class="ad-attorney-card" data-reveal>
+
+                        <div class="ad-attorney-avatar">S</div>
+
+                        <span class="ad-status in-progress">Available</span>
+
+                        <h3>Sophia Reynolds</h3>
+
+                        <p>Criminal Defense Attorney</p>
+
+                        <div class="ad-attorney-meta">
+                            <span>Assigned Cases</span>
+                            <strong>07</strong>
+                        </div>
+
+                        <a href="404.html" class="ad-btn ad-btn-soft">
+                            View Profile
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================
+                 05. DOCUMENT MANAGEMENT
+            =================================== -->
+
+            <section
+                class="ad-view"
+                id="documents"
+                data-title="Document Management"
+                data-subtitle="Review and manage legal files and records."
+            >
+
+                <div class="ad-page-intro" data-reveal>
+
+                    <div>
+                        <span class="ad-section-label">LEGAL RECORDS</span>
+
+                        <h2>Document Management</h2>
+
+                        <p>
+                            Organize documents, verify submissions,
+                            and monitor approval statuses.
+                        </p>
+                    </div>
+
+                    <a href="404.html" class="ad-btn ad-btn-gold">
+                        Upload Document
+                    </a>
+
+                </div>
+
+
+                <div class="ad-mini-stats">
+
+                    <div class="ad-mini-stat">
+                        <span>Total Documents</span>
+                        <strong>342</strong>
+                    </div>
+
+                    <div class="ad-mini-stat">
+                        <span>Approved Files</span>
+                        <strong>296</strong>
+                    </div>
+
+                    <div class="ad-mini-stat">
+                        <span>Pending Review</span>
+                        <strong>46</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="ad-panel" data-reveal>
+
+                    <div class="ad-panel-heading">
+
+                        <div>
+                            <h3>All Legal Documents</h3>
+                            <p>Document review and approval records</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="ad-table-wrapper">
+
+                        <table class="ad-table">
+
+                            <thead>
+                                <tr>
+                                    <th>Document</th>
+                                    <th>Client</th>
+                                    <th>Case ID</th>
+                                    <th>Submitted</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td><i class="fa-solid fa-file-pdf ad-file-icon"></i> Property Agreement</td>
+                                    <td>Arjun Kumar</td>
+                                    <td>SL-001</td>
+                                    <td>10 Nov 2026</td>
+                                    <td><span class="ad-status approved">Approved</span></td>
+                                    <td><a href="404.html" class="ad-action-link">Review</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td><i class="fa-solid fa-file-pdf ad-file-icon"></i> Legal Review Report</td>
+                                    <td>Priya Sharma</td>
+                                    <td>SL-002</td>
+                                    <td>09 Nov 2026</td>
+                                    <td><span class="ad-status pending">Pending</span></td>
+                                    <td><a href="404.html" class="ad-action-link">Review</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td><i class="fa-solid fa-file-lines ad-file-icon"></i> Contract Draft</td>
+                                    <td>Rahul Verma</td>
+                                    <td>SL-003</td>
+                                    <td>08 Nov 2026</td>
+                                    <td><span class="ad-status approved">Approved</span></td>
+                                    <td><a href="404.html" class="ad-action-link">Review</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td><i class="fa-solid fa-file-lines ad-file-icon"></i> Client Statement</td>
+                                    <td>Ananya Rao</td>
+                                    <td>SL-004</td>
+                                    <td>07 Nov 2026</td>
+                                    <td><span class="ad-status pending">Pending</span></td>
+                                    <td><a href="404.html" class="ad-action-link">Review</a></td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================
+                 06. APPOINTMENT MANAGEMENT
+            =================================== -->
+
+            <section
+                class="ad-view"
+                id="appointments"
+                data-title="Appointment Management"
+                data-subtitle="Manage consultations and legal meetings."
+            >
+
+                <div class="ad-page-intro" data-reveal>
+
+                    <div>
+                        <span class="ad-section-label">SCHEDULE MANAGEMENT</span>
+
+                        <h2>Appointments &amp; Meetings</h2>
+
+                        <p>
+                            Coordinate legal consultations,
+                            meeting schedules, and client requests.
+                        </p>
+                    </div>
+
+                    <a href="404.html" class="ad-btn ad-btn-gold">
+                        Schedule Meeting
+                    </a>
+
+                </div>
+
+
+                <div class="ad-mini-stats">
+
+                    <div class="ad-mini-stat">
+                        <span>Total Appointments</span>
+                        <strong>48</strong>
+                    </div>
+
+                    <div class="ad-mini-stat">
+                        <span>Upcoming</span>
+                        <strong>16</strong>
+                    </div>
+
+                    <div class="ad-mini-stat">
+                        <span>Completed</span>
+                        <strong>28</strong>
+                    </div>
+
+                    <div class="ad-mini-stat">
+                        <span>Rescheduled</span>
+                        <strong>04</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="ad-panel" data-reveal>
+
+                    <div class="ad-panel-heading">
+                        <div>
+                            <h3>Appointment Schedule</h3>
+                            <p>Upcoming client meetings</p>
+                        </div>
+                    </div>
+
+
+                    <div class="ad-meeting-list">
+
+
+                        <article class="ad-meeting">
+
+                            <div class="ad-meeting-date">
+                                <strong>18</strong>
+                                <span>NOV 2026</span>
+                            </div>
+
+                            <div class="ad-meeting-info">
+
+                                <h3>Property Legal Consultation</h3>
+
+                                <p>Client: Arjun Kumar</p>
+
+                                <span>10:30 AM · Property Law</span>
+
+                            </div>
+
+                            <span class="ad-status in-progress">Confirmed</span>
+
+                            <a href="404.html" class="ad-action-link">
+                                Manage
+                            </a>
+
+                        </article>
+
+
+                        <article class="ad-meeting">
+
+                            <div class="ad-meeting-date">
+                                <strong>19</strong>
+                                <span>NOV 2026</span>
+                            </div>
+
+                            <div class="ad-meeting-info">
+
+                                <h3>Family Law Consultation</h3>
+
+                                <p>Client: Priya Sharma</p>
+
+                                <span>11:30 AM · Family Law</span>
+
+                            </div>
+
+                            <span class="ad-status pending">Pending</span>
+
+                            <a href="404.html" class="ad-action-link">
+                                Manage
+                            </a>
+
+                        </article>
+
+
+                        <article class="ad-meeting">
+
+                            <div class="ad-meeting-date">
+                                <strong>21</strong>
+                                <span>NOV 2026</span>
+                            </div>
+
+                            <div class="ad-meeting-info">
+
+                                <h3>Corporate Contract Review</h3>
+
+                                <p>Client: Rahul Verma</p>
+
+                                <span>02:00 PM · Corporate Law</span>
+
+                            </div>
+
+                            <span class="ad-status in-progress">Confirmed</span>
+
+                            <a href="404.html" class="ad-action-link">
+                                Manage
+                            </a>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================
+                 07. BILLING MANAGEMENT
+            =================================== -->
+
+            <section
+                class="ad-view"
+                id="billing"
+                data-title="Billing & Payments"
+                data-subtitle="Manage firm invoices, billing records, and payments."
+            >
+
+                <div class="ad-page-intro" data-reveal>
+
+                    <div>
+                        <span class="ad-section-label">FINANCIAL MANAGEMENT</span>
+
+                        <h2>Billing &amp; Payments</h2>
+
+                        <p>
+                            Oversee service invoices, pending payments,
+                            and financial records.
+                        </p>
+                    </div>
+
+                    <a href="404.html" class="ad-btn ad-btn-gold">
+                        Create Invoice
+                    </a>
+
+                </div>
+
+
+                <div class="ad-billing-stats">
+
+                    <article class="ad-billing-stat" data-reveal>
+                        <span>Total Revenue</span>
+                        <h3>₹12,80,000</h3>
+                        <p>Illustrative monthly value</p>
+                    </article>
+
+                    <article class="ad-billing-stat" data-reveal>
+                        <span>Collected Payments</span>
+                        <h3>₹10,40,000</h3>
+                        <p>Sample collected amount</p>
+                    </article>
+
+                    <article class="ad-billing-stat" data-reveal>
+                        <span>Outstanding Amount</span>
+                        <h3>₹2,40,000</h3>
+                        <p>Sample pending amount</p>
+                    </article>
+
+                </div>
+
+
+                <div class="ad-panel" data-reveal>
+
+                    <div class="ad-panel-heading">
+                        <div>
+                            <h3>Invoice Records</h3>
+                            <p>Payment and billing management</p>
+                        </div>
+
+                        <a href="404.html" class="ad-btn ad-btn-soft">
+                            Export Invoices
+                        </a>
+                    </div>
+
+
+                    <div class="ad-table-wrapper">
+
+                        <table class="ad-table">
+
+                            <thead>
+                                <tr>
+                                    <th>Invoice ID</th>
+                                    <th>Client</th>
+                                    <th>Service</th>
+                                    <th>Amount</th>
+                                    <th>Due Date</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>INV-101</td>
+                                    <td>Arjun Kumar</td>
+                                    <td>Legal Consultation</td>
+                                    <td>₹5,000</td>
+                                    <td>18 Nov 2026</td>
+                                    <td><span class="ad-status approved">Paid</span></td>
+                                    <td><a href="404.html" class="ad-action-link">View</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>INV-102</td>
+                                    <td>Priya Sharma</td>
+                                    <td>Family Legal Support</td>
+                                    <td>₹12,000</td>
+                                    <td>20 Nov 2026</td>
+                                    <td><span class="ad-status pending">Pending</span></td>
+                                    <td><a href="404.html" class="ad-action-link">View</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>INV-103</td>
+                                    <td>Rahul Verma</td>
+                                    <td>Property Documentation</td>
+                                    <td>₹8,500</td>
+                                    <td>22 Nov 2026</td>
+                                    <td><span class="ad-status approved">Paid</span></td>
+                                    <td><a href="404.html" class="ad-action-link">View</a></td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================
+                 08. REPORTS & ANALYTICS
+            =================================== -->
+
+            <section
+                class="ad-view"
+                id="reports"
+                data-title="Reports & Analytics"
+                data-subtitle="Analyze legal operations and firm performance."
+            >
+
+                <div class="ad-page-intro" data-reveal>
+
+                    <div>
+                        <span class="ad-section-label">BUSINESS INTELLIGENCE</span>
+
+                        <h2>Reports &amp; Analytics</h2>
+
+                        <p>
+                            Review case activity, operational metrics,
+                            and sample financial performance.
+                        </p>
+                    </div>
+
+                    <a href="404.html" class="ad-btn ad-btn-gold">
+                        Export Reports
+                    </a>
+
+                </div>
+
+
+                <div class="ad-report-summary">
+
+                    <div class="ad-report-box" data-reveal>
+                        <span>Cases Opened</span>
+                        <strong>38</strong>
+                        <small>Sample reporting period</small>
+                    </div>
+
+                    <div class="ad-report-box" data-reveal>
+                        <span>Cases Completed</span>
+                        <strong>24</strong>
+                        <small>Sample reporting period</small>
+                    </div>
+
+                    <div class="ad-report-box" data-reveal>
+                        <span>Client Enquiries</span>
+                        <strong>52</strong>
+                        <small>Sample reporting period</small>
+                    </div>
+
+                    <div class="ad-report-box" data-reveal>
+                        <span>Attorney Assignments</span>
+                        <strong>31</strong>
+                        <small>Sample reporting period</small>
+                    </div>
+
+                </div>
+
+
+                <div class="ad-report-grid">
+
+
+                    <!-- REVENUE CHART -->
+                    <div class="ad-panel" data-reveal>
+
+                        <div class="ad-panel-heading">
+                            <div>
+                                <h3>Revenue Performance</h3>
+                                <p>Illustrative monthly figures</p>
+                            </div>
+                        </div>
+
+
+                        <div class="ad-revenue-chart">
+
+                            <div class="ad-revenue-bars">
+
+                                <div><span style="height:48%"></span><small>Jan</small></div>
+                                <div><span style="height:60%"></span><small>Feb</small></div>
+                                <div><span style="height:55%"></span><small>Mar</small></div>
+                                <div><span style="height:75%"></span><small>Apr</small></div>
+                                <div><span style="height:68%"></span><small>May</small></div>
+                                <div><span style="height:91%"></span><small>Jun</small></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- OPERATIONAL REPORT -->
+                    <div class="ad-panel" data-reveal>
+
+                        <div class="ad-panel-heading">
+                            <div>
+                                <h3>Operational Distribution</h3>
+                                <p>Illustrative case workload</p>
+                            </div>
+                        </div>
+
+
+                        <div class="ad-report-progress">
+
+                            <div>
+                                <span>Corporate Law</span>
+                                <strong>35%</strong>
+                            </div>
+
+                            <div class="ad-progress-line">
+                                <span style="width:35%"></span>
+                            </div>
+
+
+                            <div>
+                                <span>Family Law</span>
+                                <strong>25%</strong>
+                            </div>
+
+                            <div class="ad-progress-line">
+                                <span style="width:25%"></span>
+                            </div>
+
+
+                            <div>
+                                <span>Property Law</span>
+                                <strong>22%</strong>
+                            </div>
+
+                            <div class="ad-progress-line">
+                                <span style="width:22%"></span>
+                            </div>
+
+
+                            <div>
+                                <span>Criminal Law</span>
+                                <strong>18%</strong>
+                            </div>
+
+                            <div class="ad-progress-line">
+                                <span style="width:18%"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================
+                 09. ADMIN SETTINGS
+            =================================== -->
+
+            <section
+                class="ad-view"
+                id="settings"
+                data-title="Admin Settings"
+                data-subtitle="Manage your administrative account and preferences."
+            >
+
+                <div class="ad-page-intro" data-reveal>
+
+                    <div>
+                        <span class="ad-section-label">SYSTEM MANAGEMENT</span>
+
+                        <h2>Admin Settings</h2>
+
+                        <p>
+                            Review your administrator account information
+                            and portal configuration options.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="ad-settings-grid">
+
+
+                    <!-- ADMIN PROFILE -->
+                    <div class="ad-panel" data-reveal>
+
+                        <div class="ad-panel-heading">
+                            <div>
+                                <h3>Administrator Profile</h3>
+                                <p>Current signed-in account information</p>
+                            </div>
+                        </div>
+
+
+                        <div class="ad-settings-profile">
+
+                            <div class="ad-large-avatar" data-admin-initial>
+                                A
+                            </div>
+
+                            <div>
+                                <h3 data-admin-name>Admin Account</h3>
+
+                                <p data-admin-email>admin@example.com</p>
+
+                                <span class="ad-role-badge">
+                                    ADMINISTRATOR
+                                </span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="ad-settings-row">
+                            <span>Account Email</span>
+                            <strong data-admin-email>admin@example.com</strong>
+                        </div>
+
+                        <div class="ad-settings-row">
+                            <span>Access Level</span>
+                            <strong>Administrator</strong>
+                        </div>
+
+                        <div class="ad-settings-row">
+                            <span>Portal</span>
+                            <strong>Stackly Admin</strong>
+                        </div>
+
+                        <a href="404.html" class="ad-btn ad-btn-soft">
+                            Edit Profile
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- SECURITY -->
+                    <div class="ad-panel" data-reveal>
+
+                        <div class="ad-large-setting-icon">
+                            <span class="material-symbols-outlined">
+                                security
+                            </span>
+                        </div>
+
+                        <h3>Security &amp; Access</h3>
+
+                        <p>
+                            Manage administrator security preferences
+                            and protected account settings.
+                        </p>
+
+                        <a href="404.html" class="ad-btn ad-btn-soft">
+                            Security Management
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- PORTAL SETTINGS -->
+                    <div class="ad-panel" data-reveal>
+
+                        <div class="ad-large-setting-icon">
+                            <span class="material-symbols-outlined">
+                                tune
+                            </span>
+                        </div>
+
+                        <h3>Portal Preferences</h3>
+
+                        <p>
+                            Access dashboard preferences,
+                            notification controls, and system options.
+                        </p>
+
+                        <a href="404.html" class="ad-btn ad-btn-soft">
+                            Manage Preferences
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================
+                 ADMIN FOOTER
+            =================================== -->
+
+            <footer class="ad-footer">
+
+                <span>© 2026 Stackly. All Rights Reserved.</span>
+
+                <div>
+                    <a href="404.html">Privacy Policy</a>
+                    <a href="404.html">Terms &amp; Conditions</a>
+                </div>
+
+            </footer>
+
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<!-- ADMIN DASHBOARD SCRIPT -->
+<script src="js/admin-dashboard.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1438 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stackly | Law Firm</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+   <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+>
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+
+    <!-- HEADER START -->
+    <header class="stackly-header">
+
+        <nav class="stackly-navbar">
+
+            <!-- LOGO -->
+          <!-- STACKLY LOGO -->
+<a href="index.html" class="stackly-logo">
+    <img src="assets/logo 4.webp" alt="Stackly Logo">
+</a>
+
+            <!-- DESKTOP NAVIGATION -->
+            <div class="nav-links" id="navLinks">
+
+                <a href="index.html" class="nav-link active">Home</a>
+
+                <a href="about.html" class="nav-link">About</a>
+
+                <a href="services.html" class="nav-link">Services</a>
+
+                <a href="blog.html" class="nav-link">Blog</a>
+
+                <a href="contact.html" class="nav-link">Contact</a>
+
+                <!-- MOBILE LOGIN -->
+                <a href="login.html" class="mobile-login">
+                    Login
+                    <span class="material-symbols-outlined">arrow_outward</span>
+                </a>
+
+            </div>
+
+
+            <!-- DESKTOP LOGIN -->
+            <a href="login.html" class="login-btn">
+                <span>Login</span>
+
+                <span class="login-arrow">
+        
+                </span>
+            </a>
+
+
+            <!-- MOBILE TOGGLE -->
+            <button class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="navLinks">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </nav>
+
+    </header>
+
+
+<!-- GOOGLE MATERIAL SYMBOLS -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<!-- HERO SECTION -->
+<section class="law-hero">
+
+    <div class="law-hero-overlay"></div>
+
+    <div class="law-hero-container">
+
+        <!-- LEFT CONTENT -->
+        <div class="law-hero-content">
+
+            <div class="law-hero-tag">
+                <span class="material-symbols-outlined">
+                    gavel
+                </span>
+                <span>JUSTICE STARTS HERE</span>
+            </div>
+
+            <h1>
+                Your Future Deserves Legal Protection
+            </h1>
+
+            <p class="law-hero-description">
+                We provide trusted legal guidance, personalized
+                representation, and strategic solutions to protect
+                your rights, resolve complex matters, and achieve
+                the best possible outcome.
+            </p>
+
+            <!-- HERO ACTIONS -->
+            <div class="law-hero-actions">
+
+                <a href="contact.html" class="law-contact-btn">
+                    <span>Contact Now</span>
+
+                    <span class="law-btn-arrow">
+                        <span class="material-symbols-outlined">
+                            arrow_forward
+                        </span>
+                    </span>
+                </a>
+
+                <!-- CLIENT INFORMATION -->
+                <div class="law-client-info">
+
+                    <div class="law-client-avatars">
+
+                        <img src="assets/client-testi1.webp"
+                             alt="Client">
+
+                        <img src="assets/client-testi2.webp"
+                             alt="Client">
+
+                        <img src="assets/client-testi3.webp"
+                             alt="Client">
+
+                        <span class="law-client-plus">
+                            <span class="material-symbols-outlined">
+                                add
+                            </span>
+                        </span>
+
+                    </div>
+
+                    <div class="law-client-text">
+                        <h3>We have 20K+ Clients</h3>
+                        <p>World - Wide</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT REVIEW CARD -->
+        <div class="law-review-card">
+
+            <div class="law-review-description">
+                Helping injured clients pursue fair
+                compensation and justice.
+            </div>
+
+            <!-- REVIEW USERS -->
+            <div class="law-review-users">
+
+                <div class="law-review-avatars">
+
+                    <img src="assets/client-testi1.webp"
+                         alt="Reviewer">
+
+                    <img src="assets/client-testi2.webp"
+                         alt="Reviewer">
+
+                    <img src="assets/client-testi3.webp"
+                         alt="Reviewer">
+
+                    <span class="law-review-plus">
+                        <span class="material-symbols-outlined">
+                            add
+                        </span>
+                    </span>
+
+                </div>
+
+                <p>From over 2600 Reviews</p>
+
+            </div>
+
+            <div class="law-review-divider"></div>
+
+            <!-- RATING -->
+            <div class="law-rating">
+
+                <h3>4.9/5 Rating</h3>
+
+                <div class="law-rating-stars">
+
+                    <span class="material-symbols-outlined">star</span>
+                    <span class="material-symbols-outlined">star</span>
+                    <span class="material-symbols-outlined">star</span>
+                    <span class="material-symbols-outlined">star</span>
+                    <span class="material-symbols-outlined">star</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================
+     STACKLY ABOUT SECTION
+====================================== -->
+
+<section class="law-about-section">
+
+    <div class="law-about-container">
+
+        <!-- LEFT IMAGE AREA -->
+        <div class="law-about-visual">
+
+            <!-- DOT PATTERN -->
+            <div class="law-about-dots"></div>
+
+            <!-- MAIN IMAGE -->
+            <div class="law-about-main-image">
+                <img
+                    src="assets/about-law.webp"
+                    alt="Professional lawyers discussing a legal case"
+                >
+            </div>
+
+            <!-- SMALL OVERLAPPING IMAGE -->
+            <div class="law-about-small-image">
+                <img
+                    src="assets/about-order.webp"
+                    alt="Legal gavel and law documents"
+                >
+            </div>
+
+            <!-- 24 HOURS BADGE -->
+            <div class="law-about-badge">
+                <div class="law-about-badge-inner">
+                    <h3>24</h3>
+                    <span>HOURS</span>
+                    <span>ASSISTANCE</span>
+                </div>
+            </div>
+
+            <!-- SMALL DECORATIVE CIRCLE -->
+            <span class="law-about-decoration"></span>
+
+        </div>
+
+
+        <!-- RIGHT CONTENT AREA -->
+        <div class="law-about-content">
+
+            <!-- SECTION LABEL -->
+            <div class="law-about-label">
+                <span class="material-symbols-outlined">
+                    gavel
+                </span>
+                <span>ABOUT US</span>
+            </div>
+
+
+            <!-- HEADING -->
+            <h2>
+                Legal Expertise to Protect and
+                <span>Grow Your Business</span>
+            </h2>
+
+
+            <!-- DESCRIPTION -->
+            <p class="law-about-description">
+                We provide trusted legal solutions tailored to your
+                needs. Our experienced attorneys combine professional
+                expertise, personalized attention, and strategic
+                guidance to protect your rights and secure your future.
+            </p>
+
+
+            <!-- FEATURES -->
+            <div class="law-about-features">
+
+                <!-- FEATURE ONE -->
+                <div class="law-about-feature">
+
+                    <div class="law-feature-icon">
+                        <span class="material-symbols-outlined">
+                            support_agent
+                        </span>
+                    </div>
+
+                    <div class="law-feature-text">
+                        <h4>24/7 Premium</h4>
+                        <p>Support</p>
+                    </div>
+
+                </div>
+
+
+                <!-- FEATURE TWO -->
+                <div class="law-about-feature">
+
+                    <div class="law-feature-icon">
+                        <span class="material-symbols-outlined">
+                            groups
+                        </span>
+                    </div>
+
+                    <div class="law-feature-text">
+                        <h4>Professional</h4>
+                        <p>Attorneys</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- DISCOVER BUTTON -->
+            <a href="about.html" class="law-about-btn">
+                <span>Discover More</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     STACKLY LAW FIRM - SERVICES SECTION
+========================================== -->
+
+<section class="law-services-section">
+
+    <div class="law-services-container">
+
+        <!-- SECTION HEADING -->
+        <div class="law-services-heading">
+
+            <div class="law-services-label">
+                <span class="material-symbols-outlined">gavel</span>
+                <span>OUR SERVICES</span>
+            </div>
+
+            <h2>
+                Legal Solutions Designed
+                <span>Around You</span>
+            </h2>
+
+            <p>
+                We deliver trusted legal expertise and personalized
+                solutions to protect your rights, your interests,
+                and your future.
+            </p>
+
+        </div>
+
+
+        <!-- SERVICES GRID -->
+        <div class="law-services-grid">
+
+
+            <!-- CARD 01 -->
+            <article class="law-service-card">
+
+                <div class="law-service-top">
+
+                    <h3>Criminal<br>Law</h3>
+
+                    <span class="law-service-number">01</span>
+
+                </div>
+
+                <div class="law-service-divider"></div>
+
+                <p class="law-service-description">
+                    Strong legal representation to defend your rights
+                    and guide you through complex criminal matters.
+                </p>
+
+                <div class="law-service-image">
+
+                    <img src="assets/service-law.webp"
+                         alt="Criminal law legal services">
+
+                    <div class="law-service-icon">
+                        <span class="material-symbols-outlined">
+                            gavel
+                        </span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- CARD 02 -->
+            <article class="law-service-card">
+
+                <div class="law-service-top">
+
+                    <h3>Family<br>Law</h3>
+
+                    <span class="law-service-number">02</span>
+
+                </div>
+
+                <div class="law-service-divider"></div>
+
+                <p class="law-service-description">
+                    Compassionate guidance for family matters,
+                    divorce, child custody, and important legal decisions.
+                </p>
+
+                <div class="law-service-image">
+
+                    <img src="assets/service-law2.webp"
+                         alt="Family law consultation">
+
+                    <div class="law-service-icon">
+                        <span class="material-symbols-outlined">
+                            family_restroom
+                        </span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- CARD 03 -->
+            <article class="law-service-card">
+
+                <div class="law-service-top">
+
+                    <h3>Real Estate<br>Law</h3>
+
+                    <span class="law-service-number">03</span>
+
+                </div>
+
+                <div class="law-service-divider"></div>
+
+                <p class="law-service-description">
+                    Reliable property legal services covering
+                    transactions, agreements, ownership, and disputes.
+                </p>
+
+                <div class="law-service-image">
+
+                    <img src="assets/service-law3.webp"
+                         alt="Real estate legal consultation">
+
+                    <div class="law-service-icon">
+                        <span class="material-symbols-outlined">
+                            home_work
+                        </span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- CARD 04 -->
+            <article class="law-service-card">
+
+                <div class="law-service-top">
+
+                    <h3>Employment<br>Law</h3>
+
+                    <span class="law-service-number">04</span>
+
+                </div>
+
+                <div class="law-service-divider"></div>
+
+                <p class="law-service-description">
+                    Protecting employee and employer rights through
+                    workplace guidance, contracts, and dispute resolution.
+                </p>
+
+                <div class="law-service-image">
+
+                    <img src="assets/service-law4.webp"
+                         alt="Employment law legal services">
+
+                    <div class="law-service-icon">
+                        <span class="material-symbols-outlined">
+                            business_center
+                        </span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+        <!-- VIEW ALL SERVICES -->
+        <div class="law-services-bottom">
+
+            <a href="services.html" class="law-services-btn">
+                <span>Explore All Services</span>
+
+               
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     STACKLY LAW FIRM - CASE STUDIES
+========================================== -->
+
+<section class="law-cases-section">
+
+    <div class="law-cases-container">
+
+        <!-- SECTION HEADING -->
+        <div class="law-cases-heading">
+
+            <div class="law-cases-label">
+                <span class="material-symbols-outlined">gavel</span>
+                <span>CASE STUDIES</span>
+            </div>
+
+            <h2>
+                Our Successfully Resolved
+                <span>Legal Cases</span>
+            </h2>
+
+            <p>
+                Discover how our legal expertise and commitment
+                have helped clients overcome challenges and
+                achieve meaningful results.
+            </p>
+
+        </div>
+
+
+      
+<!-- ==========================================
+     STACKLY - THREE CASE STUDY CARDS
+========================================== -->
+
+<div class="law-cases-gallery">
+
+    <!-- CARD 01 - CRIMINAL LAW -->
+    <article class="law-case-card">
+
+        <img
+            class="law-case-image"
+            src="assets/criminal-law.webp"
+            alt="Criminal law courthouse"
+        >
+
+        <div class="law-case-overlay"></div>
+
+        <a href="404.html"
+           class="law-case-arrow"
+           aria-label="View criminal law case">
+            <span class="material-symbols-outlined">north_east</span>
+        </a>
+
+        <div class="law-case-info">
+
+            <div class="law-case-location">
+                <span class="material-symbols-outlined">location_on</span>
+                <span>United States</span>
+            </div>
+
+            <h3>Criminal Defense</h3>
+
+            <p>
+                Protecting client rights through strategic legal
+                defense and dedicated representation.
+            </p>
+
+            <span class="law-case-category">Criminal Law</span>
+
+        </div>
+
+    </article>
+
+
+    <!-- CARD 02 - FAMILY LAW (CENTER DEFAULT) -->
+    <article class="law-case-card active">
+
+        <img
+            class="law-case-image"
+            src="assets/domestic-voilence.webp"
+            alt="Lady Justice representing family law"
+        >
+
+        <div class="law-case-overlay"></div>
+
+        <a href="404.html"
+           class="law-case-arrow"
+           aria-label="View family law case">
+            <span class="material-symbols-outlined">north_east</span>
+        </a>
+
+        <div class="law-case-info">
+
+            <div class="law-case-location">
+                <span class="material-symbols-outlined">location_on</span>
+                <span>United States</span>
+            </div>
+
+            <h3>Domestic Violence</h3>
+
+            <p>
+                Supporting individuals and families with
+                compassionate legal guidance and protection.
+            </p>
+
+            <span class="law-case-category">Family Law</span>
+
+        </div>
+
+    </article>
+
+
+    <!-- CARD 03 - PROPERTY LAW -->
+    <article class="law-case-card">
+
+        <img
+            class="law-case-image"
+            src="assets/case-property.webp"
+            alt="Experienced lawyer in a law library"
+        >
+
+        <div class="law-case-overlay"></div>
+
+        <a href="404.html"
+           class="law-case-arrow"
+           aria-label="View property law case">
+            <span class="material-symbols-outlined">north_east</span>
+        </a>
+
+        <div class="law-case-info">
+
+            <div class="law-case-location">
+                <span class="material-symbols-outlined">location_on</span>
+                <span>United States</span>
+            </div>
+
+            <h3>Property Dispute</h3>
+
+            <p>
+                Resolving complex property matters through
+                experienced legal representation.
+            </p>
+
+            <span class="law-case-category">Real Estate Law</span>
+
+        </div>
+
+    </article>
+
+</div>
+
+        <!-- BOTTOM BUTTON -->
+        <div class="law-cases-bottom">
+
+            <a href="blog.html" class="law-cases-btn">
+                Explore More Cases
+
+              
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     STACKLY LAW FIRM - TESTIMONIALS
+========================================== -->
+
+<section class="law-testimonials-section">
+
+    <div class="law-testimonials-container">
+
+        <!-- LEFT IMAGE -->
+        <div class="law-testimonial-visual">
+
+            <div class="law-testimonial-image">
+                <img
+                    src="assets/law-person.webp"
+                    alt="Stackly professional legal consultant"
+                >
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT CONTENT -->
+        <div class="law-testimonials-content">
+
+            <!-- HEADING -->
+            <div class="law-testimonials-heading">
+
+                <div class="law-testimonials-label">
+                    <span class="material-symbols-outlined">gavel</span>
+                    <span>CLIENT TESTIMONIALS</span>
+                </div>
+
+                <h2>
+                    What Our Clients
+                    <span>Say About Stackly</span>
+                </h2>
+
+            </div>
+
+
+            <!-- TESTIMONIAL BOX -->
+            <div class="law-testimonial-box">
+
+                <!-- TOP AREA -->
+                <div class="law-testimonial-top">
+
+                    <div class="law-testimonial-quote">
+                        <span class="material-symbols-outlined">
+                            format_quote
+                        </span>
+                    </div>
+
+                    <div class="law-testimonial-controls">
+
+                        <button
+                            type="button"
+                            class="law-testimonial-prev"
+                            aria-label="Previous testimonial"
+                        >
+                            <span class="material-symbols-outlined">
+                                arrow_back
+                            </span>
+                        </button>
+
+                        <button
+                            type="button"
+                            class="law-testimonial-next"
+                            aria-label="Next testimonial"
+                        >
+                            <span class="material-symbols-outlined">
+                                arrow_forward
+                            </span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SLIDER CONTENT -->
+                <div class="law-testimonial-slider">
+
+                    <div class="law-testimonial-slide active">
+
+                        <p class="law-testimonial-description">
+                            Stackly provided exceptional legal guidance
+                            throughout my case. Their professional team
+                            understood every detail, explained the process
+                            clearly, and helped me move forward with confidence.
+                        </p>
+
+                        <div class="law-testimonial-author">
+                            <h3>Emily Johnson</h3>
+                            <span>Business Owner</span>
+                        </div>
+
+                        <div class="law-testimonial-rating">
+
+                            <div class="law-testimonial-stars">
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                            </div>
+
+                            <span class="law-testimonial-date">
+                                05 November, 2026
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="law-testimonial-slide">
+
+                        <p class="law-testimonial-description">
+                            The attorneys at Stackly handled my family
+                            matter with care and dedication. Their clear
+                            communication and thoughtful approach made
+                            a difficult situation much easier.
+                        </p>
+
+                        <div class="law-testimonial-author">
+                            <h3>Michael Anderson</h3>
+                            <span>Entrepreneur</span>
+                        </div>
+
+                        <div class="law-testimonial-rating">
+
+                            <div class="law-testimonial-stars">
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                            </div>
+
+                            <span class="law-testimonial-date">
+                                22 October, 2026
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="law-testimonial-slide">
+
+                        <p class="law-testimonial-description">
+                            I received excellent support with my property
+                            dispute. The legal team was knowledgeable,
+                            responsive, and committed to protecting my
+                            interests at every stage.
+                        </p>
+
+                        <div class="law-testimonial-author">
+                            <h3>Sophia Williams</h3>
+                            <span>Property Consultant</span>
+                        </div>
+
+                        <div class="law-testimonial-rating">
+
+                            <div class="law-testimonial-stars">
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                            </div>
+
+                            <span class="law-testimonial-date">
+                                12 September, 2026
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="law-testimonial-slide">
+
+                        <p class="law-testimonial-description">
+                            Stackly helped our company navigate a complex
+                            legal matter with confidence. Their strategic
+                            advice and professional service exceeded
+                            our expectations.
+                        </p>
+
+                        <div class="law-testimonial-author">
+                            <h3>David Miller</h3>
+                            <span>Company Director</span>
+                        </div>
+
+                        <div class="law-testimonial-rating">
+
+                            <div class="law-testimonial-stars">
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                                <span class="material-symbols-outlined">star</span>
+                            </div>
+
+                            <span class="law-testimonial-date">
+                                18 August, 2026
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     STACKLY LAW FIRM - WHY CHOOSE US
+========================================== -->
+
+<section class="law-why-section">
+
+    <!-- BACKGROUND OVERLAY -->
+    <div class="law-why-overlay"></div>
+
+    <div class="law-why-container">
+
+        <!-- LEFT CONTENT -->
+        <div class="law-why-content">
+
+            <div class="law-why-label">
+                <span class="material-symbols-outlined">gavel</span>
+                <span>WHY CHOOSE US</span>
+            </div>
+
+            <h2>
+                You Should Choose
+                <span>Stackly Legal Experts</span>
+            </h2>
+
+            <p class="law-why-description">
+                At Stackly, we combine extensive legal knowledge,
+                personal attention, and strategic thinking to
+                protect your rights. Our dedicated attorneys
+                work tirelessly to deliver trusted solutions
+                and lasting results.
+            </p>
+
+
+            <!-- FEATURE CARDS -->
+            <div class="law-why-features">
+
+                <!-- FEATURE ONE -->
+                <div class="law-why-feature">
+
+                    <div class="law-why-feature-heading">
+
+                        <div class="law-why-feature-icon">
+                            <span class="material-symbols-outlined">
+                                verified
+                            </span>
+                        </div>
+
+                        <h3>99% Winning<br>Guarantee</h3>
+
+                    </div>
+
+                    <p>
+                        Dedicated legal strategies focused on
+                        protecting your rights and interests.
+                    </p>
+
+                </div>
+
+
+                <!-- FEATURE TWO -->
+                <div class="law-why-feature">
+
+                    <div class="law-why-feature-heading">
+
+                        <div class="law-why-feature-icon">
+                            <span class="material-symbols-outlined">
+                                handshake
+                            </span>
+                        </div>
+
+                        <h3>Full Time<br>Support</h3>
+
+                    </div>
+
+                    <p>
+                        Reliable assistance and personalized
+                        guidance whenever you need us.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- BUTTON -->
+            <a href="about.html" class="law-why-button">
+                Discover More
+            </a>
+
+        </div>
+
+
+        <!-- CENTER LAWYER IMAGE -->
+        <div class="law-why-image-area">
+
+            <div class="law-why-image-frame">
+
+                <img
+                    src="assets/law-person.webp"
+                    alt="Professional Stackly female lawyer"
+                    class="law-why-main-image"
+                >
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT ACHIEVEMENT CIRCLES -->
+        <div class="law-why-stats">
+
+            <!-- STAT ONE -->
+            <div class="law-why-stat law-why-stat-one">
+
+                <h3>35</h3>
+
+                <p>
+                    Experience<br>
+                    Attorneys
+                </p>
+
+            </div>
+
+
+            <!-- STAT TWO -->
+            <div class="law-why-stat law-why-stat-two">
+
+                <h3>20</h3>
+
+                <p>
+                    Years of<br>
+                    Experience
+                </p>
+
+            </div>
+
+
+            <!-- STAT THREE -->
+            <div class="law-why-stat law-why-stat-three">
+
+                <h3>90</h3>
+
+                <p>
+                    Best Law<br>
+                    Award
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     STACKLY LAW FIRM - CONTACT CTA SECTION
+========================================== -->
+
+<section class="law-contact-section">
+
+    <div class="law-contact-container">
+
+        <!-- LEFT CONTENT -->
+        <div class="law-contact-content">
+
+            <!-- LABEL -->
+            <div class="law-contact-label">
+                <span class="material-symbols-outlined">gavel</span>
+                <span>GET IN TOUCH</span>
+            </div>
+
+
+            <!-- HEADING -->
+            <h2>
+                Your Legal Matter Deserves
+                <span>Trusted Representation.</span>
+            </h2>
+
+
+            <!-- DESCRIPTION -->
+            <p class="law-contact-description">
+                From complex disputes to important legal decisions,
+                our experienced attorneys are ready to listen,
+                understand your situation, and provide trusted
+                legal guidance.
+            </p>
+
+
+            <!-- EMAIL FORM -->
+            <form
+                class="law-contact-form"
+                id="lawContactForm"
+                novalidate
+            >
+
+                <div class="law-contact-input-wrap">
+
+                    <input
+                        type="email"
+                        id="lawContactEmail"
+                        name="email"
+                        placeholder="Email Address *"
+                        autocomplete="email"
+                        aria-label="Email Address"
+                        aria-describedby="lawEmailError"
+                        required
+                    >
+
+                    <button type="submit" class="law-contact-button">
+
+                        <span>Contact Now</span>
+
+                        <span class="law-contact-button-icon">
+                            <span class="material-symbols-outlined">
+                                arrow_forward
+                            </span>
+                        </span>
+
+                    </button>
+
+                </div>
+
+                <!-- VALIDATION MESSAGE -->
+                <p
+                    class="law-contact-error"
+                    id="lawEmailError"
+                    role="alert"
+                    aria-live="polite"
+                ></p>
+
+            </form>
+
+
+            <!-- DIVIDER -->
+            <div class="law-contact-divider"></div>
+
+
+            <!-- TRUST POINTS -->
+            <div class="law-contact-trust">
+
+                <div class="law-contact-trust-item">
+
+                    <span class="material-symbols-outlined">
+                        check_circle
+                    </span>
+
+                    <span>Experienced Counsel</span>
+
+                </div>
+
+
+                <div class="law-contact-trust-item">
+
+                    <span class="material-symbols-outlined">
+                        check_circle
+                    </span>
+
+                    <span>Client Focused Task</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE - SINGLE COMBINED IMAGE -->
+        <div class="law-contact-visual">
+
+            <div class="law-contact-image-frame">
+
+                <img
+                    src="assets/law-enquiry.webp"
+                    alt="Stackly professional legal team"
+                    class="law-contact-image"
+                    loading="lazy"
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     STACKLY LAW FIRM - FOOTER
+========================================== -->
+
+<footer class="law-footer">
+
+    <div class="law-footer-container">
+
+        <!-- TOP FOOTER -->
+        <div class="law-footer-top">
+
+            <!-- BRAND COLUMN -->
+            <div class="law-footer-brand">
+
+              <a href="index.html" class="law-footer-logo">
+
+    <img
+        src="assets/logo 4.webp"
+        alt="Stackly Logo"
+        class="law-footer-logo-image"
+    >
+
+</a>
+
+                <p class="law-footer-description">
+                    We provide trusted legal guidance to individuals,
+                    families, and businesses. Our attorneys are
+                    committed to protecting your rights.
+                </p>
+
+
+             <!-- FOOTER SOCIAL ICONS -->
+
+<div class="law-footer-social">
+
+    <a href="404.html" aria-label="Pinterest">
+        <i class="fa-brands fa-pinterest-p"></i>
+    </a>
+
+    <a href="404.html" aria-label="X Twitter">
+        <i class="fa-brands fa-x-twitter"></i>
+    </a>
+
+    <a href="404.html" aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+    </a>
+
+    <a href="404.html" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+</div>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+            <div class="law-footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+
+
+            <!-- SERVICES -->
+            <div class="law-footer-column">
+
+                <h3>Our Services</h3>
+
+                <ul>
+                    <li><a href="404.html">Family Law</a></li>
+                    <li><a href="404.html">Criminal Defense</a></li>
+                    <li><a href="404.html">Personal Injury</a></li>
+                    <li><a href="404.html">Corporate Law</a></li>
+                    <li><a href="404.html">Real Estate Law</a></li>
+                </ul>
+
+            </div>
+
+
+            <!-- WORKING HOURS -->
+            <div class="law-footer-column law-footer-hours">
+
+                <h3>Working Hours</h3>
+
+                <ul>
+                    <li>Monday - Friday: 9 AM - 6 PM</li>
+                    <li>Saturday: By Appointment</li>
+                    <li>Sunday: Closed</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTACT + NEWSLETTER BOX -->
+        <div class="law-footer-contact-box">
+
+            <!-- PHONE -->
+            <a href="404.html" class="law-footer-contact-item">
+
+                <span class="law-footer-contact-icon">
+                    <span class="material-symbols-outlined">
+                        call
+                    </span>
+                </span>
+
+                <span class="law-footer-contact-text">
+                    <span>Call Us Today!</span>
+                    <strong>+1 (23) 456 - 789</strong>
+                </span>
+
+            </a>
+
+
+            <!-- EMAIL -->
+            <a href="404.html" class="law-footer-contact-item law-footer-email">
+
+                <span class="law-footer-contact-icon">
+                    <span class="material-symbols-outlined">
+                        mail
+                    </span>
+                </span>
+
+                <span class="law-footer-contact-text">
+                    <span>E-mail Us Now!</span>
+                    <strong>info@stackly.com</strong>
+                </span>
+
+            </a>
+
+
+            <!-- NEWSLETTER -->
+            <form
+                class="law-footer-newsletter"
+                id="lawFooterForm"
+                novalidate
+            >
+
+                <div class="law-footer-newsletter-input">
+
+                    <input
+                        type="email"
+                        id="lawFooterEmail"
+                        placeholder="Your Email Address"
+                        autocomplete="email"
+                        aria-label="Your Email Address"
+                        aria-describedby="lawFooterError"
+                        required
+                    >
+
+                    <button type="submit">
+
+                        <span>Subscribe Now</span>
+
+                        <span class="law-footer-subscribe-arrow">
+                            <span class="material-symbols-outlined">
+                                arrow_forward
+                            </span>
+                        </span>
+
+                    </button>
+
+                </div>
+
+                <p
+                    class="law-footer-error"
+                    id="lawFooterError"
+                    role="alert"
+                    aria-live="polite"
+                ></p>
+
+            </form>
+
+        </div>
+
+
+        <!-- BOTTOM FOOTER -->
+        <div class="law-footer-bottom">
+
+            <p class="law-footer-copyright">
+                Copyright © 2026 Stackly. All Rights Reserved.
+            </p>
+
+            <div class="law-footer-legal-links">
+
+                <a href="404.html">Terms &amp; Conditions</a>
+
+                <span></span>
+
+                <a href="404.html">Privacy Policy</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>

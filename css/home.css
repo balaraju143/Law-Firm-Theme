@@ -1,0 +1,4695 @@
+
+/* ==========================================
+   STACKLY LAW FIRM - HERO SECTION
+========================================== */
+
+.law-hero {
+    width: 100%;
+    min-height: 650px;
+
+    position: relative;
+    isolation: isolate;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background-image: url("../assets/law-hero.webp");
+    background-size: cover;
+    background-position: center 42%;
+    background-repeat: no-repeat;
+}
+
+
+/* DARK OVERLAY */
+
+.law-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(9, 22, 31, 0.78) 0%,
+            rgba(9, 22, 31, 0.58) 50%,
+            rgba(9, 22, 31, 0.65) 100%
+        ),
+        linear-gradient(
+            0deg,
+            rgba(12, 29, 40, 0.82),
+            transparent 75%
+        );
+
+    z-index: -1;
+}
+
+
+/* HERO CONTAINER */
+
+.law-hero-container {
+    width: 100%;
+    max-width: 1600px;
+
+    margin: 0 auto;
+
+    padding: 90px 5.5%;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 380px;
+
+    align-items: center;
+
+    gap: 65px;
+}
+
+
+/* ==========================================
+   LEFT HERO CONTENT
+========================================== */
+
+.law-hero-content {
+    max-width: 960px;
+    width: 100%;
+}
+
+
+/* TOP TAG */
+
+.law-hero-tag {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 20px;
+
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.law-hero-tag .material-symbols-outlined {
+    font-size: 29px;
+    color: #d1aa4e;
+}
+
+
+/* HERO HEADING */
+
+.law-hero-content h1 {
+    max-width: 950px;
+
+    color: #ffffff;
+
+    font-size: clamp(42px, 4.1vw, 76px);
+
+    font-weight: 800;
+    line-height: 1.13;
+
+    letter-spacing: -2.5px;
+
+    margin-bottom: 25px;
+}
+
+
+/* DESCRIPTION */
+
+.law-hero-description {
+    max-width: 920px;
+
+    color: rgba(255, 255, 255, 0.95);
+
+    font-size: 19px;
+    font-weight: 500;
+
+    line-height: 1.8;
+
+    margin-bottom: 50px;
+}
+
+
+/* ==========================================
+   HERO ACTIONS
+========================================== */
+
+.law-hero-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 45px;
+}
+
+
+/* CONTACT BUTTON */
+
+.law-contact-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 18px;
+
+    min-width: 220px;
+    height: 65px;
+
+    padding: 6px 7px 6px 28px;
+
+    background: #d0aa4d;
+    color: #ffffff;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    font-size: 18px;
+    font-weight: 800;
+
+    transition: all 0.3s ease;
+}
+
+.law-contact-btn:hover {
+    background: #e1bd63;
+    transform: translateY(-3px);
+}
+
+
+/* BUTTON ARROW */
+
+.law-btn-arrow {
+    width: 51px;
+    height: 51px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #142630;
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    flex-shrink: 0;
+}
+
+.law-btn-arrow .material-symbols-outlined {
+    font-size: 27px;
+    transition: transform 0.3s ease;
+}
+
+.law-contact-btn:hover .law-btn-arrow .material-symbols-outlined {
+    transform: translateX(4px);
+}
+
+
+/* ==========================================
+   CLIENT INFORMATION
+========================================== */
+
+.law-client-info {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+
+/* CLIENT AVATARS */
+
+.law-client-avatars {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.law-client-avatars img {
+    width: 54px;
+    height: 54px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 2px solid #ffffff;
+
+    margin-left: -13px;
+}
+
+.law-client-avatars img:first-child {
+    margin-left: 0;
+}
+
+
+/* PLUS ICON */
+
+.law-client-plus {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #d0aa4d;
+    color: #ffffff;
+
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+
+    margin-left: -10px;
+    z-index: 2;
+}
+
+.law-client-plus .material-symbols-outlined {
+    font-size: 29px;
+}
+
+
+/* CLIENT TEXT */
+
+.law-client-text h3 {
+    color: #ffffff;
+
+    font-size: 23px;
+    font-weight: 800;
+
+    white-space: nowrap;
+
+    margin-bottom: 5px;
+}
+
+.law-client-text p {
+    color: #ffffff;
+
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* ==========================================
+   RIGHT REVIEW CARD
+========================================== */
+
+.law-review-card {
+    width: 100%;
+    min-height: 400px;
+
+    padding: 38px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: rgba(26, 39, 46, 0.58);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 27px;
+
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px);
+
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+}
+
+
+/* CARD DESCRIPTION */
+
+.law-review-description {
+    color: #ffffff;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   REVIEW USERS
+========================================== */
+
+.law-review-users {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    margin-top: 50px;
+}
+
+.law-review-avatars {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.law-review-avatars img {
+    width: 39px;
+    height: 39px;
+
+    object-fit: cover;
+
+    border: 1.5px solid #ffffff;
+    border-radius: 50%;
+
+    margin-left: -11px;
+}
+
+.law-review-avatars img:first-child {
+    margin-left: 0;
+}
+
+.law-review-plus {
+    width: 39px;
+    height: 39px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #d0aa4d;
+    color: #ffffff;
+
+    border: 1.5px solid #ffffff;
+    border-radius: 50%;
+
+    margin-left: -9px;
+    z-index: 2;
+}
+
+.law-review-plus .material-symbols-outlined {
+    font-size: 24px;
+}
+
+.law-review-users p {
+    color: #ffffff;
+
+    font-size: 17px;
+    font-weight: 600;
+}
+
+
+/* CARD DIVIDER */
+
+.law-review-divider {
+    width: 100%;
+    height: 1px;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    margin: 35px 0 25px;
+}
+
+
+/* ==========================================
+   RATING
+========================================== */
+
+.law-rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+.law-rating h3 {
+    color: #ffffff;
+
+    font-size: 22px;
+    font-weight: 800;
+
+    white-space: nowrap;
+}
+
+.law-rating-stars {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    color: #d0aa4d;
+}
+
+.law-rating-stars .material-symbols-outlined {
+    font-size: 23px;
+    font-variation-settings: 'FILL' 1;
+}
+
+
+/* ==========================================
+   GSAP INITIAL ANIMATION STATES
+========================================== */
+
+.law-hero-content,
+.law-review-card {
+    opacity: 0;
+}
+
+
+/* ==========================================
+   TABLET RESPONSIVE
+========================================== */
+
+@media (max-width: 1100px) {
+
+    .law-hero {
+        min-height: 620px;
+    }
+
+    .law-hero-container {
+        grid-template-columns: minmax(0, 1fr) 320px;
+
+        gap: 30px;
+
+        padding: 75px 4%;
+    }
+
+    .law-hero-content h1 {
+        font-size: 52px;
+        letter-spacing: -1.5px;
+    }
+
+    .law-hero-description {
+        font-size: 16px;
+    }
+
+    .law-hero-actions {
+        gap: 25px;
+    }
+
+    .law-review-card {
+        min-height: 360px;
+        padding: 27px;
+    }
+
+    .law-review-users {
+        gap: 10px;
+    }
+
+    .law-review-users p {
+        font-size: 14px;
+    }
+
+    .law-rating h3 {
+        font-size: 18px;
+    }
+
+    .law-rating-stars {
+        gap: 2px;
+    }
+
+    .law-rating-stars .material-symbols-outlined {
+        font-size: 19px;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .law-hero {
+        min-height: auto;
+
+        background-position: center center;
+    }
+
+    .law-hero-overlay {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(9, 22, 31, 0.78),
+                rgba(9, 22, 31, 0.84)
+            );
+    }
+
+    .law-hero-container {
+        width: 100%;
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+        padding: 75px 6% 60px;
+
+        justify-items: center;
+    }
+
+
+    /* CENTER MAIN CONTENT */
+
+    .law-hero-content {
+        max-width: 600px;
+         padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+    }
+
+
+    /* TAG */
+
+    .law-hero-tag {
+        justify-content: center;
+
+        font-size: 14px;
+        margin-bottom: 18px;
+    }
+
+    .law-hero-tag .material-symbols-outlined {
+        font-size: 25px;
+    }
+
+
+    /* HEADING */
+
+    .law-hero-content h1 {
+        width: 100%;
+
+        font-size: clamp(36px, 8vw, 49px);
+
+        line-height: 1.2;
+        letter-spacing: -1.5px;
+
+        margin-bottom: 20px;
+    }
+
+
+    /* DESCRIPTION */
+
+    .law-hero-description {
+        max-width: 520px;
+
+        font-size: 15px;
+        line-height: 1.8;
+
+        margin-bottom: 30px;
+    }
+
+
+    /* ACTIONS */
+
+    .law-hero-actions {
+        width: 100%;
+
+        flex-direction: column;
+        align-items: center;
+
+        gap: 30px;
+    }
+
+
+    /* BUTTON */
+
+    .law-contact-btn {
+        min-width: 210px;
+        height: 59px;
+
+        font-size: 16px;
+    }
+
+    .law-btn-arrow {
+        width: 47px;
+        height: 47px;
+    }
+
+
+    /* CLIENT DETAILS */
+
+    .law-client-info {
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+    .law-client-avatars img {
+        width: 47px;
+        height: 47px;
+    }
+
+    .law-client-plus {
+        width: 48px;
+        height: 48px;
+    }
+
+    .law-client-text {
+        text-align: left;
+    }
+
+    .law-client-text h3 {
+        font-size: 17px;
+    }
+
+    .law-client-text p {
+        font-size: 15px;
+    }
+
+
+    /* REVIEW CARD */
+
+    .law-review-card {
+        width: 100%;
+        max-width: 440px;
+
+        min-height: 340px;
+
+        padding: 30px 25px;
+
+        text-align: left;
+    }
+
+    .law-review-description {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .law-review-users {
+        justify-content: center;
+
+        margin-top: 35px;
+        gap: 12px;
+    }
+
+    .law-review-users p {
+        font-size: 14px;
+    }
+
+    .law-review-divider {
+        margin: 27px 0 22px;
+    }
+
+    .law-rating {
+        justify-content: center;
+        flex-wrap: wrap;
+
+        gap: 12px;
+    }
+
+    .law-rating h3 {
+        font-size: 19px;
+    }
+
+    .law-rating-stars {
+        gap: 5px;
+    }
+
+    .law-rating-stars .material-symbols-outlined {
+        font-size: 22px;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+    .law-hero-container {
+        padding: 60px 5% 45px;
+        gap: 35px;
+    }
+
+    .law-hero-content h1 {
+        font-size: 36px;
+        letter-spacing: -1px;
+    }
+
+    .law-hero-description {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    .law-client-info {
+        gap: 12px;
+    }
+
+    .law-client-avatars img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .law-client-plus {
+        width: 43px;
+        height: 43px;
+    }
+
+    .law-client-text h3 {
+        font-size: 15px;
+    }
+
+    .law-client-text p {
+        font-size: 14px;
+    }
+
+    .law-review-card {
+        min-height: 320px;
+        padding: 25px 18px;
+        border-radius: 20px;
+    }
+
+    .law-review-description {
+        font-size: 16px;
+    }
+
+    .law-review-users p {
+        font-size: 13px;
+    }
+
+    .law-rating h3 {
+        font-size: 18px;
+    }
+
+}
+
+
+/* ==========================================
+   EXTRA SMALL MOBILE
+========================================== */
+
+@media (max-width: 360px) {
+
+    .law-hero-content h1 {
+        font-size: 31px;
+    }
+
+    .law-client-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .law-client-text {
+        text-align: center;
+    }
+
+    .law-review-card {
+        padding: 23px 14px;
+    }
+
+    .law-rating-stars .material-symbols-outlined {
+        font-size: 19px;
+    }
+
+}
+
+
+
+/* ==========================================
+   STACKLY LAW FIRM - ABOUT SECTION
+========================================== */
+
+.law-about-section {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    background: #ffffff;
+
+    padding: 95px 5%;
+}
+
+
+/* MAIN CONTAINER */
+
+.law-about-container {
+    width: 100%;
+    max-width: 1450px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+    gap: 75px;
+}
+
+
+.law-about-visual {
+    position: relative;
+    width: 100%;
+    max-width: 680px;
+    height: 620px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* LARGE MAIN CIRCLE IMAGE */
+
+.law-about-main-image {
+    position: absolute;
+
+    width: 570px;
+    height: 570px;
+
+    top: 10px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    aspect-ratio: 1 / 1;
+
+    z-index: 1;
+}
+
+.law-about-main-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 50%;
+
+    transition: transform 0.6s ease;
+}
+
+.law-about-main-image:hover img {
+    transform: scale(1.05);
+}
+
+
+/* SMALL OVERLAPPING CIRCLE */
+
+.law-about-small-image {
+    position: absolute;
+
+    width: 365px;
+    height: 365px;
+
+    left: 50%;
+    bottom: 0;
+
+    transform: translateX(-50%);
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    aspect-ratio: 1 / 1;
+
+    border: 13px solid #c99a4e;
+
+    z-index: 3;
+}
+
+.law-about-small-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 50%;
+
+    transition: transform 0.6s ease;
+}
+
+.law-about-small-image:hover img {
+    transform: scale(1.06);
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 1100px) {
+
+    .law-about-visual {
+        height: 500px;
+    }
+
+    .law-about-main-image {
+        width: 430px;
+        height: 430px;
+    }
+
+    .law-about-small-image {
+        width: 280px;
+        height: 280px;
+        border-width: 10px;
+    }
+}
+
+/* ==========================================
+   24 HOURS BADGE
+========================================== */
+
+.law-about-badge {
+    position: absolute;
+
+    top: 35px;
+    right: 10px;
+
+    width: 180px;
+    height: 180px;
+
+    padding: 9px;
+
+    background: #ffffff;
+
+    border-radius: 50%;
+
+    box-shadow: 0 12px 45px rgba(0, 0, 0, 0.10);
+
+    z-index: 4;
+}
+
+.law-about-badge-inner {
+    width: 100%;
+    height: 100%;
+
+    border: 1px solid #c99a4e;
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.law-about-badge-inner h3 {
+    color: #17213b;
+
+    font-family: Georgia, serif;
+
+    font-size: 45px;
+    font-weight: 400;
+
+    line-height: 1.1;
+}
+
+.law-about-badge-inner span {
+    color: #858894;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    line-height: 1.5;
+}
+
+
+/* DECORATIVE CIRCLE */
+
+.law-about-decoration {
+    position: absolute;
+
+    right: 0;
+    bottom: 205px;
+
+    width: 29px;
+    height: 29px;
+
+    border: 1px solid #c99a4e;
+    border-radius: 50%;
+
+    z-index: 4;
+}
+
+.law-about-decoration::after {
+    content: "";
+
+    position: absolute;
+    inset: 7px;
+
+    background: #c99a4e;
+    border-radius: 50%;
+}
+
+
+/* ==========================================
+   RIGHT CONTENT
+========================================== */
+
+.law-about-content {
+    width: 100%;
+    max-width: 650px;
+}
+
+
+/* LABEL */
+
+.law-about-label {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 15px;
+
+    color: #888b96;
+
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.law-about-label .material-symbols-outlined {
+    color: #c99a4e;
+    font-size: 27px;
+}
+
+
+/* HEADING */
+
+.law-about-content h2 {
+    color: #17130f;
+
+    font-family: Georgia, 'Times New Roman', serif;
+
+    font-size: clamp(38px, 3.4vw, 58px);
+
+    font-weight: 400;
+    line-height: 1.17;
+
+    letter-spacing: -1px;
+
+    margin-bottom: 27px;
+}
+
+.law-about-content h2 span {
+    color: #c99a4e;
+}
+
+
+/* DESCRIPTION */
+
+.law-about-description {
+    color: #858995;
+
+    font-size: 17px;
+    font-weight: 500;
+
+    line-height: 1.95;
+
+    margin-bottom: 27px;
+}
+
+
+/* ==========================================
+   FEATURES
+========================================== */
+
+.law-about-features {
+    display: flex;
+    align-items: center;
+
+    gap: 45px;
+
+    margin-bottom: 44px;
+}
+
+.law-about-feature {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+}
+
+
+/* FEATURE ICON */
+
+.law-feature-icon {
+    width: 56px;
+    height: 56px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f0f0f0;
+
+    border-radius: 50%;
+}
+
+.law-feature-icon .material-symbols-outlined {
+    color: #17213b;
+    font-size: 26px;
+}
+
+
+/* FEATURE TEXT */
+
+.law-feature-text h4,
+.law-feature-text p {
+    color: #202640;
+
+    font-family: Georgia, serif;
+
+    font-size: 17px;
+    font-weight: 400;
+
+    line-height: 1.5;
+}
+
+
+/* ==========================================
+   DISCOVER MORE BUTTON
+========================================== */
+
+.law-about-btn {
+    min-width: 215px;
+    height: 64px;
+
+    padding: 0 30px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #c99a4e;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    border: 1px solid #c99a4e;
+
+    transition: all 0.35s ease;
+}
+
+.law-about-btn:hover {
+    background: #17213b;
+    border-color: #17213b;
+
+    color: #ffffff;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 25px rgba(23, 33, 59, 0.2);
+}
+
+
+/* ==========================================
+   TABLET RESPONSIVE
+========================================== */
+
+@media (max-width: 1100px) {
+
+    .law-about-section {
+        padding: 75px 4%;
+    }
+
+    .law-about-container {
+        gap: 40px;
+    }
+
+    .law-about-visual {
+        height: 500px;
+    }
+
+    .law-about-main-image {
+        width: 430px;
+        height: 430px;
+    }
+
+    .law-about-small-image {
+        width: 280px;
+        height: 280px;
+
+        border-width: 10px;
+    }
+
+    .law-about-badge {
+        width: 145px;
+        height: 145px;
+
+        right: 0;
+    }
+
+    .law-about-badge-inner h3 {
+        font-size: 36px;
+    }
+
+    .law-about-badge-inner span {
+        font-size: 12px;
+    }
+
+    .law-about-content h2 {
+        font-size: 42px;
+    }
+
+    .law-about-description {
+        font-size: 15px;
+    }
+
+    .law-about-features {
+        gap: 20px;
+    }
+
+    .law-feature-text h4,
+    .law-feature-text p {
+        font-size: 14px;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .law-about-section {
+        padding: 65px 5% 70px;
+    }
+
+    .law-about-container {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+
+    /* IMAGE AREA */
+
+    .law-about-visual {
+        width: 100%;
+        max-width: 520px;
+
+        height: 440px;
+
+        margin: 0 auto;
+    }
+
+    .law-about-dots {
+        top: 0;
+        left: 0;
+
+        width: 170px;
+        height: 190px;
+
+        background-size: 30px 30px;
+    }
+
+    .law-about-main-image {
+        top: 15px;
+
+        width: min(78vw, 370px);
+        height: min(78vw, 370px);
+    }
+
+    .law-about-small-image {
+        width: min(53vw, 255px);
+        height: min(53vw, 255px);
+
+        bottom: 0;
+
+        border-width: 9px;
+    }
+
+    .law-about-badge {
+        top: 5px;
+        right: 2%;
+
+        width: 115px;
+        height: 115px;
+
+        padding: 6px;
+    }
+
+    .law-about-badge-inner h3 {
+        font-size: 30px;
+    }
+
+    .law-about-badge-inner span {
+        font-size: 10px;
+    }
+
+    .law-about-decoration {
+        right: 3%;
+        bottom: 120px;
+
+        width: 22px;
+        height: 22px;
+    }
+
+
+    /* RIGHT CONTENT */
+
+    .law-about-content {
+        max-width: 600px;
+
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .law-about-label {
+        justify-content: center;
+
+        font-size: 15px;
+    }
+
+    .law-about-content h2 {
+        font-size: clamp(35px, 7vw, 45px);
+
+        line-height: 1.2;
+
+        margin-bottom: 20px;
+    }
+
+    .law-about-description {
+        font-size: 15px;
+        line-height: 1.8;
+
+        margin-bottom: 28px;
+    }
+
+
+    /* FEATURES */
+
+    .law-about-features {
+        width: 100%;
+
+        justify-content: center;
+        flex-wrap: wrap;
+
+        gap: 25px;
+
+        margin-bottom: 35px;
+    }
+
+    .law-about-feature {
+        justify-content: center;
+
+        text-align: left;
+    }
+
+    .law-feature-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .law-feature-text h4,
+    .law-feature-text p {
+        font-size: 14px;
+    }
+
+    .law-about-btn {
+        min-width: 195px;
+        height: 57px;
+
+        font-size: 15px;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+    .law-about-section {
+        padding: 50px 5% 60px;
+    }
+
+    .law-about-container {
+        gap: 35px;
+    }
+
+    .law-about-visual {
+        height: 340px;
+    }
+
+    .law-about-main-image {
+        width: min(78vw, 300px);
+        height: min(78vw, 300px);
+    }
+
+    .law-about-small-image {
+        width: min(53vw, 205px);
+        height: min(53vw, 205px);
+
+        border-width: 7px;
+    }
+
+    .law-about-badge {
+        width: 95px;
+        height: 95px;
+
+        top: 0;
+        right: 0;
+    }
+
+    .law-about-badge-inner h3 {
+        font-size: 25px;
+    }
+
+    .law-about-badge-inner span {
+        font-size: 9px;
+    }
+
+    .law-about-dots {
+        width: 125px;
+        height: 150px;
+    }
+
+    .law-about-decoration {
+        bottom: 85px;
+    }
+
+    .law-about-content h2 {
+        font-size: 34px;
+    }
+
+    .law-about-description {
+        font-size: 14px;
+    }
+
+    .law-about-features {
+        flex-direction: column;
+        align-items: center;
+
+        gap: 20px;
+    }
+
+    .law-about-feature {
+        min-width: 195px;
+    }
+
+}
+
+
+/* ==========================================
+   EXTRA SMALL MOBILE
+========================================== */
+
+@media (max-width: 360px) {
+
+    .law-about-visual {
+        height: 300px;
+    }
+
+    .law-about-content h2 {
+        font-size: 30px;
+    }
+
+    .law-about-badge {
+        width: 82px;
+        height: 82px;
+    }
+
+    .law-about-badge-inner h3 {
+        font-size: 22px;
+    }
+
+    .law-about-badge-inner span {
+        font-size: 8px;
+    }
+
+}
+
+
+
+
+/* ==========================================
+   STACKLY LAW FIRM - SERVICES SECTION
+========================================== */
+
+.law-services-section {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    padding: 85px 3.5% 75px;
+
+    background: #101b38;
+    isolation: isolate;
+}
+
+
+/* BACKGROUND DECORATION */
+
+.law-services-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            transparent 0 20%,
+            rgba(255,255,255,0.018) 20.1% 20.3%,
+            transparent 20.4%
+        ),
+        linear-gradient(
+            45deg,
+            transparent 0 70%,
+            rgba(255,255,255,0.018) 70.1% 70.3%,
+            transparent 70.4%
+        );
+
+    pointer-events: none;
+    z-index: -1;
+}
+
+
+/* MAIN CONTAINER */
+
+.law-services-container {
+    width: 100%;
+    max-width: 1750px;
+    margin: 0 auto;
+}
+
+
+/* ==========================================
+   SERVICES HEADING
+========================================== */
+
+.law-services-heading {
+    max-width: 750px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+
+/* LABEL */
+
+.law-services-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-bottom: 13px;
+
+    color: #a5a9b6;
+
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.law-services-label .material-symbols-outlined {
+    color: #d0a04e;
+    font-size: 27px;
+}
+
+
+/* MAIN HEADING */
+
+.law-services-heading h2 {
+    color: #ffffff;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(38px, 4vw, 57px);
+    font-weight: 400;
+
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.law-services-heading h2 span {
+    display: block;
+    color: #d0a04e;
+}
+
+
+/* DESCRIPTION */
+
+.law-services-heading p {
+    max-width: 650px;
+
+    margin: 18px auto 0;
+
+    color: #aab1c0;
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* ==========================================
+   SERVICES GRID
+========================================== */
+
+.law-services-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    align-items: stretch;
+
+    gap: 30px;
+}
+
+
+/* ==========================================
+   SERVICE CARD
+========================================== */
+
+.law-service-card {
+    min-width: 0;
+
+    padding: 38px 30px 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #f0f0f0;
+
+    color: #15203a;
+
+    border: 1px solid transparent;
+
+    position: relative;
+
+    overflow: hidden;
+
+    transition:
+        background 0.4s ease,
+        color 0.4s ease,
+        transform 0.4s ease,
+        box-shadow 0.4s ease,
+        border-color 0.4s ease;
+
+    cursor: pointer;
+}
+
+
+/* HOVER CARD */
+
+.law-service-card:hover {
+    background: #c99a4e;
+
+    color: #ffffff;
+
+    transform: translateY(-12px);
+
+    border-color: #c99a4e;
+
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.22);
+}
+
+
+/* ==========================================
+   CARD TOP
+========================================== */
+
+.law-service-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 12px;
+
+    min-height: 70px;
+}
+
+.law-service-top h3 {
+    color: #14203a;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 25px;
+    font-weight: 400;
+
+    line-height: 1.2;
+
+    transition: color 0.4s ease;
+}
+
+.law-service-number {
+    color: #ffffff;
+
+    font-size: 43px;
+    font-weight: 800;
+
+    line-height: 1;
+
+    flex-shrink: 0;
+
+    transition: color 0.4s ease;
+}
+
+
+/* HOVER TEXT */
+
+.law-service-card:hover .law-service-top h3,
+.law-service-card:hover .law-service-number {
+    color: #ffffff;
+}
+
+
+/* ==========================================
+   CARD DIVIDER
+========================================== */
+
+.law-service-divider {
+    width: 100%;
+    height: 1px;
+
+    background: rgba(20, 32, 58, 0.17);
+
+    margin: 22px 0 24px;
+
+    transition: background 0.4s ease;
+}
+
+.law-service-card:hover .law-service-divider {
+    background: rgba(255, 255, 255, 0.55);
+}
+
+
+/* ==========================================
+   CARD DESCRIPTION
+========================================== */
+
+.law-service-description {
+    color: #808898;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    line-height: 1.8;
+
+    min-height: 81px;
+
+    margin-bottom: 24px;
+
+    transition: color 0.4s ease;
+}
+
+.law-service-card:hover .law-service-description {
+    color: #ffffff;
+}
+
+
+/* ==========================================
+   CARD IMAGE
+========================================== */
+
+.law-service-image {
+    width: 100%;
+    height: 165px;
+
+    position: relative;
+
+    margin-top: auto;
+
+    overflow: hidden;
+}
+
+.law-service-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.6s ease;
+}
+
+.law-service-card:hover .law-service-image img {
+    transform: scale(1.07);
+}
+
+
+/* ==========================================
+   CARD ICON BOX
+========================================== */
+
+.law-service-icon {
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    width: 79px;
+    height: 79px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #101b38;
+
+    color: #ffffff;
+
+    transition:
+        background 0.4s ease,
+        color 0.4s ease;
+}
+
+.law-service-icon .material-symbols-outlined {
+    font-size: 34px;
+}
+
+.law-service-card:hover .law-service-icon {
+    background: #ffffff;
+    color: #c99a4e;
+}
+
+
+/* ==========================================
+   BOTTOM BUTTON
+========================================== */
+
+.law-services-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 48px;
+}
+
+.law-services-btn {
+    min-width: 220px;
+    height: 58px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 18px;
+
+    padding: 0 24px;
+
+    background: #c99a4e;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    border: 1px solid #c99a4e;
+
+    transition: all 0.35s ease;
+}
+
+.law-services-btn:hover {
+    background: #ffffff;
+    color: #101b38;
+
+    border-color: #ffffff;
+
+    transform: translateY(-3px);
+}
+
+.law-services-btn .material-symbols-outlined {
+    font-size: 21px;
+
+    transition: transform 0.3s ease;
+}
+
+.law-services-btn:hover .material-symbols-outlined {
+    transform: translateX(5px);
+}
+
+
+/* ==========================================
+   TABLET RESPONSIVE
+========================================== */
+
+@media (max-width: 1200px) {
+
+    .law-services-section {
+        padding: 75px 4%;
+    }
+
+    .law-services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px;
+    }
+
+    .law-service-card {
+        padding: 30px 25px 25px;
+    }
+
+    .law-service-image {
+        height: 190px;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .law-services-section {
+        padding: 65px 5% 55px;
+    }
+
+    .law-services-heading {
+        margin-bottom: 35px;
+        padding: 0 5px;
+    }
+
+    .law-services-heading h2 {
+        font-size: clamp(32px, 7vw, 43px);
+        line-height: 1.2;
+    }
+
+    .law-services-heading p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .law-services-grid {
+        grid-template-columns: 1fr;
+
+        width: 100%;
+        max-width: 470px;
+
+        margin: 0 auto;
+
+        gap: 24px;
+    }
+
+    .law-service-card {
+        width: 100%;
+
+        padding: 28px 24px 24px;
+
+        min-height: 0;
+    }
+
+    .law-service-top {
+        min-height: 60px;
+    }
+
+    .law-service-top h3 {
+        font-size: 23px;
+    }
+
+    .law-service-number {
+        font-size: 37px;
+    }
+
+    .law-service-divider {
+        margin: 17px 0 19px;
+    }
+
+    .law-service-description {
+        min-height: 0;
+
+        font-size: 14px;
+        line-height: 1.8;
+
+        margin-bottom: 22px;
+    }
+
+    .law-service-image {
+        height: 190px;
+    }
+
+    .law-service-icon {
+        width: 65px;
+        height: 65px;
+    }
+
+    .law-service-icon .material-symbols-outlined {
+        font-size: 29px;
+    }
+
+    .law-services-bottom {
+        margin-top: 35px;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+    .law-services-section {
+        padding: 55px 5% 45px;
+    }
+
+    .law-services-heading h2 {
+        font-size: 33px;
+    }
+
+    .law-services-label {
+        font-size: 14px;
+    }
+
+    .law-service-card {
+        padding: 24px 19px 20px;
+    }
+
+    .law-service-top h3 {
+        font-size: 22px;
+    }
+
+    .law-service-number {
+        font-size: 34px;
+    }
+
+    .law-service-image {
+        height: 175px;
+    }
+
+    .law-service-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .law-services-btn {
+        min-width: 200px;
+        height: 54px;
+    }
+
+}
+
+
+/* ==========================================
+   TOUCH DEVICES
+========================================== */
+
+@media (hover: none) {
+
+    .law-service-card:hover {
+        transform: none;
+    }
+
+    .law-service-card:hover .law-service-image img {
+        transform: none;
+    }
+
+}
+
+/* ==========================================
+   STACKLY LAW FIRM - CASE STUDIES
+========================================== */
+
+.law-cases-section {
+    width: 100%;
+    padding: 90px 4% 85px;
+
+    background: #ffffff;
+
+    overflow: hidden;
+}
+
+.law-cases-container {
+    width: 100%;
+    max-width: 1650px;
+    margin: 0 auto;
+}
+
+
+/* ==========================================
+   STACKLY - CASE STUDIES SECTION
+========================================== */
+
+.law-cases-section {
+    width: 100%;
+    padding: 80px 3.5%;
+
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.law-cases-container {
+    width: 100%;
+    max-width: 1650px;
+    margin: 0 auto;
+}
+
+
+/* ==========================================
+   HEADING
+========================================== */
+
+.law-cases-heading {
+    text-align: center;
+    max-width: 850px;
+
+    margin: 0 auto 52px;
+}
+
+.law-cases-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    margin-bottom: 10px;
+
+    color: #858995;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.law-cases-label .material-symbols-outlined {
+    color: #c99a4e;
+    font-size: 26px;
+}
+
+.law-cases-heading h2 {
+    color: #17130f;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(38px, 4vw, 55px);
+    font-weight: 400;
+    line-height: 1.17;
+}
+
+.law-cases-heading h2 span {
+    display: block;
+    color: #c99a4e;
+}
+
+.law-cases-heading p {
+    max-width: 650px;
+    margin: 15px auto 0;
+
+    color: #858995;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* ==========================================
+   THREE CARD GALLERY
+========================================== */
+
+.law-cases-gallery {
+    width: 100%;
+    height: 530px;
+
+    display: flex;
+    align-items: stretch;
+    gap: 30px;
+
+    overflow: visible;
+}
+
+
+/* ==========================================
+   INDIVIDUAL CARD
+========================================== */
+
+.law-case-card {
+    position: relative;
+
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+
+    overflow: hidden;
+    isolation: isolate;
+
+    background: #101b38;
+
+    cursor: pointer;
+
+    transition:
+        flex 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 0.5s ease;
+
+    box-shadow: none;
+}
+
+
+/* CENTER CARD DEFAULT EXPANDED */
+
+.law-case-card.active {
+    flex: 2.1;
+}
+
+
+/* HOVERED CARD EXPANDS */
+
+.law-cases-gallery:hover .law-case-card.active:not(:hover):not(:focus-within) {
+    flex: 1;
+}
+
+.law-case-card:hover,
+.law-case-card:focus-within {
+    flex: 2.1;
+
+    z-index: 2;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.16);
+}
+
+
+/* ==========================================
+   IMAGE
+========================================== */
+
+.law-case-image {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.8s ease;
+}
+
+.law-case-card:hover .law-case-image,
+.law-case-card.active .law-case-image {
+    transform: scale(1.04);
+}
+
+
+/* ==========================================
+   IMAGE OVERLAY
+========================================== */
+
+.law-case-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        180deg,
+        rgba(12, 20, 39, 0.03) 25%,
+        rgba(12, 20, 39, 0.10) 48%,
+        rgba(12, 20, 39, 0.80) 100%
+    );
+
+    opacity: 0.45;
+
+    transition: opacity 0.5s ease;
+}
+
+.law-case-card:hover .law-case-overlay,
+.law-case-card.active .law-case-overlay {
+    opacity: 1;
+}
+
+
+/* ==========================================
+   ARROW BUTTON
+========================================== */
+
+.law-case-arrow {
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #17213b;
+    color: #ffffff;
+
+    text-decoration: none;
+
+    z-index: 5;
+
+    transition:
+        top 0.5s ease,
+        bottom 0.5s ease,
+        background 0.4s ease,
+        color 0.4s ease;
+}
+
+.law-case-arrow .material-symbols-outlined {
+    font-size: 26px;
+}
+
+
+/* ACTIVE AND HOVER ARROW MOVES TO TOP */
+
+.law-case-card.active .law-case-arrow,
+.law-case-card:hover .law-case-arrow,
+.law-case-card:focus-within .law-case-arrow {
+    top: 0;
+    bottom: auto;
+
+    background: #ffffff;
+    color: #c99a4e;
+}
+
+
+/* ==========================================
+   INFORMATION SMALL CARD
+========================================== */
+
+.law-case-info {
+    position: absolute;
+
+    left: 30px;
+    bottom: 30px;
+
+    width: calc(100% - 60px);
+    max-width: 440px;
+
+    padding: 20px 23px;
+
+    background: rgba(17, 29, 57, 0.94);
+
+    border-left: 3px solid #c99a4e;
+
+    color: #ffffff;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(25px);
+
+    transition:
+        opacity 0.45s ease,
+        transform 0.5s ease,
+        visibility 0.45s ease;
+
+    z-index: 3;
+}
+
+
+/* SHOW INFO ONLY ON EXPANDED CARD */
+
+.law-case-card.active .law-case-info,
+.law-case-card:hover .law-case-info,
+.law-case-card:focus-within .law-case-info {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+
+    transition-delay: 0.15s;
+}
+
+
+/* LOCATION */
+
+.law-case-location {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    color: #ffffff;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    margin-bottom: 7px;
+}
+
+.law-case-location .material-symbols-outlined {
+    color: #d0a04e;
+    font-size: 18px;
+}
+
+
+/* TITLE */
+
+.law-case-info h3 {
+    color: #ffffff;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 24px;
+    font-weight: 400;
+
+    line-height: 1.3;
+    margin-bottom: 8px;
+}
+
+
+/* DESCRIPTION */
+
+.law-case-info p {
+    color: rgba(255, 255, 255, 0.82);
+
+    font-size: 13px;
+    line-height: 1.7;
+
+    margin-bottom: 12px;
+}
+
+
+/* CATEGORY */
+
+.law-case-category {
+    display: inline-block;
+
+    padding: 5px 12px;
+
+    border: 1px solid rgba(208, 160, 78, 0.65);
+    border-radius: 30px;
+
+    color: #e5bd77;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+/* ==========================================
+   BOTTOM BUTTON
+========================================== */
+
+.law-cases-bottom {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 45px;
+}
+
+.law-cases-btn {
+    min-width: 220px;
+    height: 58px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    padding: 0 25px;
+
+    background: #c99a4e;
+    border: 1px solid #c99a4e;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    transition: all 0.35s ease;
+}
+
+.law-cases-btn:hover {
+    background: #17213b;
+    border-color: #17213b;
+
+    transform: translateY(-3px);
+}
+
+.law-cases-btn .material-symbols-outlined {
+    font-size: 21px;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 1100px) {
+
+    .law-cases-section {
+        padding: 70px 4%;
+    }
+
+    .law-cases-gallery {
+        height: 450px;
+        gap: 18px;
+    }
+
+    .law-case-card.active,
+    .law-case-card:hover,
+    .law-case-card:focus-within {
+        flex: 2.1;
+    }
+
+    .law-case-info {
+        left: 15px;
+        bottom: 15px;
+
+        width: calc(100% - 30px);
+        padding: 15px;
+    }
+
+    .law-case-info h3 {
+        font-size: 19px;
+    }
+
+    .law-case-arrow {
+        width: 58px;
+        height: 58px;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE - THREE CARDS VERTICALLY
+========================================== */
+
+@media (max-width: 768px) {
+
+    .law-cases-section {
+        padding: 60px 5%;
+    }
+
+    .law-cases-heading {
+        margin-bottom: 35px;
+    }
+
+    .law-cases-heading h2 {
+        font-size: clamp(32px, 7vw, 43px);
+    }
+
+    .law-cases-heading p {
+        font-size: 14px;
+    }
+
+    .law-cases-gallery {
+        width: 100%;
+        max-width: 480px;
+
+        height: auto;
+
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 22px;
+    }
+
+    /* SAME CARD SIZE FOR ALL THREE */
+
+    .law-case-card,
+    .law-case-card.active,
+    .law-case-card:hover,
+    .law-case-card:focus-within,
+    .law-cases-gallery:hover .law-case-card.active:not(:hover):not(:focus-within) {
+        flex: none;
+
+        width: 100%;
+        height: 350px;
+
+        transform: none;
+    }
+
+    /* IMAGE */
+
+    .law-case-image,
+    .law-case-card:hover .law-case-image,
+    .law-case-card.active .law-case-image {
+        transform: none;
+    }
+
+    /* SHOW INFORMATION ON EVERY MOBILE CARD */
+
+    .law-case-info {
+        left: 15px;
+        bottom: 15px;
+
+        width: calc(100% - 30px);
+        max-width: none;
+
+        padding: 18px;
+
+        text-align: center;
+
+        opacity: 1;
+        visibility: visible;
+
+        transform: none;
+
+        transition: none;
+    }
+
+    .law-case-location {
+        justify-content: center;
+    }
+
+    .law-case-info h3 {
+        font-size: 21px;
+    }
+
+    .law-case-info p {
+        font-size: 13px;
+    }
+
+    /* ARROW ALWAYS TOP ON MOBILE */
+
+    .law-case-arrow,
+    .law-case-card.active .law-case-arrow,
+    .law-case-card:hover .law-case-arrow,
+    .law-case-card:focus-within .law-case-arrow {
+        top: 0;
+        bottom: auto;
+        left: 0;
+
+        width: 55px;
+        height: 55px;
+
+        background: #17213b;
+        color: #ffffff;
+    }
+
+    .law-cases-bottom {
+        margin-top: 35px;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+    .law-cases-section {
+        padding: 50px 5%;
+    }
+
+    .law-cases-heading h2 {
+        font-size: 33px;
+    }
+
+    .law-case-card,
+    .law-case-card.active,
+    .law-case-card:hover,
+    .law-case-card:focus-within {
+        height: 320px;
+    }
+
+    .law-case-info {
+        left: 10px;
+        bottom: 10px;
+
+        width: calc(100% - 20px);
+        padding: 15px;
+    }
+
+    .law-case-info h3 {
+        font-size: 19px;
+    }
+
+    .law-case-info p {
+        font-size: 12px;
+    }
+
+}
+
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .law-case-card,
+    .law-case-image,
+    .law-case-info,
+    .law-case-arrow {
+        transition: none !important;
+    }
+
+}
+
+
+
+/* ==========================================
+   STACKLY LAW FIRM - TESTIMONIALS
+========================================== */
+
+.law-testimonials-section {
+    width: 100%;
+    padding: 85px 5%;
+
+    background:#eeeeef;
+    overflow: hidden;
+}
+
+.law-testimonials-container {
+    width: 100%;
+    max-width: 1530px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 340px 1fr;
+
+    gap: 30px;
+    align-items: stretch;
+}
+
+
+/* ==========================================
+   LEFT IMAGE
+========================================== */
+
+.law-testimonial-visual {
+    position: relative;
+    min-width: 0;
+
+    padding-right: 30px;
+    border-right: 1px solid #dedede;
+}
+
+.law-testimonial-image {
+    width: 100%;
+    height: 600px;
+
+    overflow: hidden;
+
+    border-radius: 125px 0 0 0;
+}
+
+.law-testimonial-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center top;
+
+    transition: transform 0.7s ease;
+}
+
+.law-testimonial-image:hover img {
+    transform: scale(1.04);
+}
+
+
+/* ==========================================
+   RIGHT CONTENT
+========================================== */
+
+.law-testimonials-content {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* HEADING */
+
+.law-testimonials-heading {
+    margin-bottom: 48px;
+}
+
+.law-testimonials-label {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    color: #858995;
+
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+
+    margin-bottom: 10px;
+}
+
+.law-testimonials-label .material-symbols-outlined {
+    color: #c99a4e;
+    font-size: 25px;
+}
+
+.law-testimonials-heading h2 {
+    color: #17130f;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(38px, 3.5vw, 52px);
+    font-weight: 400;
+
+    line-height: 1.18;
+}
+
+.law-testimonials-heading h2 span {
+    display: block;
+    color: #c99a4e;
+}
+
+
+/* ==========================================
+   TESTIMONIAL BOX
+========================================== */
+
+.law-testimonial-box {
+    width: 100%;
+    min-height: 400px;
+
+    border: 1px solid #d8d8d8;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* TOP AREA */
+
+.law-testimonial-top {
+    width: 100%;
+
+    padding: 38px 48px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* QUOTE ICON */
+
+.law-testimonial-quote {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #c99a4e;
+    color: #ffffff;
+}
+
+.law-testimonial-quote .material-symbols-outlined {
+    font-size: 36px;
+}
+
+
+/* NAVIGATION BUTTONS */
+
+.law-testimonial-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.law-testimonial-controls button {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #eeeeef;
+    color: #17213b;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.law-testimonial-controls button:hover {
+    background: #c99a4e;
+    color: #ffffff;
+
+    transform: scale(1.08);
+}
+
+.law-testimonial-controls .material-symbols-outlined {
+    font-size: 19px;
+}
+
+
+/* ==========================================
+   SLIDER
+========================================== */
+
+.law-testimonial-slider {
+    position: relative;
+
+    flex: 1;
+    min-height: 0;
+
+    overflow: hidden;
+}
+
+
+/* EACH TESTIMONIAL */
+
+.law-testimonial-slide {
+    display: none;
+
+    width: 100%;
+    padding: 28px 48px 35px;
+
+    animation: lawTestimonialEnter 0.65s ease both;
+}
+
+.law-testimonial-slide.active {
+    display: block;
+}
+
+@keyframes lawTestimonialEnter {
+    from {
+        opacity: 0;
+        transform: translateX(45px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* DESCRIPTION */
+
+.law-testimonial-description {
+    color: #202b46;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    font-style: italic;
+    line-height: 1.9;
+
+    min-height: 110px;
+
+    margin: 0 0 28px;
+}
+
+
+/* ==========================================
+   AUTHOR + RATING
+========================================== */
+
+.law-testimonial-slide {
+    position: relative;
+}
+
+.law-testimonial-author {
+    display: inline-flex;
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.law-testimonial-author h3 {
+    color: #17213b;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.law-testimonial-author span {
+    color: #858995;
+    font-size: 15px;
+}
+
+
+/* RATING */
+
+.law-testimonial-rating {
+    float: right;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    gap: 5px;
+}
+
+.law-testimonial-stars {
+    display: flex;
+    gap: 1px;
+
+    color: #c99a4e;
+}
+
+.law-testimonial-stars .material-symbols-outlined {
+    font-size: 19px;
+    font-variation-settings: 'FILL' 1;
+}
+
+.law-testimonial-date {
+    color: #858995;
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 1100px) {
+
+    .law-testimonials-section {
+        padding: 70px 4%;
+    }
+
+    .law-testimonials-container {
+        grid-template-columns: 290px 1fr;
+        gap: 25px;
+    }
+
+    .law-testimonial-visual {
+        padding-right: 22px;
+    }
+
+    .law-testimonial-image {
+        height: 540px;
+        border-radius: 100px 0 0 0;
+    }
+
+    .law-testimonials-heading {
+        margin-bottom: 35px;
+    }
+
+    .law-testimonial-top {
+        padding: 28px 28px 0;
+    }
+
+    .law-testimonial-slide {
+        padding: 25px 28px 30px;
+    }
+
+    .law-testimonial-description {
+        font-size: 14px;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .law-testimonials-section {
+        padding: 60px 5%;
+    }
+
+    .law-testimonials-container {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        gap: 35px;
+    }
+
+    /* CENTERED IMAGE */
+
+    .law-testimonial-visual {
+        width: 100%;
+        max-width: 350px;
+
+        padding: 0;
+        border: none;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .law-testimonial-image {
+        width: 100%;
+        height: 440px;
+
+        border-radius: 100px 0 0 0;
+    }
+
+    /* CENTERED CONTENT */
+
+    .law-testimonials-content {
+        width: 100%;
+        max-width: 600px;
+
+        align-items: center;
+    }
+
+    .law-testimonials-heading {
+        width: 100%;
+
+        margin-bottom: 30px;
+
+        text-align: center;
+    }
+
+    .law-testimonials-label {
+        justify-content: center;
+    }
+
+    .law-testimonials-heading h2 {
+        font-size: clamp(34px, 7vw, 43px);
+    }
+
+    /* TESTIMONIAL CARD */
+
+    .law-testimonial-box {
+        width: 100%;
+        min-height: 0;
+    }
+
+    .law-testimonial-top {
+        padding: 22px 20px 0;
+    }
+
+    .law-testimonial-quote {
+        width: 50px;
+        height: 50px;
+    }
+
+    .law-testimonial-slide {
+        padding: 25px 20px 25px;
+
+        text-align: center;
+    }
+
+    .law-testimonial-description {
+        min-height: 0;
+
+        font-size: 14px;
+        line-height: 1.85;
+
+        margin-bottom: 25px;
+    }
+
+    .law-testimonial-author {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .law-testimonial-author h3 {
+        font-size: 21px;
+    }
+
+    .law-testimonial-rating {
+        float: none;
+
+        align-items: center;
+
+        margin-top: 18px;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+    .law-testimonials-section {
+        padding: 50px 5%;
+    }
+
+    .law-testimonial-image {
+        height: 390px;
+        border-radius: 85px 0 0 0;
+    }
+
+    .law-testimonials-heading h2 {
+        font-size: 33px;
+    }
+
+    .law-testimonial-top {
+        padding: 18px 15px 0;
+    }
+
+    .law-testimonial-slide {
+        padding: 22px 15px 22px;
+    }
+
+    .law-testimonial-description {
+        font-size: 13px;
+    }
+
+    .law-testimonial-date {
+        font-size: 12px;
+    }
+
+}
+
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .law-testimonial-slide {
+        animation: none;
+    }
+
+    .law-testimonial-image img {
+        transition: none;
+    }
+
+}
+
+
+
+/* ==========================================
+   STACKLY LAW FIRM - WHY CHOOSE US
+========================================== */
+
+.law-why-section {
+    position: relative;
+    width: 100%;
+
+    padding: 85px 5%;
+
+    background-color: #101a36;
+
+    background-image: url("../assets/law-hero.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+    isolation: isolate;
+}
+
+
+/* DARK BACKGROUND OVERLAY */
+
+.law-why-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(13, 24, 53, 0.93);
+
+    z-index: -1;
+}
+
+
+/* MAIN CONTAINER */
+
+.law-why-container {
+    width: 100%;
+    max-width: 1450px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1.35fr 1fr 0.65fr;
+
+    align-items: center;
+
+    gap: 45px;
+}
+
+
+/* ==========================================
+   LEFT CONTENT
+========================================== */
+
+.law-why-content {
+    width: 100%;
+    min-width: 0;
+}
+
+
+/* LABEL */
+
+.law-why-label {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    color: #9299b0;
+
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+
+    margin-bottom: 12px;
+}
+
+.law-why-label .material-symbols-outlined {
+    color: #c99a4e;
+    font-size: 26px;
+}
+
+
+/* HEADING */
+
+.law-why-content h2 {
+    color: #ffffff;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(36px, 3.2vw, 52px);
+
+    font-weight: 400;
+    line-height: 1.18;
+
+    margin-bottom: 25px;
+}
+
+.law-why-content h2 span {
+    display: block;
+    color: #c99a4e;
+}
+
+
+/* DESCRIPTION */
+
+.law-why-description {
+    color: #939bb3;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    line-height: 1.8;
+
+    margin-bottom: 33px;
+}
+
+
+/* ==========================================
+   FEATURE CARDS
+========================================== */
+
+.law-why-features {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background: rgba(255, 255, 255, 0.09);
+
+    border-radius: 0 100px 100px 40px;
+
+    overflow: hidden;
+
+    margin-bottom: 40px;
+}
+
+
+/* SINGLE FEATURE */
+
+.law-why-feature {
+    min-width: 0;
+
+    padding: 30px 24px 25px;
+
+    transition: background 0.35s ease;
+}
+
+.law-why-feature:first-child {
+    border-right: 2px solid #c99a4e;
+}
+
+.law-why-feature:hover {
+    background: rgba(201, 154, 78, 0.13);
+}
+
+
+/* FEATURE HEADING */
+
+.law-why-feature-heading {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 12px;
+}
+
+
+/* ICON CIRCLE */
+
+.law-why-feature-icon {
+    width: 50px;
+    height: 50px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #111c39;
+    color: #ffffff;
+}
+
+.law-why-feature-icon .material-symbols-outlined {
+    font-size: 26px;
+}
+
+
+/* FEATURE TITLE */
+
+.law-why-feature-heading h3 {
+    color: #ffffff;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 1.4;
+}
+
+
+/* FEATURE DESCRIPTION */
+
+.law-why-feature p {
+    color: #939bb3;
+
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* ==========================================
+   DISCOVER BUTTON
+========================================== */
+
+.law-why-button {
+    width: 190px;
+    height: 57px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+    color: #17213b;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    border: 1px solid #ffffff;
+
+    transition: all 0.35s ease;
+}
+
+.law-why-button:hover {
+    background: #c99a4e;
+    border-color: #c99a4e;
+
+    color: #ffffff;
+
+    transform: translateY(-3px);
+}
+
+
+/* ==========================================
+   CENTER IMAGE
+========================================== */
+
+.law-why-image-area {
+    width: 100%;
+    min-width: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* IMAGE CONTAINER */
+
+.law-why-image-frame {
+    position: relative;
+
+    width: 100%;
+    max-width: 340px;
+
+    height: 560px;
+
+    overflow: hidden;
+
+    background: #202b46;
+}
+
+
+/* IMAGE */
+
+.law-why-main-image {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center top;
+
+    transform: scale(1.03);
+}
+
+
+/* ==========================================
+   RIGHT CIRCULAR STATS
+========================================== */
+
+.law-why-stats {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+
+/* CIRCLE CARDS */
+
+.law-why-stat {
+    position: relative;
+
+    width: 200px;
+    height: 200px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    z-index: 1;
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+
+/* OVERLAPPING CIRCLES */
+
+.law-why-stat + .law-why-stat {
+    margin-top: -15px;
+}
+
+
+/* MIDDLE GOLD CIRCLE */
+
+.law-why-stat-two {
+    background: #c99a4e;
+    color: #ffffff;
+
+    z-index: 2;
+}
+
+
+/* STAT NUMBERS */
+
+.law-why-stat h3 {
+    color: #c99a4e;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 65px;
+    font-weight: 400;
+
+    line-height: 1;
+
+    margin-bottom: 5px;
+}
+
+.law-why-stat-two h3 {
+    color: #ffffff;
+}
+
+
+/* STAT DESCRIPTION */
+
+.law-why-stat p {
+    color: #858995;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+.law-why-stat-two p {
+    color: #ffffff;
+}
+
+
+/* HOVER EFFECT */
+
+.law-why-stat:hover {
+    transform: scale(1.04);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+
+    z-index: 4;
+}
+
+
+/* ==========================================
+   TABLET RESPONSIVE
+========================================== */
+
+@media (max-width: 1200px) {
+
+    .law-why-section {
+        padding: 75px 4%;
+    }
+
+    .law-why-container {
+        grid-template-columns: 1.2fr 0.9fr 0.6fr;
+        gap: 25px;
+    }
+
+    .law-why-content h2 {
+        font-size: 38px;
+    }
+
+    .law-why-image-frame {
+        height: 480px;
+    }
+
+    .law-why-stat {
+        width: 155px;
+        height: 155px;
+    }
+
+    .law-why-stat h3 {
+        font-size: 51px;
+    }
+
+    .law-why-stat p {
+        font-size: 14px;
+    }
+
+    .law-why-feature {
+        padding: 22px 15px;
+    }
+
+    .law-why-feature-heading {
+        gap: 10px;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .law-why-section {
+        padding: 65px 5%;
+    }
+
+    .law-why-container {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 40px;
+    }
+
+
+    /* LEFT CONTENT CENTER */
+
+    .law-why-content {
+        width: 100%;
+        max-width: 550px;
+
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .law-why-label {
+        justify-content: center;
+    }
+
+    .law-why-content h2 {
+        font-size: clamp(34px, 7vw, 43px);
+    }
+
+    .law-why-description {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+
+    /* FEATURES */
+
+    .law-why-features {
+        width: 100%;
+
+        border-radius: 25px;
+
+        text-align: left;
+    }
+
+    .law-why-feature {
+        padding: 22px 15px;
+    }
+
+    .law-why-feature-heading {
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .law-why-feature-heading h3 {
+        font-size: 14px;
+    }
+
+    .law-why-feature p {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .law-why-button {
+        margin: 0 auto;
+    }
+
+
+    /* CENTER IMAGE */
+
+    .law-why-image-area {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .law-why-image-frame {
+        width: 100%;
+        max-width: 330px;
+
+        height: 440px;
+    }
+
+
+    /* STATS IN ONE CENTERED ROW */
+
+    .law-why-stats {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 0;
+    }
+
+    .law-why-stat {
+        width: min(29vw, 145px);
+        height: min(29vw, 145px);
+
+        margin: 0 !important;
+    }
+
+    .law-why-stat h3 {
+        font-size: clamp(32px, 8vw, 46px);
+    }
+
+    .law-why-stat p {
+        font-size: clamp(10px, 2.8vw, 13px);
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+    .law-why-section {
+        padding: 55px 5%;
+    }
+
+    .law-why-container {
+        gap: 32px;
+    }
+
+    .law-why-content h2 {
+        font-size: 33px;
+    }
+
+    .law-why-description {
+        font-size: 13px;
+    }
+
+    .law-why-features {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .law-why-feature {
+        padding: 20px 10px;
+    }
+
+    .law-why-feature-icon {
+        width: 43px;
+        height: 43px;
+    }
+
+    .law-why-feature-heading h3 {
+        font-size: 13px;
+    }
+
+    .law-why-feature p {
+        font-size: 11px;
+    }
+
+    .law-why-image-frame {
+        height: 390px;
+    }
+
+    .law-why-stat {
+        width: 29vw;
+        height: 29vw;
+    }
+
+    .law-why-stat h3 {
+        font-size: 34px;
+    }
+
+    .law-why-stat p {
+        font-size: 10px;
+    }
+
+}
+
+
+/* EXTRA SMALL MOBILE */
+
+@media (max-width: 360px) {
+
+    .law-why-stat {
+        width: 28vw;
+        height: 28vw;
+    }
+
+    .law-why-stat h3 {
+        font-size: 29px;
+    }
+
+    .law-why-stat p {
+        font-size: 9px;
+    }
+
+}
+
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .law-why-stat,
+    .law-why-button,
+    .law-why-feature {
+        transition: none;
+    }
+
+}
+
+
+
+/* ==========================================
+   STACKLY LAW FIRM - CONTACT CTA
+========================================== */
+
+.law-contact-section {
+    position: relative;
+
+    width: 100%;
+    min-height: 650px;
+
+    padding: 75px 3.2% 0;
+
+    background-color: #ffffff;
+
+    background-image:
+        radial-gradient(
+            circle,
+            rgba(255, 255, 255, 0.07) 1px,
+            transparent 1.5px
+        );
+
+    background-size: 9px 9px;
+
+    overflow: hidden;
+    isolation: isolate;
+}
+
+
+/* DARK BACKGROUND GRADIENT */
+/*
+.law-contact-section::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        110deg,
+        #17232e 0%,
+        #1d2b36 50%,
+        #17232e 100%
+    );
+
+    z-index: -1;
+}
+
+
+/* MAIN CONTAINER */
+
+.law-contact-container {
+    position: relative;
+
+    width: 100%;
+    max-width: 1650px;
+
+    min-height: 575px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 35px;
+}
+
+
+/* ==========================================
+   LEFT CONTENT
+========================================== */
+
+.law-contact-content {
+    position: relative;
+
+    width: 100%;
+    max-width: 820px;
+
+    z-index: 2;
+
+    padding-bottom: 45px;
+}
+
+
+/* LABEL */
+
+.law-contact-label {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 23px;
+
+    color: #17130f;
+
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.law-contact-label .material-symbols-outlined {
+    color: #c99a4e;
+    font-size: 28px;
+}
+
+
+/* HEADING */
+
+.law-contact-content h2 {
+    max-width: 790px;
+
+    color: #17130f;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: clamp(38px, 4vw, 51px);
+
+    font-weight: 700;
+    line-height: 1.2;
+
+    letter-spacing: -1.5px;
+
+    margin-bottom: 24px;
+}
+
+.law-contact-content h2 span {
+    display: block;
+}
+
+
+/* DESCRIPTION */
+
+.law-contact-description {
+    max-width: 790px;
+
+    color: #101a36;
+
+    font-size: 17px;
+    line-height: 1.9;
+
+    margin-bottom: 48px;
+}
+
+
+/* ==========================================
+   EMAIL FORM
+========================================== */
+
+.law-contact-form {
+    width: 100%;
+    max-width: 755px;
+}
+
+
+/* INPUT WRAPPER */
+
+.law-contact-input-wrap {
+    width: 100%;
+    min-height: 80px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 7px;
+
+    background: #2e3b45;
+
+    border-radius: 60px;
+
+    transition: box-shadow 0.3s ease;
+}
+
+.law-contact-input-wrap:focus-within {
+    box-shadow: 0 0 0 2px rgba(201, 154, 78, 0.45);
+}
+
+
+/* EMAIL INPUT */
+
+.law-contact-input-wrap input {
+    width: 100%;
+    min-width: 0;
+    height: 62px;
+
+    padding: 0 25px;
+
+    background: transparent;
+
+    border: none;
+    outline: none;
+
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 17px;
+}
+
+.law-contact-input-wrap input::placeholder {
+    color: #9299a0;
+    opacity: 1;
+}
+
+
+/* BUTTON */
+
+.law-contact-button {
+    min-width: 220px;
+    height: 66px;
+
+    padding: 0 6px 0 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 12px;
+
+    flex-shrink: 0;
+
+    border: none;
+    border-radius: 50px;
+
+    background: #c99f4b;
+
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: background 0.35s ease;
+}
+
+.law-contact-button:hover {
+    background: #b78735;
+}
+
+
+/* BUTTON ARROW */
+
+.law-contact-button-icon {
+    width: 54px;
+    height: 54px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #17232e;
+    color: #ffffff;
+
+    border: 3px solid rgba(255, 255, 255, 0.4);
+
+    transition: transform 0.35s ease;
+}
+
+.law-contact-button:hover .law-contact-button-icon {
+    transform: translateX(3px);
+}
+
+.law-contact-button-icon .material-symbols-outlined {
+    font-size: 26px;
+}
+
+
+/* ==========================================
+   VALIDATION ERROR
+========================================== */
+
+.law-contact-error {
+    min-height: 0;
+
+    padding: 0 20px;
+
+    margin: 0;
+
+    color: #ffb4a9;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    line-height: 1.5;
+}
+
+.law-contact-error:not(:empty) {
+    margin-top: 10px;
+}
+
+
+/* INVALID INPUT */
+
+.law-contact-input-wrap.has-error {
+    box-shadow: 0 0 0 2px #e58b80;
+}
+
+
+/* ==========================================
+   DIVIDER
+========================================== */
+
+.law-contact-divider {
+    width: 100%;
+    max-width: 795px;
+
+    height: 1px;
+
+    background: rgba(255, 255, 255, 0.14);
+
+    margin: 48px 0;
+}
+
+
+/* ==========================================
+   TRUST POINTS
+========================================== */
+
+.law-contact-trust {
+    display: flex;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 35px;
+}
+
+
+.law-contact-trust-item {
+    min-height: 50px;
+
+    padding: 0 22px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    border: 1px solid rgba(255, 255, 255, 0.13);
+
+    border-radius: 40px;
+
+    color:#101a36;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.law-contact-trust-item:hover {
+    border-color: #c99a4e;
+    background: rgba(201, 154, 78, 0.08);
+}
+
+.law-contact-trust-item .material-symbols-outlined {
+    color: #c99a4e;
+
+    font-size: 23px;
+
+    font-variation-settings: 'FILL' 1;
+}
+
+
+/* ==========================================
+   RIGHT IMAGE
+========================================== */
+
+.law-contact-visual {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    min-width: 0;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+/* IMAGE FRAME */
+
+.law-contact-image-frame {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+/* SINGLE COMBINED IMAGE */
+
+.law-contact-image {
+    display: block;
+
+    width: 100%;
+    max-width: 850px;
+
+    height: auto;
+    max-height: 680px;
+
+    object-fit: contain;
+    object-position: center bottom;
+}
+
+
+/* ==========================================
+   TABLET RESPONSIVE
+========================================== */
+
+@media (max-width: 1100px) {
+
+    .law-contact-section {
+        padding: 65px 4% 0;
+    }
+
+    .law-contact-container {
+        grid-template-columns: 1.05fr 0.95fr;
+        gap: 20px;
+
+        min-height: 530px;
+    }
+
+    .law-contact-content h2 {
+        font-size: 43px;
+    }
+
+    .law-contact-description {
+        font-size: 15px;
+    }
+
+    .law-contact-input-wrap {
+        min-height: 70px;
+    }
+
+    .law-contact-button {
+        min-width: 185px;
+        height: 58px;
+        font-size: 15px;
+    }
+
+    .law-contact-button-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .law-contact-trust {
+        gap: 12px;
+    }
+
+    .law-contact-trust-item {
+        padding: 0 14px;
+        font-size: 13px;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .law-contact-section {
+        padding: 65px 5% 0;
+    }
+
+    .law-contact-container {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 35px;
+
+        min-height: auto;
+    }
+
+
+    /* CENTER LEFT CONTENT */
+
+    .law-contact-content {
+        width: 100%;
+        max-width: 580px;
+
+        padding-bottom: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .law-contact-label {
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    .law-contact-content h2 {
+        font-size: clamp(32px, 7vw, 44px);
+        letter-spacing: -0.7px;
+    }
+
+    .law-contact-description {
+        font-size: 14px;
+        line-height: 1.8;
+
+        margin-bottom: 30px;
+    }
+
+
+    /* FORM */
+
+    .law-contact-form {
+        width: 100%;
+    }
+
+    .law-contact-input-wrap {
+        min-height: 65px;
+    }
+
+    .law-contact-input-wrap input {
+        height: 52px;
+        padding: 0 15px;
+        font-size: 14px;
+    }
+
+    .law-contact-button {
+         width: 30px;
+        height: 52px;
+
+        padding-left: 14px;
+
+        font-size: 13px;
+        gap: 5px;
+    }
+
+    .law-contact-button-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .law-contact-button-icon .material-symbols-outlined {
+        font-size: 22px;
+    }
+
+    .law-contact-error {
+        text-align: left;
+    }
+
+
+    /* DIVIDER */
+
+    .law-contact-divider {
+        margin: 30px 0;
+    }
+
+
+    /* TRUST POINTS */
+
+    .law-contact-trust {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .law-contact-trust-item {
+        min-height: 43px;
+        padding: 0 12px;
+
+        font-size: 12px;
+    }
+
+
+    /* IMAGE BELOW CONTENT */
+
+    .law-contact-visual {
+        width: 100%;
+        max-width: 560px;
+
+        height: auto;
+        min-height: 0;
+
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .law-contact-image-frame {
+        width: 100%;
+        height: auto;
+    }
+
+    .law-contact-image {
+        width: 100%;
+        max-width: 520px;
+
+        height: auto;
+        max-height: none;
+
+        object-fit: contain;
+        object-position: center bottom;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+    .law-contact-section {
+        padding: 50px 5% 0;
+    }
+
+    .law-contact-container {
+        gap: 30px;
+    }
+
+    .law-contact-content h2 {
+        font-size: 33px;
+    }
+
+    .law-contact-description {
+        font-size: 13px;
+    }
+
+    .law-contact-input-wrap {
+        min-height: 58px;
+        padding: 5px;
+    }
+
+    .law-contact-input-wrap input {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    .law-contact-button {
+         width: 45px;
+        height: 48px;
+
+        padding-left: 10px;
+
+        font-size: 12px;
+    }
+
+    .law-contact-button-icon {
+        width: 38px;
+        height: 38px;
+    }
+
+    .law-contact-trust {
+        gap: 9px;
+    }
+
+    .law-contact-trust-item {
+        padding: 0 9px;
+        font-size: 11px;
+    }
+
+    .law-contact-trust-item .material-symbols-outlined {
+        font-size: 19px;
+    }
+
+}
+
+
+/* ==========================================
+   EXTRA SMALL MOBILE
+========================================== */
+
+@media (max-width: 360px) {
+
+    .law-contact-input-wrap {
+        flex-wrap: wrap;
+        height: auto;
+
+        padding: 8px;
+        border-radius: 20px;
+    }
+
+    .law-contact-input-wrap input {
+        width: 100%;
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .law-contact-button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .law-contact-trust {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .law-contact-button,
+    .law-contact-button-icon,
+    .law-contact-trust-item {
+        transition: none;
+    }
+
+}

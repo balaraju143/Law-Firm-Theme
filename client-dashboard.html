@@ -1,0 +1,1550 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stackly | Client Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/client-dashboard.css">
+
+    <!-- MATERIAL SYMBOLS -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body class="stackly-dashboard-body">
+
+<div class="stackly-dashboard">
+
+
+    <!-- =====================================
+         MOBILE SIDEBAR OVERLAY
+    ====================================== -->
+
+    <div class="sd-sidebar-overlay" id="sdSidebarOverlay"></div>
+
+
+    <!-- =====================================
+         LEFT SIDEBAR
+    ====================================== -->
+
+    <aside class="sd-sidebar" id="sdSidebar">
+
+        <!-- LOGO -->
+      <a href="#overview" class="sd-brand">
+
+    <img
+        src="assets/logo 4.webp"
+        alt="Stackly Logo"
+        class="sd-brand-logo"
+    >
+
+</a>
+
+
+        <!-- CLIENT PROFILE -->
+        <div class="sd-profile">
+
+            <div class="sd-avatar" data-user-initial>C</div>
+
+            <div class="sd-profile-info">
+
+                <h3 data-user-name>Client Account</h3>
+
+                <p data-user-email>client@example.com</p>
+
+                <span class="sd-role-badge">CLIENT</span>
+
+            </div>
+
+        </div>
+
+
+        <!-- SIDEBAR NAVIGATION -->
+        <nav class="sd-navigation">
+
+            <div class="sd-nav-heading">
+                CLIENT PORTAL
+            </div>
+
+            <a href="#overview"
+               class="sd-nav-link active"
+               data-page="overview">
+
+                <span class="material-symbols-outlined">
+                    grid_view
+                </span>
+
+                <span>Overview</span>
+
+            </a>
+
+
+            <a href="#cases"
+               class="sd-nav-link"
+               data-page="cases">
+
+                <span class="material-symbols-outlined">
+                    work
+                </span>
+
+                <span>My Cases</span>
+
+                <span class="sd-nav-count">3</span>
+
+            </a>
+
+
+            <a href="#documents"
+               class="sd-nav-link"
+               data-page="documents">
+
+                <span class="material-symbols-outlined">
+                    folder_open
+                </span>
+
+                <span>Documents</span>
+
+                <span class="sd-nav-count">5</span>
+
+            </a>
+
+
+            <a href="#appointments"
+               class="sd-nav-link"
+               data-page="appointments">
+
+                <span class="material-symbols-outlined">
+                    calendar_month
+                </span>
+
+                <span>Appointments</span>
+
+            </a>
+
+
+            <a href="#messages"
+               class="sd-nav-link"
+               data-page="messages">
+
+                <span class="material-symbols-outlined">
+                    forum
+                </span>
+
+                <span>Messages</span>
+
+                <span class="sd-nav-count">2</span>
+
+            </a>
+
+
+            <a href="#billing"
+               class="sd-nav-link"
+               data-page="billing">
+
+                <span class="material-symbols-outlined">
+                    receipt_long
+                </span>
+
+                <span>Billing &amp; Payments</span>
+
+            </a>
+
+
+            <div class="sd-nav-heading sd-nav-heading-second">
+                ACCOUNT
+            </div>
+
+
+            <a href="#settings"
+               class="sd-nav-link"
+               data-page="settings">
+
+                <span class="material-symbols-outlined">
+                    settings
+                </span>
+
+                <span>Account Settings</span>
+
+            </a>
+
+        </nav>
+
+
+        <!-- SIDEBAR BOTTOM -->
+        <div class="sd-sidebar-bottom">
+
+            <a href="login.html" class="sd-logout-link">
+
+                <span class="material-symbols-outlined">
+                    logout
+                </span>
+
+                Logout
+
+            </a>
+
+            <p>Stackly Legal Portal v1.0</p>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =====================================
+         MAIN DASHBOARD AREA
+    ====================================== -->
+
+    <main class="sd-main">
+
+
+        <!-- TOP HEADER -->
+        <header class="sd-header">
+
+
+            <!-- LEFT HEADER -->
+            <div class="sd-header-left">
+
+                <button
+                    type="button"
+                    class="sd-menu-toggle"
+                    id="sdMenuToggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                >
+
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+
+                </button>
+
+
+                <div class="sd-header-title">
+
+                    <h1 id="sdHeaderTitle">Overview</h1>
+
+                    <p id="sdHeaderSubtitle">
+                        Your legal matters at a glance.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT HEADER -->
+            <div class="sd-header-actions">
+
+
+                <!-- SEARCH - 404 -->
+                <a href="404.html" class="sd-search-link">
+
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+
+                    <span>Search your legal matters...</span>
+
+                </a>
+
+
+                <!-- NOTIFICATIONS - 404 -->
+                <a href="404.html"
+                   class="sd-header-icon"
+                   aria-label="Notifications">
+
+                    <span class="material-symbols-outlined">
+                        notifications
+                    </span>
+
+                    <span class="sd-notification-dot"></span>
+
+                </a>
+
+
+                <!-- DYNAMIC USER AVATAR -->
+                <a href="#settings"
+                   class="sd-header-avatar"
+                   data-user-initial
+                   aria-label="Open account settings">
+                    C
+                </a>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =====================================
+             DASHBOARD PAGE CONTENT
+        ====================================== -->
+
+        <div class="sd-content">
+
+
+            <!-- =================================
+                 VIEW 01 - OVERVIEW
+            ================================== -->
+
+            <section class="sd-view active"
+                     id="overview"
+                     data-title="Overview"
+                     data-subtitle="Your legal matters at a glance.">
+
+
+                <!-- WELCOME BANNER -->
+                <div class="sd-welcome-banner" data-reveal>
+
+                    <div class="sd-welcome-content">
+
+                        <span class="sd-welcome-label">
+                            CLIENT DASHBOARD
+                        </span>
+
+                        <h2>
+                            Welcome Back,
+                            <span data-user-name>Client Account</span>
+                        </h2>
+
+                        <p>
+                            Stay informed about your cases, access legal
+                            documents, and manage your upcoming consultations
+                            in one secure place.
+                        </p>
+
+                        <div class="sd-welcome-actions">
+
+                            <a href="#cases" class="sd-btn sd-btn-light">
+                                View My Cases
+                            </a>
+
+                            <a href="404.html" class="sd-btn sd-btn-outline">
+                                Contact Our Team
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="sd-welcome-decoration">
+                        <span class="material-symbols-outlined">
+                            balance
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <!-- STATISTICS -->
+                <div class="sd-stats-grid">
+
+                    <article class="sd-stat-card" data-reveal>
+
+                        <div class="sd-stat-top">
+                            <span class="sd-stat-icon gold">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </span>
+
+                            <span class="sd-stat-status">
+                                Active
+                            </span>
+                        </div>
+
+                        <p>Active Cases</p>
+
+                        <h3>03</h3>
+
+                        <span class="sd-stat-note">
+                            Cases currently in progress
+                        </span>
+
+                    </article>
+
+
+                    <article class="sd-stat-card" data-reveal>
+
+                        <div class="sd-stat-top">
+                            <span class="sd-stat-icon blue">
+                                <i class="fa-solid fa-folder-open"></i>
+                            </span>
+
+                            <span class="sd-stat-status">
+                                Updated
+                            </span>
+                        </div>
+
+                        <p>Documents</p>
+
+                        <h3>12</h3>
+
+                        <span class="sd-stat-note">
+                            Legal records and files
+                        </span>
+
+                    </article>
+
+
+                    <article class="sd-stat-card" data-reveal>
+
+                        <div class="sd-stat-top">
+                            <span class="sd-stat-icon green">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </span>
+
+                            <span class="sd-stat-status">
+                                Upcoming
+                            </span>
+                        </div>
+
+                        <p>Appointments</p>
+
+                        <h3>02</h3>
+
+                        <span class="sd-stat-note">
+                            Scheduled consultations
+                        </span>
+
+                    </article>
+
+
+                    <article class="sd-stat-card" data-reveal>
+
+                        <div class="sd-stat-top">
+                            <span class="sd-stat-icon brown">
+                                <i class="fa-solid fa-file-invoice-dollar"></i>
+                            </span>
+
+                            <span class="sd-stat-status">
+                                Pending
+                            </span>
+                        </div>
+
+                        <p>Pending Invoices</p>
+
+                        <h3>01</h3>
+
+                        <span class="sd-stat-note">
+                            Invoice awaiting review
+                        </span>
+
+                    </article>
+
+                </div>
+
+
+                <!-- OVERVIEW MAIN GRID -->
+                <div class="sd-overview-grid">
+
+
+                    <!-- CASE PROGRESS -->
+                    <div class="sd-panel sd-case-progress-panel" data-reveal>
+
+                        <div class="sd-panel-heading">
+
+                            <div>
+                                <h3>Case Progress</h3>
+
+                                <p>Current status of your legal matters</p>
+                            </div>
+
+                            <a href="#cases" class="sd-text-link">
+                                View All
+                            </a>
+
+                        </div>
+
+
+                        <div class="sd-progress-item">
+
+                            <div class="sd-progress-details">
+
+                                <div>
+                                    <h4>Property Documentation</h4>
+                                    <span>Case #SL-2026-001</span>
+                                </div>
+
+                                <strong>75%</strong>
+
+                            </div>
+
+                            <div class="sd-progress-track">
+                                <span style="width:75%"></span>
+                            </div>
+
+                            <span class="sd-progress-status">
+                                Document verification in progress
+                            </span>
+
+                        </div>
+
+
+                        <div class="sd-progress-item">
+
+                            <div class="sd-progress-details">
+
+                                <div>
+                                    <h4>Business Legal Advisory</h4>
+                                    <span>Case #SL-2026-002</span>
+                                </div>
+
+                                <strong>50%</strong>
+
+                            </div>
+
+                            <div class="sd-progress-track">
+                                <span style="width:50%"></span>
+                            </div>
+
+                            <span class="sd-progress-status">
+                                Awaiting legal review
+                            </span>
+
+                        </div>
+
+
+                        <div class="sd-progress-item">
+
+                            <div class="sd-progress-details">
+
+                                <div>
+                                    <h4>Contract Review</h4>
+                                    <span>Case #SL-2026-003</span>
+                                </div>
+
+                                <strong>90%</strong>
+
+                            </div>
+
+                            <div class="sd-progress-track">
+                                <span style="width:90%"></span>
+                            </div>
+
+                            <span class="sd-progress-status">
+                                Final review stage
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- UPCOMING APPOINTMENTS -->
+                    <div class="sd-panel sd-upcoming-panel" data-reveal>
+
+                        <div class="sd-panel-heading">
+
+                            <div>
+                                <h3>Upcoming Consultation</h3>
+
+                                <p>Your scheduled legal meetings</p>
+                            </div>
+
+                            <span class="material-symbols-outlined">
+                                event
+                            </span>
+
+                        </div>
+
+
+                        <div class="sd-appointment-card">
+
+                            <div class="sd-appointment-date">
+                                <strong>18</strong>
+                                <span>NOV</span>
+                            </div>
+
+                            <div class="sd-appointment-info">
+
+                                <h4>Legal Consultation</h4>
+
+                                <p>Property Documentation</p>
+
+                                <span>
+                                    <i class="fa-regular fa-clock"></i>
+                                    10:30 AM
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="sd-appointment-card">
+
+                            <div class="sd-appointment-date">
+                                <strong>21</strong>
+                                <span>NOV</span>
+                            </div>
+
+                            <div class="sd-appointment-info">
+
+                                <h4>Contract Review</h4>
+
+                                <p>Corporate Legal Advisory</p>
+
+                                <span>
+                                    <i class="fa-regular fa-clock"></i>
+                                    02:00 PM
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <a href="#appointments" class="sd-full-link">
+                            View All Appointments
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RECENT ACTIVITY -->
+                <div class="sd-panel sd-activity-panel" data-reveal>
+
+                    <div class="sd-panel-heading">
+
+                        <div>
+                            <h3>Recent Case Activity</h3>
+                            <p>Latest updates from your legal team</p>
+                        </div>
+
+                        <a href="#cases" class="sd-text-link">
+                            All Activities
+                        </a>
+
+                    </div>
+
+
+                    <div class="sd-activity-list">
+
+                        <div class="sd-activity-item">
+
+                            <span class="sd-activity-icon">
+                                <i class="fa-solid fa-file-circle-check"></i>
+                            </span>
+
+                            <div>
+                                <h4>Document Review Completed</h4>
+                                <p>Property Documentation – Legal team</p>
+                            </div>
+
+                            <span class="sd-activity-time">
+                                Recently updated
+                            </span>
+
+                        </div>
+
+
+                        <div class="sd-activity-item">
+
+                            <span class="sd-activity-icon">
+                                <i class="fa-solid fa-scale-balanced"></i>
+                            </span>
+
+                            <div>
+                                <h4>Case Review Scheduled</h4>
+                                <p>Business Legal Advisory</p>
+                            </div>
+
+                            <span class="sd-activity-time">
+                                Upcoming
+                            </span>
+
+                        </div>
+
+
+                        <div class="sd-activity-item">
+
+                            <span class="sd-activity-icon">
+                                <i class="fa-solid fa-envelope-open-text"></i>
+                            </span>
+
+                            <div>
+                                <h4>New Communication Received</h4>
+                                <p>Your legal representative sent an update.</p>
+                            </div>
+
+                            <span class="sd-activity-time">
+                                New
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================
+                 VIEW 02 - MY CASES
+            ================================== -->
+
+            <section class="sd-view"
+                     id="cases"
+                     data-title="My Cases"
+                     data-subtitle="Review your legal matters and case progress.">
+
+
+                <div class="sd-page-intro" data-reveal>
+
+                    <div>
+                        <span class="sd-section-label">LEGAL CASE MANAGEMENT</span>
+
+                        <h2>My Legal Cases</h2>
+
+                        <p>
+                            Monitor your case progress, review updates,
+                            and stay informed about important legal activities.
+                        </p>
+                    </div>
+
+                    <a href="contact.html" class="sd-btn sd-btn-gold">
+                        Request Consultation
+                    </a>
+
+                </div>
+
+
+                <div class="sd-case-summary-grid">
+
+                    <div class="sd-summary-box">
+                        <span>Active Cases</span>
+                        <strong>03</strong>
+                    </div>
+
+                    <div class="sd-summary-box">
+                        <span>Under Review</span>
+                        <strong>02</strong>
+                    </div>
+
+                    <div class="sd-summary-box">
+                        <span>Completed</span>
+                        <strong>01</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="sd-case-cards">
+
+                    <article class="sd-case-card" data-reveal>
+
+                        <div class="sd-case-card-top">
+
+                            <span class="sd-case-icon">
+                                <i class="fa-solid fa-house"></i>
+                            </span>
+
+                            <span class="sd-status in-progress">
+                                In Progress
+                            </span>
+
+                        </div>
+
+                        <span class="sd-case-number">SL-2026-001</span>
+
+                        <h3>Property Documentation</h3>
+
+                        <p>
+                            Legal documentation, verification,
+                            and property-related advisory support.
+                        </p>
+
+                        <div class="sd-case-meta">
+                            <span>Assigned Attorney</span>
+                            <strong>Legal Team</strong>
+                        </div>
+
+                        <div class="sd-case-progress">
+
+                            <div>
+                                <span>Progress</span>
+                                <strong>75%</strong>
+                            </div>
+
+                            <div class="sd-progress-track">
+                                <span style="width:75%"></span>
+                            </div>
+
+                        </div>
+
+                        <a href="#documents" class="sd-btn sd-btn-soft">
+                            View Documents
+                        </a>
+
+                    </article>
+
+
+                    <article class="sd-case-card" data-reveal>
+
+                        <div class="sd-case-card-top">
+
+                            <span class="sd-case-icon">
+                                <i class="fa-solid fa-building"></i>
+                            </span>
+
+                            <span class="sd-status under-review">
+                                Under Review
+                            </span>
+
+                        </div>
+
+                        <span class="sd-case-number">SL-2026-002</span>
+
+                        <h3>Business Legal Advisory</h3>
+
+                        <p>
+                            Corporate agreements, legal consultation,
+                            and business documentation assistance.
+                        </p>
+
+                        <div class="sd-case-meta">
+                            <span>Assigned Attorney</span>
+                            <strong>Corporate Team</strong>
+                        </div>
+
+                        <div class="sd-case-progress">
+
+                            <div>
+                                <span>Progress</span>
+                                <strong>50%</strong>
+                            </div>
+
+                            <div class="sd-progress-track">
+                                <span style="width:50%"></span>
+                            </div>
+
+                        </div>
+
+                        <a href="#documents" class="sd-btn sd-btn-soft">
+                            View Documents
+                        </a>
+
+                    </article>
+
+
+                    <article class="sd-case-card" data-reveal>
+
+                        <div class="sd-case-card-top">
+
+                            <span class="sd-case-icon">
+                                <i class="fa-solid fa-file-contract"></i>
+                            </span>
+
+                            <span class="sd-status in-progress">
+                                In Progress
+                            </span>
+
+                        </div>
+
+                        <span class="sd-case-number">SL-2026-003</span>
+
+                        <h3>Contract Review</h3>
+
+                        <p>
+                            Review of contractual terms,
+                            obligations, and legal requirements.
+                        </p>
+
+                        <div class="sd-case-meta">
+                            <span>Assigned Attorney</span>
+                            <strong>Advisory Team</strong>
+                        </div>
+
+                        <div class="sd-case-progress">
+
+                            <div>
+                                <span>Progress</span>
+                                <strong>90%</strong>
+                            </div>
+
+                            <div class="sd-progress-track">
+                                <span style="width:90%"></span>
+                            </div>
+
+                        </div>
+
+                        <a href="#documents" class="sd-btn sd-btn-soft">
+                            View Documents
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================
+                 VIEW 03 - DOCUMENTS
+            ================================== -->
+
+            <section class="sd-view"
+                     id="documents"
+                     data-title="Documents"
+                     data-subtitle="Access and organize your legal documents.">
+
+
+                <div class="sd-page-intro" data-reveal>
+
+                    <div>
+                        <span class="sd-section-label">DOCUMENT CENTER</span>
+
+                        <h2>My Legal Documents</h2>
+
+                        <p>
+                            Review important files and records associated
+                            with your legal matters.
+                        </p>
+                    </div>
+
+                    <a href="404.html" class="sd-btn sd-btn-gold">
+                        Request Document
+                    </a>
+
+                </div>
+
+
+                <div class="sd-document-stats">
+
+                    <div class="sd-summary-box">
+                        <span>Total Documents</span>
+                        <strong>12</strong>
+                    </div>
+
+                    <div class="sd-summary-box">
+                        <span>Approved</span>
+                        <strong>08</strong>
+                    </div>
+
+                    <div class="sd-summary-box">
+                        <span>Under Review</span>
+                        <strong>04</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="sd-panel" data-reveal>
+
+                    <div class="sd-panel-heading">
+
+                        <div>
+                            <h3>Recent Documents</h3>
+                            <p>Files shared with your account</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="sd-table-wrapper">
+
+                        <table class="sd-table">
+
+                            <thead>
+                                <tr>
+                                    <th>Document Name</th>
+                                    <th>Case Reference</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>
+                                        <span class="sd-document-name">
+                                            <i class="fa-solid fa-file-pdf"></i>
+                                            Property Agreement
+                                        </span>
+                                    </td>
+
+                                    <td>SL-2026-001</td>
+
+                                    <td>10 Nov 2026</td>
+
+                                    <td><span class="sd-status approved">Approved</span></td>
+
+                                    <td>
+                                        <a href="404.html" class="sd-action-link">
+                                            View
+                                        </a>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>
+                                        <span class="sd-document-name">
+                                            <i class="fa-solid fa-file-pdf"></i>
+                                            Legal Review Report
+                                        </span>
+                                    </td>
+
+                                    <td>SL-2026-002</td>
+
+                                    <td>08 Nov 2026</td>
+
+                                    <td><span class="sd-status under-review">Under Review</span></td>
+
+                                    <td>
+                                        <a href="404.html" class="sd-action-link">
+                                            View
+                                        </a>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>
+                                        <span class="sd-document-name">
+                                            <i class="fa-solid fa-file-lines"></i>
+                                            Contract Draft
+                                        </span>
+                                    </td>
+
+                                    <td>SL-2026-003</td>
+
+                                    <td>06 Nov 2026</td>
+
+                                    <td><span class="sd-status approved">Approved</span></td>
+
+                                    <td>
+                                        <a href="404.html" class="sd-action-link">
+                                            View
+                                        </a>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>
+                                        <span class="sd-document-name">
+                                            <i class="fa-solid fa-file-lines"></i>
+                                            Client Information Form
+                                        </span>
+                                    </td>
+
+                                    <td>SL-2026-001</td>
+
+                                    <td>04 Nov 2026</td>
+
+                                    <td><span class="sd-status pending">Pending</span></td>
+
+                                    <td>
+                                        <a href="404.html" class="sd-action-link">
+                                            View
+                                        </a>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================
+                 VIEW 04 - APPOINTMENTS
+            ================================== -->
+
+            <section class="sd-view"
+                     id="appointments"
+                     data-title="Appointments"
+                     data-subtitle="Manage your consultations and legal meetings.">
+
+
+                <div class="sd-page-intro" data-reveal>
+
+                    <div>
+                        <span class="sd-section-label">CONSULTATION SCHEDULE</span>
+
+                        <h2>My Appointments</h2>
+
+                        <p>
+                            Review upcoming legal consultations
+                            and previous meeting details.
+                        </p>
+                    </div>
+
+                    <a href="contact.html" class="sd-btn sd-btn-gold">
+                        Request Appointment
+                    </a>
+
+                </div>
+
+
+                <div class="sd-panel" data-reveal>
+
+                    <div class="sd-panel-heading">
+                        <div>
+                            <h3>Upcoming Meetings</h3>
+                            <p>Your scheduled consultations</p>
+                        </div>
+                    </div>
+
+
+                    <div class="sd-appointment-list">
+
+                        <article class="sd-meeting-card">
+
+                            <div class="sd-meeting-date">
+                                <strong>18</strong>
+                                <span>NOV 2026</span>
+                            </div>
+
+                            <div class="sd-meeting-content">
+
+                                <h3>Property Legal Consultation</h3>
+
+                                <p>Property Documentation</p>
+
+                                <span>
+                                    <i class="fa-regular fa-clock"></i>
+                                    10:30 AM – 11:30 AM
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-user-tie"></i>
+                                    Assigned Legal Team
+                                </span>
+
+                            </div>
+
+                            <span class="sd-status in-progress">
+                                Confirmed
+                            </span>
+
+                        </article>
+
+
+                        <article class="sd-meeting-card">
+
+                            <div class="sd-meeting-date">
+                                <strong>21</strong>
+                                <span>NOV 2026</span>
+                            </div>
+
+                            <div class="sd-meeting-content">
+
+                                <h3>Contract Review Meeting</h3>
+
+                                <p>Corporate Advisory</p>
+
+                                <span>
+                                    <i class="fa-regular fa-clock"></i>
+                                    02:00 PM – 03:00 PM
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-user-tie"></i>
+                                    Advisory Team
+                                </span>
+
+                            </div>
+
+                            <span class="sd-status under-review">
+                                Scheduled
+                            </span>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+
+                <div class="sd-panel" data-reveal>
+
+                    <h3>Need a Different Appointment?</h3>
+
+                    <p class="sd-panel-description">
+                        Contact our legal team to discuss a suitable
+                        consultation time for your requirements.
+                    </p>
+
+                    <a href="contact.html" class="sd-btn sd-btn-gold">
+                        Contact Legal Team
+                    </a>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================
+                 VIEW 05 - MESSAGES
+            ================================== -->
+
+            <section class="sd-view"
+                     id="messages"
+                     data-title="Messages"
+                     data-subtitle="Communication with your legal team.">
+
+
+                <div class="sd-page-intro" data-reveal>
+
+                    <div>
+                        <span class="sd-section-label">CLIENT COMMUNICATION</span>
+
+                        <h2>Messages &amp; Updates</h2>
+
+                        <p>
+                            Keep track of important communications
+                            related to your legal matters.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="sd-message-layout">
+
+                    <div class="sd-panel sd-message-list-panel" data-reveal>
+
+                        <div class="sd-panel-heading">
+                            <div>
+                                <h3>Recent Conversations</h3>
+                                <p>Updates from your legal representatives</p>
+                            </div>
+                        </div>
+
+
+                        <a href="404.html" class="sd-message-card">
+
+                            <span class="sd-message-avatar">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </span>
+
+                            <span class="sd-message-details">
+                                <strong>Property Legal Team</strong>
+                                <small>Your document review has been updated.</small>
+                                <small>Recent communication</small>
+                            </span>
+
+                            <span class="sd-message-unread"></span>
+
+                        </a>
+
+
+                        <a href="404.html" class="sd-message-card">
+
+                            <span class="sd-message-avatar">
+                                <i class="fa-solid fa-scale-balanced"></i>
+                            </span>
+
+                            <span class="sd-message-details">
+                                <strong>Corporate Advisory Team</strong>
+                                <small>We have shared an update on your matter.</small>
+                                <small>Previous communication</small>
+                            </span>
+
+                        </a>
+
+
+                        <a href="404.html" class="sd-message-card">
+
+                            <span class="sd-message-avatar">
+                                <i class="fa-solid fa-folder-open"></i>
+                            </span>
+
+                            <span class="sd-message-details">
+                                <strong>Document Support</strong>
+                                <small>Your submitted records are under review.</small>
+                                <small>Earlier communication</small>
+                            </span>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="sd-panel sd-message-help" data-reveal>
+
+                        <span class="sd-large-feature-icon">
+                            <i class="fa-solid fa-comments"></i>
+                        </span>
+
+                        <h3>Need Legal Assistance?</h3>
+
+                        <p>
+                            For questions regarding your case,
+                            contact our legal support team.
+                        </p>
+
+                        <a href="contact.html" class="sd-btn sd-btn-gold">
+                            Contact Support
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================
+                 VIEW 06 - BILLING
+            ================================== -->
+
+            <section class="sd-view"
+                     id="billing"
+                     data-title="Billing & Payments"
+                     data-subtitle="Review your legal service invoices and payments.">
+
+
+                <div class="sd-page-intro" data-reveal>
+
+                    <div>
+                        <span class="sd-section-label">FINANCIAL INFORMATION</span>
+
+                        <h2>Billing &amp; Payments</h2>
+
+                        <p>
+                            Review your legal service billing
+                            information and payment records.
+                        </p>
+                    </div>
+
+                    <a href="404.html" class="sd-btn sd-btn-gold">
+                        Payment Support
+                    </a>
+
+                </div>
+
+
+                <div class="sd-billing-grid">
+
+                    <div class="sd-billing-card" data-reveal>
+                        <span>Total Invoices</span>
+                        <strong>05</strong>
+                        <p>Recorded service invoices</p>
+                    </div>
+
+                    <div class="sd-billing-card" data-reveal>
+                        <span>Paid Invoices</span>
+                        <strong>04</strong>
+                        <p>Completed payment records</p>
+                    </div>
+
+                    <div class="sd-billing-card" data-reveal>
+                        <span>Pending Invoices</span>
+                        <strong>01</strong>
+                        <p>Awaiting payment review</p>
+                    </div>
+
+                </div>
+
+
+                <div class="sd-panel" data-reveal>
+
+                    <div class="sd-panel-heading">
+
+                        <div>
+                            <h3>Invoice History</h3>
+                            <p>Your legal service billing records</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="sd-table-wrapper">
+
+                        <table class="sd-table">
+
+                            <thead>
+                                <tr>
+                                    <th>Invoice</th>
+                                    <th>Service</th>
+                                    <th>Amount</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>INV-001</td>
+                                    <td>Legal Consultation</td>
+                                    <td>₹5,000</td>
+                                    <td><span class="sd-status approved">Paid</span></td>
+                                    <td><a href="404.html" class="sd-action-link">View</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>INV-002</td>
+                                    <td>Document Review</td>
+                                    <td>₹8,000</td>
+                                    <td><span class="sd-status approved">Paid</span></td>
+                                    <td><a href="404.html" class="sd-action-link">View</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>INV-003</td>
+                                    <td>Business Advisory</td>
+                                    <td>₹12,000</td>
+                                    <td><span class="sd-status pending">Pending</span></td>
+                                    <td><a href="404.html" class="sd-action-link">View</a></td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================
+                 VIEW 07 - SETTINGS
+            ================================== -->
+
+            <section class="sd-view"
+                     id="settings"
+                     data-title="Account Settings"
+                     data-subtitle="Manage your client account information.">
+
+
+                <div class="sd-page-intro" data-reveal>
+
+                    <div>
+                        <span class="sd-section-label">ACCOUNT MANAGEMENT</span>
+
+                        <h2>Account Settings</h2>
+
+                        <p>
+                            View your account information
+                            and access your account preferences.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="sd-settings-grid">
+
+                    <div class="sd-panel" data-reveal>
+
+                        <div class="sd-settings-profile">
+
+                            <div class="sd-large-avatar" data-user-initial>
+                                C
+                            </div>
+
+                            <div>
+                                <h3 data-user-name>Client Account</h3>
+                                <p data-user-email>client@example.com</p>
+                                <span class="sd-role-badge">CLIENT ACCOUNT</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="sd-settings-row">
+                            <span>Registered Email</span>
+                            <strong data-user-email>client@example.com</strong>
+                        </div>
+
+                        <div class="sd-settings-row">
+                            <span>Account Type</span>
+                            <strong>Client</strong>
+                        </div>
+
+                        <div class="sd-settings-row">
+                            <span>Portal Access</span>
+                            <strong>Client Portal</strong>
+                        </div>
+
+                        <a href="404.html" class="sd-btn sd-btn-soft">
+                            Update Profile
+                        </a>
+
+                    </div>
+
+
+                    <div class="sd-panel" data-reveal>
+
+                        <span class="sd-large-feature-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </span>
+
+                        <h3>Account Security</h3>
+
+                        <p class="sd-panel-description">
+                            Your account security and access
+                            settings are important to us.
+                        </p>
+
+                        <a href="404.html" class="sd-btn sd-btn-soft">
+                            Security Settings
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- FOOTER -->
+            <footer class="sd-dashboard-footer">
+
+                <span>© 2026 Stackly. All Rights Reserved.</span>
+
+                <div>
+                    <a href="404.html">Privacy Policy</a>
+                    <a href="404.html">Terms &amp; Conditions</a>
+                </div>
+
+            </footer>
+
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<script src="js/client-dashboard.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,937 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stackly | Law Firm</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+   <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+>
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+
+    <!-- HEADER START -->
+    <header class="stackly-header">
+
+        <nav class="stackly-navbar">
+
+            <!-- LOGO -->
+          <!-- STACKLY LOGO -->
+<a href="index.html" class="stackly-logo">
+    <img src="assets/logo 4.webp" alt="Stackly Logo">
+</a>
+
+            <!-- DESKTOP NAVIGATION -->
+            <div class="nav-links" id="navLinks">
+
+                <a href="index.html" class="nav-link ">Home</a>
+
+                <a href="about.html" class="nav-link">About</a>
+
+                <a href="services.html" class="nav-link">Services</a>
+
+                <a href="blog.html" class="nav-link">Blog</a>
+
+                <a href="contact.html" class="nav-link active">Contact</a>
+
+                <!-- MOBILE LOGIN -->
+                <a href="login.html" class="mobile-login">
+                    Login
+                    <span class="material-symbols-outlined">arrow_outward</span>
+                </a>
+
+            </div>
+
+
+            <!-- DESKTOP LOGIN -->
+            <a href="login.html" class="login-btn">
+                <span>Login</span>
+
+                <span class="login-arrow">
+        
+                </span>
+            </a>
+
+
+            <!-- MOBILE TOGGLE -->
+            <button class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="navLinks">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </nav>
+
+    </header>
+
+
+<!-- ==========================================
+     STACKLY CONTACT PAGE HERO
+========================================== -->
+
+<section class="law-contact-hero">
+
+    <!-- DARK BACKGROUND OVERLAY -->
+    <div class="law-contact-hero-overlay"></div>
+
+    <!-- CENTER CONTENT -->
+    <div class="law-contact-hero-content">
+
+        <h1 class="law-contact-hero-title">
+            CONTACT US
+        </h1>
+
+        <div class="law-contact-breadcrumb">
+
+            <a href="index.html">Home</a>
+
+            <span class="contact-breadcrumb-separator">/</span>
+
+            <span class="current-page">Contact Us</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     STACKLY LAW FIRM - CONTACT FORM SECTION
+========================================== -->
+
+<section class="stackly-contact-form-section">
+
+    <div class="stackly-contact-form-container">
+
+        <!-- SECTION TOP HEADING -->
+        <div class="stackly-contact-top">
+
+            <div class="stackly-contact-top-title">
+
+                <div class="stackly-contact-label">
+                    <span class="material-symbols-outlined">gavel</span>
+                    <span>GET IN TOUCH</span>
+                </div>
+
+                <h2>
+                    Tell Us About Your
+                    <span>Legal Matter.</span>
+                </h2>
+
+            </div>
+
+            <p class="stackly-contact-top-description">
+                A few details will help our legal team understand
+                your requirements and guide you towards the right
+                support. Your enquiry is handled with care.
+            </p>
+
+        </div>
+
+
+        <!-- CONTACT MAIN LAYOUT -->
+        <div class="stackly-contact-main">
+
+
+            <!-- ==================================
+                 LEFT IMAGE CONTENT
+            =================================== -->
+
+            <div class="stackly-contact-visual">
+
+                <div class="stackly-contact-main-image">
+
+                    <img
+                        src="assets/law-hero.webp"
+                        alt="Professional legal consultation with an experienced attorney"
+                    >
+
+                    <!-- IMAGE OVERLAY -->
+                    <div class="stackly-contact-image-overlay"></div>
+
+                    <!-- IMAGE CAPTION -->
+                    <div class="stackly-contact-image-caption">
+
+                        <span class="material-symbols-outlined">
+                            verified_user
+                        </span>
+
+                        <div>
+                            <h3>Your Rights Matter</h3>
+                            <p>Professional guidance. Personal attention.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FLOATING GOLD TRUST CARD -->
+                <div class="stackly-contact-trust-card">
+
+                    <span class="material-symbols-outlined">
+                        balance
+                    </span>
+
+                    <div>
+                        <h4>Trusted Legal Support</h4>
+                        <p>Dedicated to protecting your interests.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ==================================
+                 RIGHT CONTACT FORM
+            =================================== -->
+
+            <div class="stackly-contact-form-card">
+
+                <div class="stackly-contact-form-heading">
+
+                    <span class="material-symbols-outlined">
+                        contact_support
+                    </span>
+
+                    <h3>How Can We Help You?</h3>
+
+                    <p>
+                        Share your details and tell us about
+                        your legal requirements.
+                    </p>
+
+                </div>
+
+
+                <!-- CONTACT FORM -->
+                <form
+                    id="stacklyContactForm"
+                    class="stackly-contact-form"
+                    novalidate
+                >
+
+                    <!-- NAME -->
+                    <div class="stackly-form-group">
+
+                        <label for="contactName">
+                            Full Name <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="contactName"
+                            name="name"
+                            placeholder="Enter your full name"
+                            autocomplete="name"
+                            aria-describedby="contactNameError"
+                            required
+                        >
+
+                        <span
+                            class="stackly-field-error"
+                            id="contactNameError"
+                            data-error-for="name"
+                            role="alert"
+                        ></span>
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+                    <div class="stackly-form-group">
+
+                        <label for="contactEmail">
+                            Email Address <span>*</span>
+                        </label>
+
+                        <input
+                            type="email"
+                            id="contactEmail"
+                            name="email"
+                            placeholder="Enter your email address"
+                            autocomplete="email"
+                            aria-describedby="contactEmailError"
+                            required
+                        >
+
+                        <span
+                            class="stackly-field-error"
+                            id="contactEmailError"
+                            data-error-for="email"
+                            role="alert"
+                        ></span>
+
+                    </div>
+
+
+                    <!-- PHONE -->
+                    <div class="stackly-form-group">
+
+                        <label for="contactPhone">
+                            Phone Number <span>*</span>
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="contactPhone"
+                            name="phone"
+                            placeholder="Enter your phone number"
+                            autocomplete="tel"
+                            aria-describedby="contactPhoneError"
+                            required
+                        >
+
+                        <span
+                            class="stackly-field-error"
+                            id="contactPhoneError"
+                            data-error-for="phone"
+                            role="alert"
+                        ></span>
+
+                    </div>
+
+
+                    <!-- MESSAGE -->
+                    <div class="stackly-form-group">
+
+                        <label for="contactMessage">
+                            How Can We Help? <span>*</span>
+                        </label>
+
+                        <textarea
+                            id="contactMessage"
+                            name="message"
+                            rows="4"
+                            placeholder="Briefly describe your legal matter..."
+                            aria-describedby="contactMessageError"
+                            required
+                        ></textarea>
+
+                        <span
+                            class="stackly-field-error"
+                            id="contactMessageError"
+                            role="alert"
+                            data-error-for="message"
+                        ></span>
+
+                    </div>
+
+
+                    <!-- SUBMIT BUTTON -->
+                    <button
+                        type="submit"
+                        class="stackly-contact-submit"
+                    >
+
+                        <span>Send Message</span>
+
+                    </button>
+
+
+                    <!-- PRIVACY NOTE -->
+                    <div class="stackly-contact-privacy">
+
+                        <span class="material-symbols-outlined">
+                            lock
+                        </span>
+
+                        <span>Your information is handled with care.</span>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     STACKLY - CONTACT INFORMATION SECTION
+========================================== -->
+
+<section class="stackly-contact-info-section" id="contact-information">
+
+    <div class="stackly-contact-info-container">
+
+        <!-- SECTION HEADING -->
+        <div class="stackly-contact-info-heading">
+
+            <div class="stackly-contact-info-label">
+                <span class="material-symbols-outlined">support_agent</span>
+                <span>CONTACT INFORMATION</span>
+            </div>
+
+            <h2>
+                However You Like to Talk,
+                <span>We Are Listening.</span>
+            </h2>
+
+            <p>
+                Whether you need legal guidance, have a question,
+                or want to discuss your situation, our team is
+                here to help you find the right direction.
+            </p>
+
+        </div>
+
+
+        <!-- FOUR CONTACT CARDS -->
+        <div class="stackly-contact-info-grid">
+
+
+            <!-- CARD 01 - SALES -->
+            <article class="stackly-contact-info-card">
+
+                <div class="stackly-contact-info-icon">
+                    <span class="material-symbols-outlined">
+                        chat
+                    </span>
+                </div>
+
+                <h3>Chat to Sales</h3>
+
+                <p>
+                    Speak with our team about legal services
+                    and consultation enquiries.
+                </p>
+
+                <a href="404.html" class="stackly-contact-info-link">
+                    +91 96528 42235
+                 
+                </a>
+
+            </article>
+
+
+
+            <!-- CARD 02 - LOCATION -->
+            <article class="stackly-contact-info-card">
+
+                <div class="stackly-contact-info-icon">
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+                </div>
+
+                <h3>Visit Our Office</h3>
+
+                <a
+                    href="404.html"
+                    class="stackly-contact-address"
+                >
+                    Evolve Studio, 4th Floor, Khata No. 10,
+                    Begur - Koppa Road, In front of SNN Raj
+                    Serenity, Suraksha Nagar, Yelenahalli,
+                    Begur, Bengaluru, Karnataka - 560068.
+                </a>
+
+                <a href="404.html" class="stackly-contact-info-link">
+                    Get Directions
+                  
+                </a>
+
+            </article>
+
+
+
+            <!-- CARD 03 - EMAIL -->
+            <article class="stackly-contact-info-card">
+
+                <div class="stackly-contact-info-icon">
+                    <span class="material-symbols-outlined">
+                        mail
+                    </span>
+                </div>
+
+                <h3>Chat to Support</h3>
+
+                <p>
+                    Have a question? Reach out to our team
+                    for assistance with your enquiry.
+                </p>
+
+                <a href="404.html" class="stackly-contact-info-link">
+                    Stackly@gmail.com
+                 
+                </a>
+
+            </article>
+
+
+
+            <!-- CARD 04 - PHONE -->
+            <article class="stackly-contact-info-card">
+
+                <div class="stackly-contact-info-icon">
+                    <span class="material-symbols-outlined">
+                        call
+                    </span>
+                </div>
+
+                <h3>Call Us</h3>
+
+                <p>
+                    Our team is available during regular
+                    working hours to assist with your needs.
+                </p>
+
+                <a href="404.html" class="stackly-contact-info-link">
+                    Mon - Fri: 8 AM to 5 PM
+                   
+                </a>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     STACKLY - LEGAL FAQ FEATURE SECTION
+========================================== -->
+
+<section class="stackly-legal-faq-feature" id="legal-faq">
+
+    <div class="stackly-legal-faq-container">
+
+        <!-- LEFT CONTENT -->
+        <div class="stackly-legal-faq-content">
+
+            <!-- LABEL -->
+            <div class="stackly-legal-faq-label">
+                <span class="material-symbols-outlined">gavel</span>
+                <span>LEGAL GUIDANCE</span>
+            </div>
+
+            <!-- HEADING -->
+            <h2>
+                Have Questions?
+                <span>We're Here to Help.</span>
+            </h2>
+
+            <!-- DESCRIPTION -->
+            <p class="stackly-legal-faq-description">
+                Understanding your legal rights shouldn't be complicated.
+                Explore answers to common questions and discover how
+                Stackly can guide you through your legal journey.
+            </p>
+
+
+            <!-- FAQ QUESTIONS -->
+            <div class="stackly-legal-faq-list">
+
+
+                <!-- FAQ 01 -->
+                <div class="stackly-legal-faq-item">
+
+                    <button
+                        type="button"
+                        class="stackly-legal-faq-question"
+                        aria-expanded="false"
+                    >
+                        <span>When should I consult an attorney?</span>
+
+                        <span class="material-symbols-outlined">
+                            add
+                        </span>
+                    </button>
+
+                    <div class="stackly-legal-faq-answer">
+                        <div>
+                            <p>
+                                Consult an attorney when you face a legal
+                                dispute, need agreement review, receive a
+                                legal notice, or want guidance about your
+                                rights and available options.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 02 -->
+                <div class="stackly-legal-faq-item">
+
+                    <button
+                        type="button"
+                        class="stackly-legal-faq-question"
+                        aria-expanded="false"
+                    >
+                        <span>What happens during a consultation?</span>
+
+                        <span class="material-symbols-outlined">
+                            add
+                        </span>
+                    </button>
+
+                    <div class="stackly-legal-faq-answer">
+                        <div>
+                            <p>
+                                We listen to your concerns, understand
+                                your circumstances, discuss relevant
+                                information, and explain possible next
+                                steps for your legal matter.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 03 -->
+                <div class="stackly-legal-faq-item">
+
+                    <button
+                        type="button"
+                        class="stackly-legal-faq-question"
+                        aria-expanded="false"
+                    >
+                        <span>How do legal fees work?</span>
+
+                        <span class="material-symbols-outlined">
+                            add
+                        </span>
+                    </button>
+
+                    <div class="stackly-legal-faq-answer">
+                        <div>
+                            <p>
+                                Fees depend on the nature and complexity
+                                of the matter, the time required, and
+                                the services involved. Applicable charges
+                                should be discussed before work begins.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 04 -->
+                <div class="stackly-legal-faq-item">
+
+                    <button
+                        type="button"
+                        class="stackly-legal-faq-question"
+                        aria-expanded="false"
+                    >
+                        <span>Will my legal information remain private?</span>
+
+                        <span class="material-symbols-outlined">
+                            add
+                        </span>
+                    </button>
+
+                    <div class="stackly-legal-faq-answer">
+                        <div>
+                            <p>
+                                Client information is handled responsibly
+                                in accordance with applicable professional
+                                duties and confidentiality requirements.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CTA -->
+            <a href="404.html" class="stackly-legal-faq-button">
+                <span>Talk to Our Team</span>
+
+              
+            </a>
+
+        </div>
+
+
+
+        <!-- RIGHT IMAGE CONTAINER -->
+        <div class="stackly-legal-faq-visual">
+
+            <div class="stackly-legal-faq-image-wrap">
+
+                <img
+                    src="assets/faq-lawyer.webp"
+                    alt="Professional attorney discussing a legal matter with a client"
+                    loading="lazy"
+                >
+
+                <!-- IMAGE BOTTOM CAPTION -->
+                <div class="stackly-legal-faq-image-caption">
+
+                    <span class="material-symbols-outlined">
+                        verified_user
+                    </span>
+
+                    <div>
+                        <h3>Guidance You Can Trust</h3>
+
+                        <p>
+                            Clear advice. Dedicated legal support.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     STACKLY LAW FIRM - FOOTER
+========================================== -->
+
+<footer class="law-footer">
+
+    <div class="law-footer-container">
+
+        <!-- TOP FOOTER -->
+        <div class="law-footer-top">
+
+            <!-- BRAND COLUMN -->
+            <div class="law-footer-brand">
+
+              <a href="index.html" class="law-footer-logo">
+
+    <img
+        src="assets/logo 4.webp"
+        alt="Stackly Logo"
+        class="law-footer-logo-image"
+    >
+
+</a>
+
+                <p class="law-footer-description">
+                    We provide trusted legal guidance to individuals,
+                    families, and businesses. Our attorneys are
+                    committed to protecting your rights.
+                </p>
+
+
+             <!-- FOOTER SOCIAL ICONS -->
+
+<div class="law-footer-social">
+
+    <a href="404.html" aria-label="Pinterest">
+        <i class="fa-brands fa-pinterest-p"></i>
+    </a>
+
+    <a href="404.html" aria-label="X Twitter">
+        <i class="fa-brands fa-x-twitter"></i>
+    </a>
+
+    <a href="404.html" aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+    </a>
+
+    <a href="404.html" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+</div>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+            <div class="law-footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+
+
+            <!-- SERVICES -->
+            <div class="law-footer-column">
+
+                <h3>Our Services</h3>
+
+                <ul>
+                    <li><a href="404.html">Family Law</a></li>
+                    <li><a href="404.html">Criminal Defense</a></li>
+                    <li><a href="404.html">Personal Injury</a></li>
+                    <li><a href="404.html">Corporate Law</a></li>
+                    <li><a href="404.html">Real Estate Law</a></li>
+                </ul>
+
+            </div>
+
+
+            <!-- WORKING HOURS -->
+            <div class="law-footer-column law-footer-hours">
+
+                <h3>Working Hours</h3>
+
+                <ul>
+                    <li>Monday - Friday: 9 AM - 6 PM</li>
+                    <li>Saturday: By Appointment</li>
+                    <li>Sunday: Closed</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTACT + NEWSLETTER BOX -->
+        <div class="law-footer-contact-box">
+
+            <!-- PHONE -->
+            <a href="404.html" class="law-footer-contact-item">
+
+                <span class="law-footer-contact-icon">
+                    <span class="material-symbols-outlined">
+                        call
+                    </span>
+                </span>
+
+                <span class="law-footer-contact-text">
+                    <span>Call Us Today!</span>
+                    <strong>+1 (23) 456 - 789</strong>
+                </span>
+
+            </a>
+
+
+            <!-- EMAIL -->
+            <a href="404.html" class="law-footer-contact-item law-footer-email">
+
+                <span class="law-footer-contact-icon">
+                    <span class="material-symbols-outlined">
+                        mail
+                    </span>
+                </span>
+
+                <span class="law-footer-contact-text">
+                    <span>E-mail Us Now!</span>
+                    <strong>info@stackly.com</strong>
+                </span>
+
+            </a>
+
+
+            <!-- NEWSLETTER -->
+            <form
+                class="law-footer-newsletter"
+                id="lawFooterForm"
+                novalidate
+            >
+
+                <div class="law-footer-newsletter-input">
+
+                    <input
+                        type="email"
+                        id="lawFooterEmail"
+                        placeholder="Your Email Address"
+                        autocomplete="email"
+                        aria-label="Your Email Address"
+                        aria-describedby="lawFooterError"
+                        required
+                    >
+
+                    <button type="submit">
+
+                        <span>Subscribe Now</span>
+
+                        <span class="law-footer-subscribe-arrow">
+                            <span class="material-symbols-outlined">
+                                arrow_forward
+                            </span>
+                        </span>
+
+                    </button>
+
+                </div>
+
+                <p
+                    class="law-footer-error"
+                    id="lawFooterError"
+                    role="alert"
+                    aria-live="polite"
+                ></p>
+
+            </form>
+
+        </div>
+
+
+        <!-- BOTTOM FOOTER -->
+        <div class="law-footer-bottom">
+
+            <p class="law-footer-copyright">
+                Copyright © 2026 Stackly. All Rights Reserved.
+            </p>
+
+            <div class="law-footer-legal-links">
+
+                <a href="404.html">Terms &amp; Conditions</a>
+
+                <span></span>
+
+                <a href="404.html">Privacy Policy</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

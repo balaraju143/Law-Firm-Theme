@@ -1,0 +1,683 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stackly | Law Firm</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+   <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+>
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+    <!-- HEADER START -->
+    <header class="stackly-header">
+
+        <nav class="stackly-navbar">
+
+            <!-- LOGO -->
+          <!-- STACKLY LOGO -->
+<a href="index.html" class="stackly-logo">
+    <img src="assets/logo 4.webp" alt="Stackly Logo">
+</a>
+
+            <!-- DESKTOP NAVIGATION -->
+            <div class="nav-links" id="navLinks">
+
+                <a href="index.html" class="nav-link ">Home</a>
+
+                <a href="about.html" class="nav-link">About</a>
+
+                <a href="services.html" class="nav-link">Services</a>
+
+                <a href="blog.html" class="nav-link">Blog</a>
+
+                <a href="contact.html" class="nav-link">Contact</a>
+
+                <!-- MOBILE LOGIN -->
+                <a href="login.html" class="mobile-login">
+                    Login
+                    <span class="material-symbols-outlined">arrow_outward</span>
+                </a>
+
+            </div>
+
+
+            <!-- DESKTOP LOGIN -->
+            <a href="login.html" class="login-btn">
+                <span>Login</span>
+
+                <span class="login-arrow">
+        
+                </span>
+            </a>
+
+
+            <!-- MOBILE TOGGLE -->
+            <button class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="navLinks">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </nav>
+
+    </header>
+
+
+<!-- ==========================================
+     STACKLY LAW FIRM - LOGIN CARD
+========================================== -->
+
+<section class="stackly-login-section">
+
+    <div class="stackly-login-card">
+
+
+        <!-- ==================================
+             LEFT SIDE - LEGAL BACKGROUND
+        =================================== -->
+
+        <div class="stackly-login-visual">
+
+            <div class="stackly-login-visual-overlay"></div>
+
+            <div class="stackly-login-visual-content">
+
+                <div class="stackly-login-brand">
+                    <span class="material-symbols-outlined">
+                        gavel
+                    </span>
+                    STACKLY LAW
+                </div>
+
+
+                <h1>
+                    Protecting Your Rights.
+                    <span>Guiding Your Future.</span>
+                </h1>
+
+
+                <p>
+                    Access your Stackly legal portal to stay connected
+                    with your legal team, review case updates, and
+                    manage your legal journey with confidence.
+                </p>
+
+
+                <!-- LEGAL FEATURES -->
+
+                <div class="stackly-login-highlights">
+
+                    <div>
+                        <span class="material-symbols-outlined">
+                            verified_user
+                        </span>
+                        Trusted Legal Support
+                    </div>
+
+                    <div>
+                        <span class="material-symbols-outlined">
+                            shield_lock
+                        </span>
+                        Secure Client Access
+                    </div>
+
+                    <div>
+                        <span class="material-symbols-outlined">
+                            support_agent
+                        </span>
+                        Dedicated Assistance
+                    </div>
+
+                </div>
+
+
+                <!-- BOTTOM STATISTICS -->
+
+                <div class="stackly-login-stats">
+
+                    <div>
+                        <h3>01</h3>
+                        <p>Client Portal</p>
+                    </div>
+
+                    <div>
+                        <h3>02</h3>
+                        <p>Admin Portal</p>
+                    </div>
+
+                    <div>
+                        <h3>24/7</h3>
+                        <p>Portal Access</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ==================================
+             RIGHT SIDE - LOGIN FORM
+        =================================== -->
+
+        <div class="stackly-login-form-panel">
+
+            <div class="stackly-login-form-inner">
+
+
+                <!-- FORM HEADING -->
+
+                <div class="stackly-login-heading">
+
+                    <span class="material-symbols-outlined">
+                        account_circle
+                    </span>
+
+                    <h2>Welcome Back</h2>
+
+                    <p>
+                        Enter your details below to access your
+                        secure legal account.
+                    </p>
+
+                </div>
+
+
+                <!-- ROLE SELECTION -->
+
+                <div class="stackly-login-role-section">
+
+                    <label>Choose Account Role</label>
+
+                    <div
+                        class="stackly-login-role-options"
+                        role="group"
+                        aria-label="Choose account role"
+                    >
+
+                        <button
+                            type="button"
+                            class="stackly-role-btn active"
+                            data-role="client"
+                            aria-pressed="true"
+                        >
+                            <span class="material-symbols-outlined">
+                                person
+                            </span>
+                            Client
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="stackly-role-btn"
+                            data-role="admin"
+                            aria-pressed="false"
+                        >
+                            <span class="material-symbols-outlined">
+                                admin_panel_settings
+                            </span>
+                            Admin
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- LOGIN FORM -->
+
+                <form
+                    id="stacklyLoginForm"
+                    class="stackly-login-form"
+                    novalidate
+                >
+
+
+                    <!-- EMAIL -->
+
+                    <div class="stackly-login-field">
+
+                        <label for="stacklyLoginEmail">
+                            Email Address
+                            <span>*</span>
+                        </label>
+
+                        <div class="stackly-login-input-wrap">
+
+                            <span class="material-symbols-outlined">
+                                mail
+                            </span>
+
+                            <input
+                                type="email"
+                                id="stacklyLoginEmail"
+                                name="email"
+                                placeholder="Enter your email address"
+                                autocomplete="username"
+                                aria-describedby="stacklyEmailError"
+                                required
+                            >
+
+                        </div>
+
+                        <span
+                            class="stackly-login-error"
+                            id="stacklyEmailError"
+                            role="alert"
+                        ></span>
+
+                    </div>
+
+
+
+                    <!-- PASSWORD -->
+
+                    <div class="stackly-login-field">
+
+                        <label for="stacklyLoginPassword">
+                            Password
+                            <span>*</span>
+                        </label>
+
+                        <div class="stackly-login-input-wrap">
+
+                            <span class="material-symbols-outlined">
+                                lock
+                            </span>
+
+                            <input
+                                type="password"
+                                id="stacklyLoginPassword"
+                                name="password"
+                                placeholder="Enter your password"
+                                autocomplete="current-password"
+                                aria-describedby="stacklyPasswordError"
+                                required
+                            >
+
+                            <!-- SHOW HIDE PASSWORD -->
+
+                            <button
+                                type="button"
+                                class="stackly-password-toggle"
+                                aria-label="Show password"
+                                aria-pressed="false"
+                            >
+                                <i class="fa-regular fa-eye-slash"></i>
+                            </button>
+
+                        </div>
+
+                        <span
+                            class="stackly-login-error"
+                            id="stacklyPasswordError"
+                            role="alert"
+                        ></span>
+
+                    </div>
+
+
+
+                    <!-- REMEMBER + FORGOT -->
+
+                    <div class="stackly-login-options">
+
+                        <label class="stackly-remember-label">
+
+                            <input
+                                type="checkbox"
+                                id="stacklyRemember"
+                                name="remember"
+                            >
+
+                            <span>Remember Me</span>
+
+                        </label>
+
+
+                        <a
+                            href="404.html"
+                            class="stackly-forgot-password"
+                        >
+                            Forgot Password?
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- LOGIN BUTTON -->
+
+                    <button
+                        type="submit"
+                        class="stackly-login-submit"
+                    >
+
+                        <span>Sign In</span>
+
+                    </button>
+
+
+
+                    <!-- DIVIDER -->
+
+                    <div class="stackly-login-divider">
+
+                        <span></span>
+
+                        <p>OR CONNECT WITH</p>
+
+                        <span></span>
+
+                    </div>
+
+
+
+                    <!-- SOCIAL LOGIN -->
+
+                    <div class="stackly-login-social">
+
+                        <a
+                            href="404.html"
+                            aria-label="Google login"
+                        >
+                            <i class="fa-brands fa-google"></i>
+                        </a>
+
+                        <a
+                            href="404.html"
+                            aria-label="Apple login"
+                        >
+                            <i class="fa-brands fa-apple"></i>
+                        </a>
+
+                        <a
+                            href="404.html"
+                            aria-label="Facebook login"
+                        >
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- SIGN UP -->
+
+                    <div class="stackly-login-register">
+
+                        <span>Don't have an account?</span>
+
+                        <a href="signup.html">
+                            Create Account
+                        </a>
+
+                    </div>
+
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ==========================================
+     STACKLY LAW FIRM - FOOTER
+========================================== -->
+
+<footer class="law-footer">
+
+    <div class="law-footer-container">
+
+        <!-- TOP FOOTER -->
+        <div class="law-footer-top">
+
+            <!-- BRAND COLUMN -->
+            <div class="law-footer-brand">
+
+              <a href="index.html" class="law-footer-logo">
+
+    <img
+        src="assets/logo 4.webp"
+        alt="Stackly Logo"
+        class="law-footer-logo-image"
+    >
+
+</a>
+
+                <p class="law-footer-description">
+                    We provide trusted legal guidance to individuals,
+                    families, and businesses. Our attorneys are
+                    committed to protecting your rights.
+                </p>
+
+
+             <!-- FOOTER SOCIAL ICONS -->
+
+<div class="law-footer-social">
+
+    <a href="404.html" aria-label="Pinterest">
+        <i class="fa-brands fa-pinterest-p"></i>
+    </a>
+
+    <a href="404.html" aria-label="X Twitter">
+        <i class="fa-brands fa-x-twitter"></i>
+    </a>
+
+    <a href="404.html" aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+    </a>
+
+    <a href="404.html" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+</div>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+            <div class="law-footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+
+
+            <!-- SERVICES -->
+            <div class="law-footer-column">
+
+                <h3>Our Services</h3>
+
+                <ul>
+                    <li><a href="404.html">Family Law</a></li>
+                    <li><a href="404.html">Criminal Defense</a></li>
+                    <li><a href="404.html">Personal Injury</a></li>
+                    <li><a href="404.html">Corporate Law</a></li>
+                    <li><a href="404.html">Real Estate Law</a></li>
+                </ul>
+
+            </div>
+
+
+            <!-- WORKING HOURS -->
+            <div class="law-footer-column law-footer-hours">
+
+                <h3>Working Hours</h3>
+
+                <ul>
+                    <li>Monday - Friday: 9 AM - 6 PM</li>
+                    <li>Saturday: By Appointment</li>
+                    <li>Sunday: Closed</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTACT + NEWSLETTER BOX -->
+        <div class="law-footer-contact-box">
+
+            <!-- PHONE -->
+            <a href="404.html" class="law-footer-contact-item">
+
+                <span class="law-footer-contact-icon">
+                    <span class="material-symbols-outlined">
+                        call
+                    </span>
+                </span>
+
+                <span class="law-footer-contact-text">
+                    <span>Call Us Today!</span>
+                    <strong>+1 (23) 456 - 789</strong>
+                </span>
+
+            </a>
+
+
+            <!-- EMAIL -->
+            <a href="404.html" class="law-footer-contact-item law-footer-email">
+
+                <span class="law-footer-contact-icon">
+                    <span class="material-symbols-outlined">
+                        mail
+                    </span>
+                </span>
+
+                <span class="law-footer-contact-text">
+                    <span>E-mail Us Now!</span>
+                    <strong>info@stackly.com</strong>
+                </span>
+
+            </a>
+
+
+            <!-- NEWSLETTER -->
+            <form
+                class="law-footer-newsletter"
+                id="lawFooterForm"
+                novalidate
+            >
+
+                <div class="law-footer-newsletter-input">
+
+                    <input
+                        type="email"
+                        id="lawFooterEmail"
+                        placeholder="Your Email Address"
+                        autocomplete="email"
+                        aria-label="Your Email Address"
+                        aria-describedby="lawFooterError"
+                        required
+                    >
+
+                    <button type="submit">
+
+                        <span>Subscribe Now</span>
+
+                        <span class="law-footer-subscribe-arrow">
+                            <span class="material-symbols-outlined">
+                                arrow_forward
+                            </span>
+                        </span>
+
+                    </button>
+
+                </div>
+
+                <p
+                    class="law-footer-error"
+                    id="lawFooterError"
+                    role="alert"
+                    aria-live="polite"
+                ></p>
+
+            </form>
+
+        </div>
+
+
+        <!-- BOTTOM FOOTER -->
+        <div class="law-footer-bottom">
+
+            <p class="law-footer-copyright">
+                Copyright © 2026 Stackly. All Rights Reserved.
+            </p>
+
+            <div class="law-footer-legal-links">
+
+                <a href="404.html">Terms &amp; Conditions</a>
+
+                <span></span>
+
+                <a href="404.html">Privacy Policy</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
