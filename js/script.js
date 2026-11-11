@@ -240,3 +240,148 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+
+
+
+/* ==========================================
+   STACKLY PREMIUM LOADER FUNCTIONALITY
+========================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const loader = document.getElementById(
+        "stacklyPremiumLoader"
+    );
+
+    if (!loader) return;
+
+
+    // PREVENT BACKGROUND SCROLL
+
+    document.body.classList.add(
+        "stackly-loader-active"
+    );
+
+
+    // LOADER SETTINGS
+
+    const MINIMUM_DISPLAY = 650;
+
+    const MAXIMUM_DISPLAY = 2100;
+
+
+    let pageLoaded = document.readyState === "complete";
+
+    let minimumFinished = false;
+
+    let loaderHidden = false;
+
+
+    /* ======================================
+       HIDE LOADER
+    ====================================== */
+
+    function hideLoader() {
+
+        if (loaderHidden) return;
+
+        loaderHidden = true;
+
+        clearTimeout(minimumTimer);
+
+        clearTimeout(maximumTimer);
+
+
+        loader.classList.add("is-hidden");
+
+        document.body.classList.remove(
+            "stackly-loader-active"
+        );
+
+
+        // REMOVE LOADER AFTER TRANSITION
+
+        setTimeout(() => {
+
+            loader.remove();
+
+        }, 850);
+
+    }
+
+
+    /* ======================================
+       CHECK LOADING STATUS
+    ====================================== */
+
+    function checkLoader() {
+
+        if (pageLoaded && minimumFinished) {
+
+            hideLoader();
+
+        }
+
+    }
+
+
+    /* ======================================
+       MINIMUM DISPLAY TIME
+    ====================================== */
+
+    const minimumTimer = setTimeout(() => {
+
+        minimumFinished = true;
+
+        checkLoader();
+
+    }, MINIMUM_DISPLAY);
+
+
+    /* ======================================
+       PAGE LOAD COMPLETED
+    ====================================== */
+
+    function handlePageLoad() {
+
+        pageLoaded = true;
+
+        checkLoader();
+
+    }
+
+
+    // HANDLE ALREADY LOADED PAGES
+
+    if (pageLoaded) {
+
+        checkLoader();
+
+    } else {
+
+        window.addEventListener(
+            "load",
+            handlePageLoad,
+            { once: true }
+        );
+
+    }
+
+
+    /* ======================================
+       STRICT MAXIMUM DISPLAY TIME
+    ====================================== */
+
+    const maximumTimer = setTimeout(() => {
+
+        pageLoaded = true;
+
+        minimumFinished = true;
+
+        hideLoader();
+
+    }, MAXIMUM_DISPLAY);
+
+
+});
