@@ -46,14 +46,13 @@ body {
     align-items: center;
     justify-content:space-between;
 
-    background: rgba(255, 255, 255, 0.10);
-
+     background: rgba(20, 35, 46, 0.97);
     border: 1px solid rgba(255, 255, 255, 0.14);
     border-radius: 50px;
     margin-left: 8%;
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
-
+    z-index: 99999;
     position:fixed;
 }
 

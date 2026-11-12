@@ -674,3 +674,170 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
 });
+
+
+
+
+
+/* ==========================================
+   STACKLY CONTACT EMAIL VALIDATION
+========================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const form = document.getElementById("lawContactForm");
+    const emailInput = document.getElementById("lawContactEmail");
+    const errorMessage = document.getElementById("lawEmailError");
+    const inputWrap = document.querySelector(".law-contact-input-wrap");
+
+    if (!form || !emailInput || !errorMessage || !inputWrap) return;
+
+    let errorTimer;
+
+    // SHOW ERROR
+    function showError(message) {
+
+        clearTimeout(errorTimer);
+
+        errorMessage.textContent = message;
+
+        inputWrap.classList.add("has-error");
+
+        emailInput.setAttribute("aria-invalid", "true");
+
+        errorTimer = setTimeout(() => {
+            clearError();
+        }, 3000);
+    }
+
+    // CLEAR ERROR
+    function clearError() {
+
+        errorMessage.textContent = "";
+
+        inputWrap.classList.remove("has-error");
+
+        emailInput.removeAttribute("aria-invalid");
+
+        clearTimeout(errorTimer);
+    }
+
+    // CLEAR ERROR WHILE TYPING
+    emailInput.addEventListener("input", () => {
+        clearError();
+    });
+
+
+    // FORM SUBMISSION
+    form.addEventListener("submit", (event) => {
+
+        event.preventDefault();
+
+        const email = emailInput.value.trim();
+
+        // EMPTY VALIDATION
+        if (!email) {
+
+            showError("Please enter your email address.");
+
+            emailInput.focus();
+
+            return;
+        }
+
+        // EMAIL FORMAT VALIDATION
+        const emailPattern =
+            /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+        if (!emailPattern.test(email) || !emailInput.validity.valid) {
+
+            showError("Please enter a valid email address.");
+
+            emailInput.focus();
+
+            return;
+        }
+
+        // VALID EMAIL
+        clearError();
+
+        // RESET EMAIL BEFORE NAVIGATION
+        form.reset();
+
+        // REDIRECT TO 404 PAGE
+        window.location.href = "404.html";
+
+    });
+
+
+    // RESET WHEN RETURNING TO THIS PAGE
+    window.addEventListener("pageshow", () => {
+
+        form.reset();
+
+        clearError();
+
+    });
+
+});
+
+
+/* ==========================================
+   STACKLY CONTACT - GSAP ANIMATIONS
+========================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    if (typeof gsap === "undefined") return;
+
+    if (typeof ScrollTrigger !== "undefined") {
+        gsap.registerPlugin(ScrollTrigger);
+    }
+
+
+    // LEFT CONTENT REVEAL
+    gsap.fromTo(
+        ".law-contact-content",
+        {
+            x: -100,
+            opacity: 0
+        },
+        {
+            x: 0,
+            opacity: 1,
+            duration: 1.3,
+            ease: "power3.out",
+
+            scrollTrigger: {
+                trigger: ".law-contact-section",
+                start: "top 75%",
+                toggleActions: "play none none none"
+            }
+        }
+    );
+
+
+    // RIGHT IMAGE REVEAL
+    gsap.fromTo(
+        ".law-contact-image",
+        {
+            x: 100,
+            opacity: 0,
+            clipPath: "inset(0 0 0 100%)"
+        },
+        {
+            x: 0,
+            opacity: 1,
+            clipPath: "inset(0 0 0 0%)",
+            duration: 1.5,
+            ease: "power3.out",
+
+            scrollTrigger: {
+                trigger: ".law-contact-visual",
+                start: "top 85%",
+                toggleActions: "play none none none"
+            }
+        }
+    );
+
+});
